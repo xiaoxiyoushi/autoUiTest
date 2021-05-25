@@ -1,0 +1,33 @@
+package com.beilie.test.bole.pages.GP.GPPM;
+
+import com.beilie.test.open.PublicClass.Public;
+
+//GPPM10我的项目
+public class GPPM10Page extends Public<GPPM10Page> {
+
+    //点击客户名称下拉框，选择项目名称
+    public GPPM10Page selectName(int i){
+        this.findByClassName("ivu-select-selection").click();
+        //this.findByXPath("//li[\""+name+"\"]").click();
+        this.findListByClassName("ivu-select-item").get(i).click();
+        return this;
+    }
+
+    //输入项目名称
+    public GPPM10Page inputClientName(String name,String projectName){
+        this.findByXPath("//input[@placeholder=\""+name+"\"]").sendKeys(projectName);
+        return this;
+    }
+
+    public GPPM10Page clickSearch(){
+        this.findByXPath("//button[text()=\"搜索\"]").click();
+        return this;
+    }
+
+    public String getProjectName(){
+        //this.findByXPath("//button[text()=\"搜索\"]").click();
+        String projectName=this.findByClassName("ivu-table-tbody").findByTagName("a").getText();
+        return projectName;
+    }
+
+}

@@ -1,0 +1,126 @@
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective settings
+[WARNING] Unrecognised tag: 'repositories' (position: START_TAG seen ...| variables for plugins in the POM. \n\t\t| | -->\n\t\n\t  <repositories>... @140:18)  @ D:\apps\maven\bin\..\conf\settings.xml, line 140, column 18
+[WARNING] 
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com-beilie-test 1.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ com-beilie-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ com-beilie-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ com-beilie-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ com-beilie-test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 112 source files to D:\workSpace\TEST\trunk\autoTest\src\com-beilie-test\target\test-classes
+[WARNING] /D:/workSpace/TEST/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/seleniums/core/SearchTemplate.java: 某些输入文件使用了未经检查或不安全的操作。
+[WARNING] /D:/workSpace/TEST/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/seleniums/core/SearchTemplate.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ com-beilie-test ---
+[INFO] Surefire report directory: D:\workSpace\TEST\trunk\autoTest\src\com-beilie-test\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.beilie.test.es.HunterRegisteAndAuthenticationTest
+21:01:47.989 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+21:01:47.992 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+21:01:48.013 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+21:01:48.013 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+21:01:48.021 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+21:01:48.021 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+21:01:48.032 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+21:01:48.033 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+21:01:48.053 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+21:01:48.053 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.808 sec <<< FAILURE! - in com.beilie.test.es.HunterRegisteAndAuthenticationTest
+getHunterCompanyAuthed(com.beilie.test.es.HunterRegisteAndAuthenticationTest)  Time elapsed: 0.698 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.beilie.spring.SpringUtils.getBean(SpringUtils.java:16)
+	at com.beilie.core.test.EFTestBuilder.getServiceInstance(EFTestBuilder.java:43)
+	at com.beilie.core.test.EFTestBuilder.getHost(EFTestBuilder.java:27)
+	at com.beilie.core.test.TestBase.buildURI(TestBase.java:121)
+	at com.beilie.core.test.TestBase.getRequest(TestBase.java:193)
+	at com.beilie.core.test.TestBase.execute(TestBase.java:153)
+	at com.beilie.test.es.HunterRegisteAndAuthenticationTest.getHunterCompanyAuthed(HunterRegisteAndAuthenticationTest.java:91)
+
+getMyHunterEnterpriseProfile(com.beilie.test.es.HunterRegisteAndAuthenticationTest)  Time elapsed: 0.061 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.beilie.spring.SpringUtils.getBean(SpringUtils.java:16)
+	at com.beilie.core.test.EFTestBuilder.getServiceInstance(EFTestBuilder.java:43)
+	at com.beilie.core.test.EFTestBuilder.getHost(EFTestBuilder.java:27)
+	at com.beilie.core.test.TestBase.buildURI(TestBase.java:121)
+	at com.beilie.core.test.TestBase.getRequest(TestBase.java:193)
+	at com.beilie.core.test.TestBase.execute(TestBase.java:153)
+	at com.beilie.test.es.HunterRegisteAndAuthenticationTest.getMyHunterEnterpriseProfile(HunterRegisteAndAuthenticationTest.java:82)
+
+findCompanyInfo(com.beilie.test.es.HunterRegisteAndAuthenticationTest)  Time elapsed: 0.019 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.beilie.spring.SpringUtils.getBean(SpringUtils.java:16)
+	at com.beilie.core.test.EFTestBuilder.getServiceInstance(EFTestBuilder.java:43)
+	at com.beilie.core.test.EFTestBuilder.getHost(EFTestBuilder.java:27)
+	at com.beilie.core.test.TestBase.buildURI(TestBase.java:121)
+	at com.beilie.core.test.TestBase.getRequest(TestBase.java:193)
+	at com.beilie.core.test.TestBase.execute(TestBase.java:153)
+	at com.beilie.test.es.HunterRegisteAndAuthenticationTest.findCompanyInfo(HunterRegisteAndAuthenticationTest.java:73)
+
+registHunter(com.beilie.test.es.HunterRegisteAndAuthenticationTest)  Time elapsed: 0.017 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.beilie.spring.SpringUtils.getBean(SpringUtils.java:16)
+	at com.beilie.core.test.EFTestBuilder.getServiceInstance(EFTestBuilder.java:43)
+	at com.beilie.core.test.EFTestBuilder.getHost(EFTestBuilder.java:27)
+	at com.beilie.core.test.TestBase.buildURI(TestBase.java:121)
+	at com.beilie.core.test.TestBase.getRequest(TestBase.java:206)
+	at com.beilie.core.test.TestBase.execute(TestBase.java:153)
+	at com.beilie.test.es.ESTestCase.applyToHunterEnterpriseCARequest(ESTestCase.java:70)
+	at com.beilie.test.es.HunterRegisteAndAuthenticationTest.registHunter(HunterRegisteAndAuthenticationTest.java:24)
+
+submitCompanyInfo(com.beilie.test.es.HunterRegisteAndAuthenticationTest)  Time elapsed: 0.006 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.beilie.spring.SpringUtils.getBean(SpringUtils.java:16)
+	at com.beilie.core.test.EFTestBuilder.getServiceInstance(EFTestBuilder.java:43)
+	at com.beilie.core.test.EFTestBuilder.getHost(EFTestBuilder.java:27)
+	at com.beilie.core.test.TestBase.buildURI(TestBase.java:121)
+	at com.beilie.core.test.TestBase.getRequest(TestBase.java:206)
+	at com.beilie.core.test.TestBase.execute(TestBase.java:153)
+	at com.beilie.test.es.HunterRegisteAndAuthenticationTest.submitCompanyInfo(HunterRegisteAndAuthenticationTest.java:59)
+
+
+Results :
+
+Tests in error: 
+  HunterRegisteAndAuthenticationTest.findCompanyInfo:73 ? NullPointer
+  HunterRegisteAndAuthenticationTest.getHunterCompanyAuthed:91 ? NullPointer
+  HunterRegisteAndAuthenticationTest.getMyHunterEnterpriseProfile:82 ? NullPointer
+  HunterRegisteAndAuthenticationTest.registHunter:24->ESTestCase.applyToHunterEnterpriseCARequest:70 ? NullPointer
+  HunterRegisteAndAuthenticationTest.submitCompanyInfo:59 ? NullPointer
+
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 15.499 s
+[INFO] Finished at: 2019-06-14T21:01:48+08:00
+[INFO] Final Memory: 45M/406M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project com-beilie-test: There are test failures.
+[ERROR] 
+[ERROR] Please refer to D:\workSpace\TEST\trunk\autoTest\src\com-beilie-test\target\surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

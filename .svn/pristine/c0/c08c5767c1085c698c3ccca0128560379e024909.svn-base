@@ -1,0 +1,24 @@
+1510364485969,59,启动添加企业客户流程,200,,线程组 1-1,text,true,,8276,739,1,1,51,0,34
+1510364486031,0,完成完善客户基本信息任务,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in path at index 46: http://192.168.5.105:8080/api/v1/gc/customer/${customerId}/completeTask/${taskId},线程组 1-1,text,false,,1090,0,1,1,0,0,0
+1510364486032,0,完成添加联络人任务,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in path at index 61: http://192.168.5.105:8080/api/v1/gc/contactors/completeTask/${taskId},线程组 1-1,text,false,,1078,0,1,1,0,0,0
+1510364486032,0,完成添加沟通记录任务,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in path at index 62: http://192.168.5.105:8080/api/v1/gc/contactLogs/completeTask/${taskId},线程组 1-1,text,false,,1079,0,1,1,0,0,0
+1510364577792,53,启动添加企业客户流程,200,,线程组 1-1,text,true,,8276,739,1,1,47,0,31
+1510364577848,1,完成完善客户基本信息任务,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in path at index 46: http://192.168.5.105:8080/api/v1/gc/customer/${customerId}/completeTask/${taskId},线程组 1-1,text,false,,1090,0,1,1,0,0,0
+1510364577849,0,完成添加联络人任务,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in path at index 61: http://192.168.5.105:8080/api/v1/gc/contactors/completeTask/${taskId},线程组 1-1,text,false,,1078,0,1,1,0,0,0
+1510364577849,0,完成添加沟通记录任务,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in path at index 62: http://192.168.5.105:8080/api/v1/gc/contactLogs/completeTask/${taskId},线程组 1-1,text,false,,1079,0,1,1,0,0,0
+1510364679448,1170,启动添加企业客户流程,200,,线程组 1-1,text,true,,608,353,1,1,1164,0,2
+1510364680620,0,完成完善客户基本信息任务,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in path at index 78: http://192.168.5.105:8080/api/v1/gc/customer/378842457795723264/completeTask/${taskId},线程组 1-1,text,false,,1095,0,1,1,0,0,0
+1510364680621,0,完成添加联络人任务,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in path at index 61: http://192.168.5.105:8080/api/v1/gc/contactors/completeTask/${taskId},线程组 1-1,text,false,,1078,0,1,1,0,0,0
+1510364680623,0,完成添加沟通记录任务,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in path at index 62: http://192.168.5.105:8080/api/v1/gc/contactLogs/completeTask/${taskId},线程组 1-1,text,false,,1079,0,1,1,0,0,0
+1510383653541,498,启动添加企业客户流程,200,,线程组 1-1,text,true,,614,353,1,1,496,0,37
+1510383654067,209,完成完善客户基本信息任务,200,,线程组 1-1,text,true,,590,1005,1,1,209,0,0
+1510383654277,163,完成添加联络人任务,200,,线程组 1-1,text,true,,582,601,1,1,163,0,0
+1510383654441,189,完成添加沟通记录任务,200,,线程组 1-1,text,true,,548,392,1,1,189,0,0
+1510384027446,337,启动添加企业客户流程,200,,线程组 1-1,text,true,,614,353,1,1,337,0,6
+1510384027785,248,完成完善客户基本信息任务,200,,线程组 1-1,text,true,,590,1005,1,1,248,0,0
+1510384028035,206,完成添加联络人任务,200,,线程组 1-1,text,true,,582,601,1,1,206,0,0
+1510384028241,254,完成添加沟通记录任务,200,,线程组 1-1,text,true,,548,392,1,1,254,0,0
+1510385608207,63,启动添加企业客户流程,200,,线程组 1-1,text,true,,8276,739,1,1,51,0,34
+1510385608273,0,完成完善客户基本信息任务,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in path at index 46: http://192.168.5.105:8080/api/v1/gc/customer/${customerId}/completeTask/${taskId},线程组 1-1,text,false,,1090,0,1,1,0,0,0
+1510385608274,0,完成添加联络人任务,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in path at index 61: http://192.168.5.105:8080/api/v1/gc/contactors/completeTask/${taskId},线程组 1-1,text,false,,1078,0,1,1,0,0,0
+1510385608274,0,完成添加沟通记录任务,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in path at index 62: http://192.168.5.105:8080/api/v1/gc/contactLogs/completeTask/${taskId},线程组 1-1,text,false,,1079,0,1,1,0,0,0

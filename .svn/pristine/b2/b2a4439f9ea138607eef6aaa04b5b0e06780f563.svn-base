@@ -1,0 +1,37 @@
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective settings
+[WARNING] Unrecognised tag: 'repositories' (position: START_TAG seen ...| variables for plugins in the POM. \n\t\t| | -->\n\t\n\t  <repositories>... @140:18)  @ D:\apps\maven\bin\..\conf\settings.xml, line 140, column 18
+[WARNING] Unrecognised tag: 'repositories' (position: START_TAG seen ...| variables for plugins in the POM. \n\t\t| | -->\n\t\n\t  <repositories>... @140:18)  @ C:\Users\shenjie\.m2\settings.xml, line 140, column 18
+[WARNING] 
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com-beilie-test 1.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ com-beilie-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ com-beilie-test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 22 source files to D:\workspace\TEST\trunk\autoTest\src\com-beilie-test\target\classes
+[WARNING] /D:/workspace/TEST/trunk/autoTest/src/com-beilie-test/src/main/java/com/beilie/test/seleniums/core/SearchTemplate.java: 某些输入文件使用了未经检查或不安全的操作。
+[WARNING] /D:/workspace/TEST/trunk/autoTest/src/com-beilie-test/src/main/java/com/beilie/test/seleniums/core/SearchTemplate.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ com-beilie-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ com-beilie-test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 90 source files to D:\workspace\TEST\trunk\autoTest\src\com-beilie-test\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ com-beilie-test ---
+[INFO] Surefire report directory: D:\workspace\TEST\trunk\autoTest\src\com-beilie-test\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+终止批处理操作吗(Y/N)? 

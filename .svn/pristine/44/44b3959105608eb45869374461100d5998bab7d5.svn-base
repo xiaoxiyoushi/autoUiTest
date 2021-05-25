@@ -1,0 +1,113 @@
+package com.beilie.test.bole.pages.GP;
+
+import com.beilie.test.open.PublicClass.Public;
+import org.junit.Assert;
+
+import java.util.HashMap;
+import java.util.Map;
+
+//GPPL04收款计划，CCL角色的页面
+public class GPPL04Page<T extends GPPL04Page> extends Public<T> {
+    public GPPL04Page clickPay(){
+        this.findByXPath("//button[text()=\"新增普通收款\"]").click();
+        return this;
+    }
+
+    public GPPL04Page clickCandidateNameInput(){
+        this.findByXPath("//input[@placeholder=\"请输入候选人姓名\"]").click();
+        return this;
+    }
+
+    //校对 候选人、公司名称、职位名称	、本次收款金额
+    public GPPL04Page checkInform(Map<String,Object> hash, String b) throws InterruptedException{
+
+        Object candidateName=hash.get("1");
+        Object recommendJob=hash.get("2");
+        Object recommendComp=hash.get("3");
+
+        String candidateName_1=candidateName.toString();
+        String recommendJob_1=recommendJob.toString();
+        String recommendComp_1=recommendComp.toString();
+
+        sendInputPlaceholder("请输入候选人姓名",candidateName_1);
+        sendInputPlaceholder("公司名称",recommendComp_1);
+        sendInputPlaceholder("职位名称",recommendJob_1);
+
+        clickButton("搜索");
+        this.sleepForSeconds(2);
+
+        String td_Value=table_tdValue(0,4);
+        Assert.assertEquals(b,td_Value);
+        return this;
+    }
+
+    public Map<String,Object> clickPayment(){
+        Map<String, Object> hash= new HashMap<String, Object>();
+
+        for (int i=0;i<table_trNumb();i++){
+            String OperationPay=this.findByClassName("ivu-table-tbody")
+                    .findListByTagName("tr").get(i)
+                    .findListByTagName("td").get(10)
+                    .findListByTagName("a").get(1).getText();
+
+            if (OperationPay.equals("付款")){
+                String candidateName=this.table_tdValue(i,1);
+                String company=this.table_tdValue(i,2);
+                String job=this.table_tdValue(i,3);
+                String thisTimeMoney=this.table_tdValue(i,4);
+
+                hash.put("1",candidateName);
+                hash.put("2",company);
+                hash.put("3",job);
+                hash.put("4",thisTimeMoney);
+
+                this.findByClassName("ivu-table-tbody")
+                        .findListByTagName("tr").get(i)
+                        .findListByTagName("td").get(10)
+                        .findListByTagName("a").get(1).click();
+                break;
+            }
+
+        }
+        return hash;
+    }
+
+    //校对 候选人、公司名称、职位名称	、本次收款金额
+    public GPPL04Page checkInform_havenPaid(Map<String,Object> hash) throws InterruptedException{
+        Object candidateName=hash.get("1");
+        Object company=hash.get("2");
+        Object job=hash.get("3");
+        Object thisTimeMoney=hash.get("4");
+
+        String candidateName_1=candidateName.toString();
+        String company_1=company.toString();
+        String job_1=job.toString();
+        String thisTimeMoney_1=thisTimeMoney.toString();
+
+        sendInputPlaceholder("请输入候选人姓名",candidateName_1);
+        sendInputPlaceholder("公司名称",company_1);
+        sendInputPlaceholder("职位名称",job_1);
+
+        clickButton("搜索");
+        this.sleepForSeconds(2);
+
+        for (int i=0;i<table_trNumb();i++){
+            String td_thisTimeMoney=this.table_tdValue(i,4);
+            if (thisTimeMoney_1.equals(td_thisTimeMoney)){
+                String payStatus=this.findByClassName("ivu-table-tbody")
+                        .findListByTagName("tr").get(i)
+                        .findListByTagName("td").get(10)
+                        .findListByTagName("a").get(1).getText();
+
+                Assert.assertEquals("已付款",payStatus);
+
+
+                break;
+            }
+        }
+
+        return this;
+    }
+
+
+}

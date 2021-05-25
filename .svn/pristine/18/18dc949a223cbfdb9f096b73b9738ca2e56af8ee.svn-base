@@ -1,0 +1,48 @@
+package com.beilie.test.bole.pages.EB;
+
+import com.beilie.test.open.PublicClass.Public;
+import org.junit.Assert;
+
+public class EBFA05Page extends Public<EBFA05Page> {
+
+    /*
+    点击头像
+     */
+    public EBFA05Page clickAvatar(int n){
+        this.findByClassName("pt72").findListByClassName("small_card").get(n)
+                .findByClassName("cursorP").click();
+        return this;
+    }
+
+    /*
+    点击收藏按钮
+     */
+    public EBFA05Page clickCollection(){
+        this.findByClassName("pt72").findByClassName("small_card")
+        .findByClassName("addToTalents").findByTagName("img").click();
+        return this;
+    }
+
+    /*
+    在“确认取消收藏?”弹框里，点击【确定】按钮
+     */
+    public EBFA05Page clickConfirmBtn(){
+        this.findById("inquiryModal_modal").findByClassName("click_btn_bg")
+                .click();
+        return this;
+    }
+
+    /*
+    人选搜索结果里 人选的个数,是0
+     */
+    public EBFA05Page checkCandidateNumb(){
+        int candidateNumb=this.findByClassName("EBFA05_rightResult_content")
+                .findListByClassName("small_card").size();
+
+       String str=candidateNumb+"";
+        Assert.assertEquals("0",str);
+
+        return this;
+    }
+
+}

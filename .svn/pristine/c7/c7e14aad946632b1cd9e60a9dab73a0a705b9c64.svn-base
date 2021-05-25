@@ -1,0 +1,18 @@
+package com.beilie.test.bole.pages.GP;
+
+import com.beilie.test.open.PublicClass.Public;
+
+//GPCT01任务中心
+public class GPCT01Page extends Public<GPCT01Page> {
+
+    public GPCT01Page clickCarry(){
+        this.findByXPath("//span[text()=\"执行\"]").click();
+        return this;
+    }
+
+    public String getTaskName(){
+        String taskName=this.findListByClassName("ivu-table-cell-ellipsis").get(1)
+                .findByTagName("span").getText();
+        return taskName;
+    }
+}

@@ -1,0 +1,58 @@
+2017/11/11 15:35:18 INFO  - jmeter.util.JMeterUtils: Setting Locale to zh_CN 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: Loading user properties from: E:\JMeter\apache-jmeter-3.1\bin\user.properties 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: Loading system properties from: E:\JMeter\apache-jmeter-3.1\bin\system.properties 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: Copyright (c) 1998-2016 The Apache Software Foundation 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: Version 3.1 r1770033 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: java.version=1.8.0_141 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) Client VM 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: os.name=Windows 7 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: os.arch=x86 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: os.version=6.1 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: file.encoding=GBK 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: Max memory     =523501568 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: Available Processors =8 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: Default Locale=中文 (中国) 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: JMeter  Locale=中文 (中国) 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: JMeterHome=E:\JMeter\apache-jmeter-3.1 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: user.dir  =E:\ceshi\script\lietou\sprint12 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: PWD       =E:\ceshi\script\lietou\sprint12 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: IP: 192.168.5.175 Name: PPT03-20170215J FullName: 192.168.5.175 
+2017/11/11 15:35:18 INFO  - jmeter.services.FileServer: Default base='E:\ceshi\script\lietou\sprint12' 
+2017/11/11 15:35:18 INFO  - jmeter.services.FileServer: Set new base='E:\ceshi\script\lietou\sprint12' 
+2017/11/11 15:35:18 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2017/11/11 15:35:18 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2017/11/11 15:35:18 INFO  - jmeter.save.SaveService: Using SaveService properties version 3.1 
+2017/11/11 15:35:18 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2017/11/11 15:35:18 INFO  - jmeter.save.SaveService: Loading file: GC查询(chunxiao).jmx 
+2017/11/11 15:35:18 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/11/11 15:35:18 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/11/11 15:35:18 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/11/11 15:35:18 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/11/11 15:35:18 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2017/11/11 15:35:18 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: Creating summariser <summary> 
+2017/11/11 15:35:18 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2017/11/11 15:35:18 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2017/11/11 15:35:18 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2017/11/11 15:35:18 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2017/11/11 15:35:18 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2017/11/11 15:35:18 INFO  - jmeter.JMeter: 正在运行的测试 (1510385718449) 
+2017/11/11 15:35:18 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : 线程组 
+2017/11/11 15:35:18 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group 线程组. 
+2017/11/11 15:35:18 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2017/11/11 15:35:18 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2017/11/11 15:35:18 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2017/11/11 15:35:18 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2017/11/11 15:35:18 INFO  - jmeter.threads.JMeterThread: Thread started: 线程组 1-1 
+2017/11/11 15:35:18 INFO  - jmeter.services.FileServer: Stored: E:\ceshi\data\lietou\sprint12\GC查询(chunxiao).txt 
+2017/11/11 15:35:18 INFO  - jmeter.protocol.http.sampler.HTTPHCAbstractImpl: Local host = PPT03-20170215J 
+2017/11/11 15:35:18 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: HTTP request retry count = 0 
+2017/11/11 15:35:18 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2017/11/11 15:35:18 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2017/11/11 15:35:18 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2017/11/11 15:35:18 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+2017/11/11 15:35:18 INFO  - jmeter.threads.JMeterThread: Thread is done: 线程组 1-1 
+2017/11/11 15:35:18 INFO  - jmeter.threads.JMeterThread: Thread finished: 线程组 1-1 
+2017/11/11 15:35:18 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2017/11/11 15:35:18 INFO  - jmeter.services.FileServer: Close: E:\ceshi\data\lietou\sprint12\GC查询(chunxiao).txt 
+2017/11/11 15:35:18 INFO  - jmeter.reporters.Summariser: summary =     26 in 00:00:00 =   81.8/s Avg:     8 Min:     6 Max:    53 Err:     0 (0.00%) 

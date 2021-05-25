@@ -1,0 +1,45 @@
+server:
+  port: 1101
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://http://pro.beilie.com/discovery/
+logging:
+  level:
+    ROOT: WARN
+spring:
+  application:
+    name: test-v1
+  session:
+    store-type: redis
+  redis:
+    host: 192.168.5.113
+    port: 32301
+    password: redis@beilie
+  datasource:
+    url: jdbc:mysql://192.168.5.193:3306/security?useUnicode=true&characterEncoding=UTF-8 
+    username: root
+    password: mysql@beilie
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+security:
+  sessions: NEVER
+mybatis:
+#  typeAliasesPackage: com.wasp.rbac.domain.valueobject
+  executorType: Simple
+#  schema: org.wasp.account.domain.model

@@ -1,0 +1,26 @@
+package com.beilie.test.open.hunters.pages;
+import com.beilie.test.seleniums.core.UIPage;
+public class LoginPage extends UIPage<LoginPage> {
+    public LoginPage() {
+    }
+    public LoginPage userName(String value) {
+        this.findById("username").sendKeys(value);
+        return this;
+    }
+    public LoginPage password(String password) {
+        this.findById("password").sendKeys(password);
+        return this;
+    }
+    public LoginPage clickAccountLogin() {
+        this.findById("accountLogin").click();
+        return this;
+    }
+    public LoginPage captcha(String code) {
+        this.findById("captcha").sendKeys(code);
+        return this;
+    }
+    public LoginPage submit() throws IllegalAccessException, InstantiationException {
+        this.findByClassName("loginBtn").submit();
+        return this;
+    }
+}

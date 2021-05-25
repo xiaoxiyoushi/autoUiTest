@@ -1,0 +1,170 @@
+package com.beilie.test.open.PublicClass;
+
+import com.beilie.test.open.hunters.pages.CreatePositionPage;
+import com.beilie.test.seleniums.core.Element;
+import com.beilie.test.seleniums.core.UIPage;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.UUID;
+
+public class Public<T extends Public> extends UIPage<T> {
+    //随机生成字符串
+    public static final String ALLCHAR = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    public static String generateString(int length) {
+        StringBuffer sb = new StringBuffer();
+        Random random = new Random();
+        for (int i = 0; i < length; i++) {
+            sb.append(ALLCHAR.charAt(random.nextInt(ALLCHAR.length())));
+        }
+        return sb.toString();
+    }
+
+    /*
+    要产生随机数，可以使用Java api中java.lang包中的Math类.Math类以静态方法的方式提供常用的数学方法，
+    其中Math.random()方法是一个可以产生[0.0,1.0]区间内的一个双精度浮点数的方法
+    如：
+    产生一个100以内的整数：int x=(int)(Math.random()*100);
+    又如：
+    产生一个1-50之间的随机数：int x=1+(int)(Math.random()*50)
+     */
+
+    public static int generateNumber() {
+        Random r = new Random();
+        int num = (int) (Math.random() * 4 );//num产生0-3
+        return num;
+    }
+
+    public static int generateNumber1(int i) {
+        int num = (int) (Math.random() * i );
+        return num;
+    }
+
+    public static int generateNumber2(int i) {
+        int num = 1+(int) (Math.random() * i );
+        return num;
+    }
+    /**
+     * 组件
+     */
+    //所属行业
+    public T clickInternet(){
+       this.findByCssSelector("#plugin > div > div.allIndustry.clearfix.flex > div > ul > li:nth-child(2) > span").click();
+        return (T) this;
+    }
+    public T submitIndustry(){
+        this.findByCssSelector("#plugin > div > div.industruWrapFooter > button.ef-btn.ef-confirm-btn").click();
+        return (T) this;
+    }
+
+    public T selectIndustry(){
+        this.findByCssSelector("#plugin > div > div.allIndustry.clearfix.flex > div > ul > li:nth-child(2) > span").click();
+        this.findByCssSelector("#plugin > div > div.industruWrapFooter > button.ef-btn.ef-confirm-btn").click();
+        return (T) this;
+    }
+
+    //选择职能
+    public T zujianSelectFunction(){
+        this.findByClassName("dialog-box").findByTagName("ul").findListByTagName("li").get(1).click();
+        this.findByClassName("dialog-box").findByTagName("ul").findListByTagName("li").get(2).click();
+        this.findByClassName("industruWrapFooter").findListByTagName("button").get(1).click();
+        return (T) this;
+    }
+
+    //工作地点
+    /*public Element selectElems1(int i) {
+        Element elements = this.findByClassName("tab-body functionName").findListByTagName("ul").get(i);
+        return elements;
+    }*/
+    public Element selectElems(int i) {
+        Element elements = this.findByClassName("dialog-box").findListByTagName("ul").get(i);
+        return elements;
+    }
+    public T location1(int i) {
+        this.selectElems(0).findListByTagName("li").get(i).click();
+        return (T) this;
+    }
+    public T location2(int j) {
+        this.findById("stab.level").findListByTagName("li").get(j).click();
+        return (T) this;
+    }
+    public T submitlocation() {
+        this.findByClassName("industruWrapFooter").findListByTagName("button").get(1).click();
+        return (T) this;
+    }
+
+    //工作地点
+    public T workPlace(int i,int j){
+        this.selectElems(0).findListByTagName("li").get(i).click();
+        this.findById("stab.level").findListByTagName("li").get(j).click();
+        this.findByClassName("industruWrapFooter").findListByTagName("button").get(1).click();
+        return (T) this;
+    }
+    //工作地点1
+    public T workPlace1(int i,int j,int k){
+        this.selectElems(0).findListByTagName("li").get(i).click();
+        this.findById("stab.level").findListByTagName("li").get(j).click();
+        this.findById("stab.level").findListByTagName("li").get(k).click();
+        this.findByClassName("industruWrapFooter").findListByTagName("button").get(1).click();
+        return (T) this;
+    }
+    //日历
+    public T calendar() {
+        this.findByCssSelector("#EFMonthSelector > div > div.ivu-select-dropdown > div > div > div > div:nth-child(2) > div > span:nth-child(1) > em")
+                .click();
+        return (T) this;
+    }
+
+    /*
+    后退方法
+     */
+    public T backCurrentPage(){
+        this.back();
+        return (T) this;
+    }
+
+    String uuid = UUID.randomUUID().toString();
+
+    public Element elements(int i){
+        Element element=this.findListByXPath("//*[@id=\"home_menus_menuId\"]/child::li").get(i);
+        return element;
+    }
+
+    /**
+     *  加入项目表
+     * @param arrayList
+     * @param n
+     * @return
+     */
+    public ArrayList<String> addProjectTable(ArrayList<String> arrayList, int n){
+        //获取表的行数
+        List<Element> elements=this.findListById("selectTable_box").get(n).findByClassName("table_bg").findListByClassName("ivu-table-row");
+        int num=elements.size();
+
+        for(int i=0;i<num;i++){
+            elements.get(i).findByClassName("cursorP").click();
+            try {
+                this.sleepForSeconds(2);
+            } catch (InterruptedException e) {
+            }
+            String joinStatus =  this.findListById("selectTable_box").get(n).findByClassName("table_bg").findListByClassName("ivu-table-row").get(i).findByClassName("weight400").getText();
+            //String joinStatus =  elements.get(i).findByClassName("weight400").getText();
+            if (joinStatus.equals("已加入")) {
+                /*String clientName1 =  elements.get(i).findListByTagName("span").get(0).getText();//获取第i行的客户名称
+                String projectName1 =  elements.get(i).findListByTagName("span").get(1).getText();//获取第i行的项目名称*/
+                String clientName1 =  this.findListById("selectTable_box").get(n).findByClassName("table_bg").findListByClassName("ivu-table-row").get(i).findListByTagName("span").get(0).getText();//获取第i行的客户名称
+                String projectName1 =  this.findListById("selectTable_box").get(n).findByClassName("table_bg").findListByClassName("ivu-table-row").get(i).findListByTagName("span").get(1).getText();//获取第i行的项目名称
+                arrayList.add(clientName1);
+                arrayList.add(projectName1);
+                break;
+            } else {
+                //关闭提示框
+                this.findByCssSelector("#ef-modal-ef-model-confirm > div.ef-modal-ef-model-confirm-footer > button").click();
+            }
+        }
+        return arrayList;
+    }
+
+
+}

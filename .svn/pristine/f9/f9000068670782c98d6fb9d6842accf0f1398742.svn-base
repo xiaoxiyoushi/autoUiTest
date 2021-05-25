@@ -1,0 +1,29 @@
+package com.beilie.test.bole.pages.GP;
+
+import org.junit.Assert;
+
+import java.util.Map;
+
+//GPPL03收款计划列表，人事角色的页面
+public class GPPL03Page extends GPPL04Page<GPPL03Page> {
+    //校对 候选人、公司名称、职位名称	、本次收款金额
+    public GPPL03Page checkInform_1(Map<String,Object> hash, String b) throws InterruptedException{
+
+        Object candidateName=hash.get("1");
+        Object recommendJob=hash.get("2");
+
+        String candidateName_1=candidateName.toString();
+        String recommendJob_1=recommendJob.toString();
+
+        sendInputPlaceholder("请输入候选人姓名",candidateName_1);
+        sendInputPlaceholder("职位名称",recommendJob_1);
+
+        clickButton("搜索");
+        this.sleepForSeconds(2);
+
+        String td_Value=table_tdValue(0,4);
+        Assert.assertEquals(b,td_Value);
+        return this;
+    }
+
+}

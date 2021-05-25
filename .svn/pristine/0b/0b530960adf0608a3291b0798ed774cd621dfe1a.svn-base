@@ -1,0 +1,13 @@
+package com.beilie.test.bole.cases;
+
+import com.beilie.test.bole.core.BoleBase;
+import com.beilie.test.bole.pages.BdHomePage;
+import org.junit.Test;
+
+public class bd首页 extends BoleBase {
+    @Test
+    public void 进入bd首页 ()throws IllegalAccessException, InstantiationException, InterruptedException{
+        BdHomePage bdHomePage = login("68657208", "888888").sleepForSeconds(3);
+
+    }
+}
