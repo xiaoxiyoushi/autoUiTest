@@ -1,0 +1,2 @@
+# autoUiTest
+selenium java
