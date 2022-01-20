@@ -47,7 +47,7 @@ public class EBFA08人选详情_编辑简历_项目经历 extends BoleBase{
                 .checkResume_project(project)//校对简历详情里的 项目内容
                 .clickSpan("生成推荐报告").sleepForSeconds(1)//点击 生成推荐报告
                 .Span_Value("生成推荐报告成功")//框架上 提示生成推荐报告成功
-                .clickLi("推荐报告")//切换 推荐报告栏
+                .Li_click("推荐报告")//切换 推荐报告栏
                 .sleepForSeconds(2)
                 .click_Recommend()//点击  查看报告
                 .switchToNewIframe(1, EB0301Page.class).sleepForSeconds(2);

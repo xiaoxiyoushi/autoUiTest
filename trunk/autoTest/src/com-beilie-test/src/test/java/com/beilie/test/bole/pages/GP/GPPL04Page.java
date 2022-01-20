@@ -96,7 +96,7 @@ public class GPPL04Page<T extends GPPL04Page> extends Public<T> {
         for (int i=0;i<table_trNumb();i++){
             String td_thisTimeMoney=this.table_tdValue(i,5);
             if (thisTimeMoney_1.equals(td_thisTimeMoney)){
-                String payStatus=this.table_td_spanValue(1,i,0,1);
+                String payStatus=this.table_td_spanValue(1,i,0);
                 Assert.assertEquals("已付款",payStatus);
                 break;
             }

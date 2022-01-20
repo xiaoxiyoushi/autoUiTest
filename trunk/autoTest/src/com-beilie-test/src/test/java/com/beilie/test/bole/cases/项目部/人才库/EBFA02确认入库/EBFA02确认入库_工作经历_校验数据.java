@@ -17,8 +17,10 @@ public class EBFA02确认入库_工作经历_校验数据 extends BoleBase {
             public void test ()throws IllegalAccessException, InstantiationException, InterruptedException, InvocationTargetException {
                 BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 
+                bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
                 EBFA04Page eBFA04Page = (EBFA04Page) bdHomePage
-                        .clickMenus(" 中文简历库", "简历搜索")//点击菜单栏
+                        .clickFirstMenu_resumeLibrary().sleepForSeconds(1)//点击一级菜单：中文简历库
+                        .clickSecondMenu_resumeSearch()//点击二级菜单：简历搜索
                         .switchToNewIframe1("EBFA04", EBFA04Page.class).sleepForSeconds(1);
 
                 String randomStr = Public.generateString(8);//8位随机字符串
@@ -74,16 +76,20 @@ public class EBFA02确认入库_工作经历_校验数据 extends BoleBase {
         选择职能、行业、地点，并且获取选择的值
          */
                 String function_value = eBFA02Page
-                        .label_followingDiv_clickimg("目前职能：")//点击目前职能的icon
-                        .getfunction_SingleComponentValue();
+                        .inputPlaceholder_parentDiv_parentDiv_iClick("请选择目前职能").sleepForSeconds(1)//点击目前职能的icon
+                        .functionSingleComponent()//选择职能组件
+                        .label_followingDiv_spanValue("目前职能：");
 
                 String industry_value = eBFA02Page
-                        .label_followingDiv_clickimg("所在行业：")//点击所在行业的icon
-                        .getIndustryComponentValue();
+                        .inputPlaceholder_parentDiv_parentDiv_iClick("请选择公司行业").sleepForSeconds(1)//点击目前职能的icon
+                        .industryComponent()//选择职能组件
+                        .label_followingDiv_spanValue("所在行业：");
 
-                String location_value = eBFA02Page.component_delete(3)
-                        .label_followingDiv_clickimg("工作地点：")//点击工作地点的icon
-                        .placeComponent_getValue();
+                String location_value = eBFA02Page
+                        .input_bcakSpace("请选择工作地址",1).sleepForSeconds(1)//清掉现居住地
+                        .inputPlaceholder_parentDiv_parentDiv_iClick("请选择工作地址").sleepForSeconds(1)//点击现居住地的icon
+                        .workPlaceComponent()//选择地点组件
+                        .label_followingDiv_spanValue("工作地点：");
 
                 List<String> list=new ArrayList<String>();
                 list.add(companyName);
@@ -117,7 +123,7 @@ public class EBFA02确认入库_工作经历_校验数据 extends BoleBase {
                         .checkResume_workExperience(list,industry_value,currentSalary)//校对简历详情里的 工作经历，公司名称、职位名称、职能、地点、行业、薪资
                         .clickSpan("生成推荐报告").sleepForSeconds(1)//点击 生成推荐报告
                         .Span_Value("生成推荐报告成功")//框架上 提示生成推荐报告成功
-                        .clickLi("推荐报告")//切换 推荐报告栏
+                        .Li_click("推荐报告")//切换 推荐报告栏
                         .sleepForSeconds(2)
                         .click_Recommend()//点击  查看报告
                         .switchToNewIframe(1, EB0301Page.class).sleepForSeconds(2);

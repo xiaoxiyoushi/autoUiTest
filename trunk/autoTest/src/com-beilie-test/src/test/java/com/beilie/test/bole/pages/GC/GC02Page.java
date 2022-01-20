@@ -34,7 +34,7 @@ public class GC02Page extends Public<GC02Page> {
     //点击保存
     public GC02Page clickSave(){
         this.findByClassName("ivu-form-label-right")
-                .findByClassName("btnSub").click();
+                .findByClassName("ivu-btn-primary").click();
         return this;
     }
 

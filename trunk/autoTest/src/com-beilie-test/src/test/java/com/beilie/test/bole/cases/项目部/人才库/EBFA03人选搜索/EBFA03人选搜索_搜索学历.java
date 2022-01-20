@@ -17,7 +17,7 @@ public class EBFA03人选搜索_搜索学历 extends BoleBase {
         String xueLi="大专";
         eBFA03Page
                 .clickSpan("学历下限").sleepForSeconds(1)//点击学历下限框
-                .clickLi(xueLi)//点击大专
+                .Li_click(xueLi)//点击大专
                 .clickSpan("学历上限").sleepForSeconds(1)//点击学历上限框
                 .span_parentDiv_parentDiv_followingGetDiv("学历上限",xueLi)//点击大专
                 .clickSpan("搜索").sleepForSeconds(3)//点击搜索

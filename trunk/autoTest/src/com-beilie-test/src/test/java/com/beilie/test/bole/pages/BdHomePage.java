@@ -11,7 +11,7 @@ bd首页
  */
 public class BdHomePage extends UIPage<BdHomePage> {
     //点击二级菜单
-   //点击左侧菜单栏，客户管理-添加客户、我的客户
+    //点击左侧菜单栏，客户管理-添加客户、我的客户
     public BdHomePage clickClientManger(String ClientMangerMenu,int n) throws InterruptedException{
         Element element=this.findById("home_menus_menuId")
                 .findListByClassName("ivu-menu-submenu").get(n);
@@ -103,6 +103,85 @@ public class BdHomePage extends UIPage<BdHomePage> {
 
     public BdHomePage clickSpan(String str){
         this.findByXPath("//span[text()=\""+str+"\"]").click();
+        return this;
+    }
+
+    //关闭隐藏菜单弹窗
+    public BdHomePage closeHideMenue() throws InterruptedException{
+        this.findByXPath("//div[@class=\"ef-modal v-transfer-dom\"]//i").click();
+        return this;
+    }
+
+    //点击一级菜单：项目管理
+    public BdHomePage clickFirstMenu_projectManage() throws InterruptedException{
+        this.findByXPath("//span[text()=\" 项目管理\"]").click();
+        return this;
+    }
+
+    //点击二级菜单：我的项目
+    public BdHomePage clickSecondMenu_myProject() throws InterruptedException{
+        this.findByXPath("//a[text()=\"我的项目\"]").click();
+        return this;
+    }
+
+    //点击一级菜单：人才库
+    public BdHomePage clickFirstMenu_candidateLibrary() throws InterruptedException{
+        this.findByXPath("//span[text()=\" 人才库\"]").click();
+        return this;
+    }
+
+    //点击一级菜单：中文简历库
+    public BdHomePage clickFirstMenu_resumeLibrary() throws InterruptedException{
+        this.findByXPath("//span[text()=\" 中文简历库\"]").click();
+        return this;
+    }
+
+    //点击二级菜单：上传简历
+    public BdHomePage clickSecondMenu_upResume() throws InterruptedException{
+        this.findByXPath("//a[text()=\"上传简历\"]").click();
+        return this;
+    }
+
+    //点击二级菜单：简历搜索
+    public BdHomePage clickSecondMenu_resumeSearch() throws InterruptedException{
+        this.findByXPath("//a[text()=\"简历搜索\"]").click();
+        return this;
+    }
+
+    //点击二级菜单：人选搜索
+    public BdHomePage clickSecondMenu_candidateSearch() throws InterruptedException{
+        this.findByXPath("//a[text()=\"人选搜索\"]").click();
+        return this;
+    }
+
+    //点击一级菜单：外呼管理
+    public BdHomePage clickFirstMenu_callManage() throws InterruptedException{
+        this.findByXPath("//span[text()=\" 外呼管理\"]").click();
+        return this;
+    }
+
+    //点击二级菜单：外呼部门分配
+    public BdHomePage clickSecondMenu_callDepartment() throws InterruptedException{
+        this.findByXPath("//a[text()=\"外呼部门分配\"]").click();
+        return this;
+    }
+
+    //点击一级菜单：实时统计数据项
+    public BdHomePage clickFirstMenu_tongji() throws InterruptedException{
+        this.findByXPath("//span[text()=\" 实时统计数据项\"]").click();
+        return this;
+    }
+
+    //点击二级菜单：实时统计
+    public BdHomePage clickSecondMenu_tongji() throws InterruptedException{
+        this.findByXPath("//a[text()=\"实时统计\"]").click();
+        return this;
+    }
+
+
+    //只有一级菜单,插件安装
+    public BdHomePage singleMenu(){
+        this.findByXPath("//a[text()=\"插件安装\"]").click();
         return this;
     }
 

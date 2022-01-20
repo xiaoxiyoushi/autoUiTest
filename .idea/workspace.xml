@@ -1,0 +1,1841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cdd1fbd6-d29d-4266-aaf8-bbd7697cba88" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_2_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_oss_aliyun_sdk_oss_2_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beilie_com_beilie_core_1_0_3_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beilie_com_beilie_core_kafka_1_0_3_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beilie_com_beilie_core_zookeeper_1_0_3_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beilie_com_beilie_data_mybatis_1_0_3_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beilie_com_beilie_gaohr_1_0_3_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beilie_com_beilie_platform_api_1_0_3_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beilie_com_beilie_talents_1_0_4_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_joda_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_4_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_extensions_guice_assistedinject_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_extensions_guice_grapher_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_extensions_guice_multibindings_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_archaius_archaius_core_0_7_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_eureka_eureka_client_1_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_eureka_eureka_core_1_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_governator_governator_1_12_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_governator_governator_api_1_12_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_governator_governator_core_1_12_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_core_1_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_commons_util_0_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_eventbus_0_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_infix_0_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_statistics_0_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_core_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_eureka_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_httpclient_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_loadbalancer_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_transport_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_servo_servo_core_0_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_servo_servo_internal_0_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_14_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_apache_client4_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_jxpath_commons_jxpath_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_core_9_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_hystrix_9_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_slf4j_9_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_5_7_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_dns_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_0_27_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_4_0_27_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_2_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_protostuff_protostuff_api_1_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_protostuff_protostuff_collectionschema_1_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_protostuff_protostuff_core_1_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_protostuff_protostuff_runtime_1_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava2_rxjava_2_2_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_1_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_0_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_contexts_0_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_servo_0_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_cache_cache_api_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_persistence_api_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_41.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_8_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jpountz_lz4_lz4_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_2_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk15_2_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_runtime_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_stringtemplate_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_4_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_4_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_4_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_connect_api_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_connect_json_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_0_9_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_streams_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_yetus_audience_annotations_0_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_55.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_55.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_woodstox_core_asl_4_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ehcache_ehcache_3_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_2_4_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jasig_cas_client_cas_client_core_3_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_marshalling_jboss_marshalling_2_0_9_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_marshalling_jboss_marshalling_river_2_0_9_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jdom_jdom_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_2_71.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_2_71.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jre7_1_2_71.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jre8_1_2_71.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jodd_jodd_bean_5_0_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jodd_jodd_core_5_0_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20140107.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_animal_sniffer_annotation_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_0_0_CR1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongo_java_driver_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_redisson_redisson_3_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_rocksdb_rocksdbjni_5_18_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_2_53_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_2_53_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_141_59.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_2_53_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_2_53_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_141_59.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_141_59.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_2_53_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_2_53_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_2_53_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_4_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_4_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_4_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_1_4_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_4_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_4_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_1_4_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_4_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_4_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_4_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_4_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_4_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_1_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_1_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_core_1_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_1_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_1_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_archaius_1_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_eureka_1_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_feign_1_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_ribbon_1_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_12_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_1_9_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_7_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_hateoas_spring_hateoas_0_20_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_kafka_spring_kafka_1_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_cas_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_1_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_3_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__com_beilie_com_beilie_core_kafka_1_0_3_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__com_beilie_com_beilie_gaohr_1_0_3_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__com_beilie_com_beilie_talents_1_0_4_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_kafka_connect_api_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_kafka_connect_json_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_kafka_kafka_streams_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_maven_maven_artifact_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_maven_maven_artifact_manager_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_maven_maven_core_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_maven_maven_error_diagnostics_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_maven_maven_model_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_maven_maven_monitor_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_maven_maven_plugin_api_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_maven_maven_plugin_descriptor_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_maven_maven_plugin_parameter_documenter_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_maven_maven_plugin_registry_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_maven_maven_profile_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_maven_maven_project_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_maven_maven_repository_metadata_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_maven_maven_settings_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_maven_maven_toolchain_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_maven_plugins_maven_compiler_plugin_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_maven_wagon_wagon_provider_api_1_0_beta_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_codehaus_plexus_plexus_compiler_api_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_codehaus_plexus_plexus_compiler_javac_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_codehaus_plexus_plexus_compiler_manager_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_2_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_jetbrains_annotations_22_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_mongodb_mongo_java_driver_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_rocksdb_rocksdbjni_5_18_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_1_9_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/CCL角色/DHSP06外呼部门分配/DHSP06外呼部门分配_分配或者收回号码Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/CCL角色/GLAC01实时统计/个人给人选加标签数量Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/CCL角色/GP10项目详情_全部栏_加入时间默认倒序Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/CCL角色/插件安排/EBFA13插件安装_生成口令Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/客户部/我的客户/GCCM02我的客户_延长个人锁.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/客服/GP50待回访列表_添加备注.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/客服/GP50待回访列表_设置客户联系方式.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/客服/GP50待回访列表_设置查单状态.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/收款/BD/_03GPCT01任务中心_审核预付款使用.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/收款/CCL/_03GPRV01收款计划_使用预付款.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/收款/CCL/_04GPRV01收款计划_律师费.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/团队人选/GP10项目详情_全部栏_加入时间默认倒序test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/设置职位状态/GP10项目详情_关闭职位.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/设置职位状态/GP10项目详情_恢复职位.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/设置职位状态/GP10项目详情_暂停职位.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/设置项目进程/GP10项目详情_offer谈判中.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/设置项目进程/GP10项目详情_上班保证期.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/设置项目进程/GP10项目详情_中止.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/设置项目进程/GP10项目详情_已完成.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/设置项目进程/GP10项目详情_暂停.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_02项目候选人详情/GP10项目详情_点击预览绑定报告.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_02项目候选人详情/GP14项目候选人详情_备注人选基本信息.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_02项目候选人详情/GP14项目候选人详情_点击姓名绑定报告.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/DH/DHSP06Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EBFA13Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EBFAPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GLAC/GLAC01Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPAT/GPAT01Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPAT/GPAT09Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPCP/GPCP05Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__com_beilie_com_beilie_core_1_0_3_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__com_beilie_com_beilie_core_1_0_3_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__com_beilie_com_beilie_core_zookeeper_1_0_3_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__com_beilie_com_beilie_core_zookeeper_1_0_3_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__com_beilie_com_beilie_data_mybatis_1_0_3_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__com_beilie_com_beilie_data_mybatis_1_0_3_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__com_beilie_com_beilie_platform_api_1_0_3_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__com_beilie_com_beilie_platform_api_1_0_3_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/.idea/libraries/Maven__org_jetbrains_annotations_20_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_23_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/com-beilie-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/com-beilie-test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/main/java/com/beilie/test/TestServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/main/java/com/beilie/test/TestServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/main/java/com/beilie/test/seleniums/core/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/main/java/com/beilie/test/seleniums/core/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/main/java/com/beilie/test/seleniums/core/TestCaseBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/main/java/com/beilie/test/seleniums/core/TestCaseBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/审核专员/GC37待审核的合同.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/审核专员/GC37待审核的合同.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/客户部/客户管理_新增客户/_01GHHP00_添加单个客户.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/客户部/我的客户/_01GHHP00_添加单个客户.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/客户部/客户管理_新增客户/_02GC01_创建草稿合同.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/客户部/我的客户/_02GC01_创建草稿合同.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/客户部/客户管理_新增客户/_03GC12提交合同.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/客户部/我的客户/_03GC12提交合同.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/扒皮简历/卓聘.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/扒皮简历/无忧.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/扒皮简历/猎聘.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/扒皮简历/职位点关闭.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01创建收款/GPPL03收款计划_确认付款.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/创建收款/GPPL03收款计划_确认付款.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01创建收款/_01GPPL04收款计划_新增普通的收款.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/创建收款/_01GPPL04收款计划_新增普通的收款.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01创建收款/_02GPPL04收款计划_新增律师函收款.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/创建收款/_02GPPL04收款计划_新增律师函收款.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01创建收款/_03GPPL04收款计划_新增诉讼收款.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/创建收款/_03GPPL04收款计划_新增诉讼收款.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01创建收款/_04GPPL04收款计划_确认付款.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/创建收款/_04GPPL04收款计划_确认付款.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01创建收款/_05GP50待回访列表_创建收款.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/创建收款/_05GP50待回访列表_创建收款.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01创建收款/_06GPPL01收款计划_确认付款.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/创建收款/_06GPPL01收款计划_确认付款.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_02财务/_01GP39财务收款_确认收款.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/财务/_01GP39财务收款_确认收款.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_02财务/_02GP39财务收款_驳回收款.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/财务/_02GP39财务收款_驳回收款.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_02财务/_03GP39财务收款_撤销收款.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/财务/_03GP39财务收款_撤销收款.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_个人信息模块_校验必填项.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_个人信息模块_校验必填项.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_工作经历_校验必填项.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_工作经历_校验必填项.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_教育信息_校验必填项.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_教育信息_校验必填项.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_校验解析出的简历.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_校验解析出的简历.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_确认入库.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_确认入库.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_解析上传的简历.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_解析上传的简历.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_个人信息_校验数据.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_个人信息_校验数据.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_个人简评_校验数据.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_个人简评_校验数据.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_加入项目.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_加入项目.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_工作经历_校验数据.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_工作经历_校验数据.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_教育经历_校验数据.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_教育经历_校验数据.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_附加信息_校验数据.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_附加信息_校验数据.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_项目经历_校验数据.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_项目经历_校验数据.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_举报简历.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_举报简历.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_可能包含关键词_人选信息.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_可能包含关键词_人选信息.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_搜索学历.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_搜索学历.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_搜索推荐职位.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_搜索推荐职位.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA05我的收藏夹/EBFA05我的收藏夹_新增备注.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA05我的收藏夹/EBFA05我的收藏夹_新增备注.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA07我的分组/EBFA07我的分组_新增分组.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA07我的分组/EBFA07我的分组_新增分组.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_个人信息.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_个人信息.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_个人简评.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_个人简评.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_备注.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_备注.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_工作经历.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_工作经历.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_教育经历.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_教育经历.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_附加信息.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_附加信息.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_项目经历.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_项目经历.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA11待修改简历.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA11待修改简历.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA17简历举报.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA17简历举报.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/人才库_跨租户/_01EBFA04简历搜索_跨租户_确认入库.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/人才库_跨租户/_01EBFA04简历搜索_跨租户_确认入库.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/人才库_跨租户/_02EBFA04简历搜索_跨租户_加入项目.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/人才库_跨租户/_02EBFA04简历搜索_跨租户_加入项目.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/人才库_跨租户/_03EBFA04简历搜索_跨租户_打开已入库的人选.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/人才库_跨租户/_03EBFA04简历搜索_跨租户_打开已入库的人选.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/建项目_分配项目/_01GP00创建项目.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/建项目_分配项目/_01GP00创建项目.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/建项目_分配项目/_02GPRP01发布到贝猎网Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/建项目_分配项目/_02GPRP01发布到贝猎网Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/建项目_分配项目/_04GP05设置项目操作顾问.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/建项目_分配项目/_04GP05设置项目操作顾问.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/收款/BD/_01GPRV02客户预付款_创建预付款.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/收款/BD/_01GPRV02客户预付款_创建预付款.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/收款/BD/_02GPRV02客户预付款_确认预付款.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/收款/BD/_02GPRV02客户预付款_确认预付款.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/收款/CCL/_01GPRV01收款计划_创建收款.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/收款/CCL/_01GPRV01收款计划_创建收款.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/收款/CCL/_02GPRV01收款计划_确认付款.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/收款/CCL/_02GPRV01收款计划_确认付款.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/收款/CCL/_03GPRV01收款计划_使用预付款.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/收款/合约专员/GPCT01任务中心_预付款审核_通过.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/收款/合约专员/GPCT01任务中心_预付款审核_通过.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/收款/财务/GPCT01任务中心_预付款确认收款.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/收款/财务/GPCT01任务中心_预付款确认收款.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/管理员/EBFA06标签管理_新增标签.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/管理员/EBFA06标签管理_新增标签.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/管理员/EBLK03升级锁额度管理_新增升级锁.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/管理员/EBLK03升级锁额度管理_新增升级锁.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/过程绩效汇总/_01GPPM11过程绩效汇总_线上发送报告数.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/过程绩效汇总/_01GPPM11过程绩效汇总_审核推荐报告数与线上发送报告数.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/过程绩效汇总/_02GPPM11过程绩效汇总_到面人数.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/过程绩效汇总/_02GPPM11过程绩效汇总_到面人数.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/过程绩效汇总/_03GPPM11过程绩效汇总_offer数与入职数.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/过程绩效汇总/_03GPPM11过程绩效汇总_offer数与入职数.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目执行/_01GP10项目详情_项目执行_到发送推荐报告.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目执行/_01GP10项目详情_项目执行_到发送推荐报告.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目执行/_02GP10项目详情_项目执行_到新建Offer.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目执行/_02GP10项目详情_项目执行_到新建Offer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目执行/_03GP10项目详情_项目执行_提交offer到提交入职.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目执行/_03GP10项目详情_项目执行_提交offer到提交入职.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/团队人选/GP10项目详情_新增简历_加入项目.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/团队人选/GP10项目详情_新增简历_加入项目.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/团队人选/GP10项目详情_添加备注.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/团队人选/GP10项目详情_添加备注.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/项目详情/GP10项目详情_编辑基本信息_职能分类.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/项目详情/GP10项目详情_编辑基本信息_职能分类.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/项目详情/GP10项目详情_编辑基本信息_行业分类.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/项目详情/GP10项目详情_编辑基本信息_行业分类.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/项目详情/GP10项目详情_项目要点.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/项目详情/GP10项目详情_项目要点.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/core/BoleBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/core/BoleBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/BdHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/BdHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EB0701Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EB0701Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EBFA01Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EBFA01Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EBFA02Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EBFA02Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EBFA03Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EBFA03Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EBFA08Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EBFA08Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EBFA10Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EBFA10Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GC/GC01Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GC/GC01Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GC/GC02Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GC/GC02Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GC/GC12Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GC/GC12Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GC/GC18Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GC/GC18Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GC/GCCM01Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GC/GCCM01Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GC/GCCM02Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GC/GCCM02Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPAT06Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPAT/GPAT06Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPPL04Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPPL04Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPPM/GPPM10Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPPM/GPPM10Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPRV01Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPRV01Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPXX/GP00Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPXX/GP00Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPXX/GP10Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPXX/GP10Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPXX/GP14Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPXX/GP14Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPXX/GP18Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPXX/GP18Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPXX/GP39Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPXX/GP39Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPXX/GP50Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPXX/GP50Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/open/PublicClass/Public.java" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/open/PublicClass/Public.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/classes/com/beilie/test/TestServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/classes/com/beilie/test/TestServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/classes/com/beilie/test/seleniums/core/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/classes/com/beilie/test/seleniums/core/Engine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/classes/com/beilie/test/seleniums/core/TestCaseBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/classes/com/beilie/test/seleniums/core/TestCaseBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/审核专员/GC37待审核的合同.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/审核专员/GC37待审核的合同.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/客户部/客户管理_新增客户/_01GHHP00_添加单个客户.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/客户部/客户管理_新增客户/_02GC01_创建草稿合同.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/客户部/客户管理_新增客户/_03GC12提交合同.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/扒皮简历/卓聘.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/扒皮简历/无忧.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/扒皮简历/猎聘.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/扒皮简历/职位点关闭.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/_01创建收款/_01GPPL04收款计划_新增普通的收款.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/_01创建收款/_02GPPL04收款计划_新增律师函收款.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/_01创建收款/_03GPPL04收款计划_新增诉讼收款.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/_01创建收款/_04GPPL04收款计划_确认付款.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/_01创建收款/_05GP50待回访列表_创建收款.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/_01创建收款/_06GPPL01收款计划_确认付款.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/_02财务/_01GP39财务收款_确认收款.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/_02财务/_02GP39财务收款_驳回收款.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/_02财务/_03GP39财务收款_撤销收款.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_个人信息模块_校验必填项.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_个人信息模块_校验必填项.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_工作经历_校验必填项.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_工作经历_校验必填项.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_教育信息_校验必填项.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_教育信息_校验必填项.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_校验解析出的简历.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_确认入库.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_解析上传的简历.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA01上传简历/EBFA01上传简历_解析上传的简历.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_个人信息_校验数据.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_个人信息_校验数据.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_个人简评_校验数据.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_个人简评_校验数据.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_加入项目.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_加入项目.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_工作经历_校验数据.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_工作经历_校验数据.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_教育经历_校验数据.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_教育经历_校验数据.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_附加信息_校验数据.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_附加信息_校验数据.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_项目经历_校验数据.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_项目经历_校验数据.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_举报简历.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_举报简历.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_可能包含关键词_人选信息.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_可能包含关键词_人选信息.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_搜索学历.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_搜索学历.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_搜索推荐职位.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_搜索推荐职位.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA05我的收藏夹/EBFA05我的收藏夹_新增备注.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA05我的收藏夹/EBFA05我的收藏夹_新增备注.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA07我的分组/EBFA07我的分组_新增分组.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA07我的分组/EBFA07我的分组_新增分组.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_个人信息.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_个人信息.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_个人简评.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_个人简评.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_备注.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_备注.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_工作经历.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_工作经历.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_教育经历.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_教育经历.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_附加信息.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_附加信息.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_项目经历.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_项目经历.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA11待修改简历.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA11待修改简历.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA17简历举报.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/EBFA17简历举报.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/人才库_跨租户/_01EBFA04简历搜索_跨租户_确认入库.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/人才库_跨租户/_01EBFA04简历搜索_跨租户_确认入库.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/人才库_跨租户/_02EBFA04简历搜索_跨租户_加入项目.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/人才库_跨租户/_02EBFA04简历搜索_跨租户_加入项目.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/人才库_跨租户/_03EBFA04简历搜索_跨租户_打开已入库的人选.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/人才库/人才库_跨租户/_03EBFA04简历搜索_跨租户_打开已入库的人选.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/建项目_分配项目/_01GP00创建项目.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/建项目_分配项目/_01GP00创建项目.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/建项目_分配项目/_02GPRP01发布到贝猎网Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/建项目_分配项目/_04GP05设置项目操作顾问.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/建项目_分配项目/_04GP05设置项目操作顾问.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/收款/BD/_01GPRV02客户预付款_创建预付款.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/收款/BD/_02GPRV02客户预付款_确认预付款.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/收款/CCL/_01GPRV01收款计划_创建收款.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/收款/CCL/_02GPRV01收款计划_确认付款.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/收款/CCL/_03GPRV01收款计划_使用预付款.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/收款/合约专员/GPCT01任务中心_预付款审核_通过.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/收款/财务/GPCT01任务中心_预付款确认收款.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/管理员/EBFA06标签管理_新增标签.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/管理员/EBFA06标签管理_新增标签.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/管理员/EBLK03升级锁额度管理_新增升级锁.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/管理员/EBLK03升级锁额度管理_新增升级锁.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/过程绩效汇总/_01GPPM11过程绩效汇总_线上发送报告数.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/过程绩效汇总/_02GPPM11过程绩效汇总_到面人数.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/过程绩效汇总/_02GPPM11过程绩效汇总_到面人数.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/过程绩效汇总/_03GPPM11过程绩效汇总_offer数与入职数.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/过程绩效汇总/_03GPPM11过程绩效汇总_offer数与入职数.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/项目执行/_01GP10项目详情_项目执行_到发送推荐报告.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/项目执行/_01GP10项目详情_项目执行_到发送推荐报告.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/项目执行/_02GP10项目详情_项目执行_到新建Offer.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/项目执行/_02GP10项目详情_项目执行_到新建Offer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/项目执行/_03GP10项目详情_项目执行_提交offer到提交入职.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/项目执行/_03GP10项目详情_项目执行_提交offer到提交入职.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/项目详情/团队人选/GP10项目详情_新增简历_加入项目.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/项目详情/团队人选/GP10项目详情_添加备注.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/项目详情/项目详情/GP10项目详情_编辑基本信息_职能分类.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/项目详情/项目详情/GP10项目详情_编辑基本信息_行业分类.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/cases/项目部/项目详情/项目详情/GP10项目详情_项目要点.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/core/BoleBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/core/BoleBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/BdHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/BdHomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/EB/EB0701Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/EB/EB0701Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/EB/EBFA01Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/EB/EBFA01Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/EB/EBFA02Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/EB/EBFA02Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/EB/EBFA03Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/EB/EBFA03Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/EB/EBFA08Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/EB/EBFA08Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/EB/EBFA10Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/EB/EBFA10Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GC/GC01Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GC/GC01Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GC/GC02Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GC/GC02Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GC/GC12Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GC/GC12Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GC/GC18Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GC/GC18Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GC/GCCM01Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GC/GCCM01Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GC/GCCM02Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GC/GCCM02Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPAT06Page.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPPL04Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPPL04Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPPM/GPPM10Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPPM/GPPM10Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPRV01Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPRV01Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPXX/GP00Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPXX/GP00Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPXX/GP10Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPXX/GP10Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPXX/GP14Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPXX/GP14Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPXX/GP18Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPXX/GP18Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPXX/GP39Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPXX/GP39Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPXX/GP50Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/bole/pages/GP/GPXX/GP50Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/open/PublicClass/Public.class" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/test-classes/com/beilie/test/open/PublicClass/Public.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trunk/autoTest/tools/seleniums/3.141.59/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/trunk/autoTest/tools/seleniums/3.141.59/chromedriver.exe" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1757252922">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="3" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="2" />
+          <entry key="java" value="112" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="112" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="31" />
+          <entry key="java" value="1225" />
+          <entry key="xml" value="32" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1225" />
+          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="XML" value="32" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-2092519360">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="4" />
+          <entry key="xml" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="2032154984">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/CCL角色/GLAC01实时统计/个人给人选加标签数量Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/core/BoleBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/open/PublicClass/Public.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>i标签</find>
+      <find>li标签</find>
+      <find>div标签</find>
+      <find>img标签</find>
+      <find>span标签</find>
+      <find>table</find>
+      <find>http</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/收款/CCL/_01GPRV01收款计划_创建收款.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPXX/GP10Page.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/团队人选/GP10项目详情_全部栏_加入时间默认倒序.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/项目详情/GP10项目详情_项目要点.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_搜索推荐职位.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_个人信息.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/团队人选/GP10项目详情_添加备注.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_个人简评_校验数据.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_个人简评.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_项目经历.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/项目详情/GP10项目详情_编辑基本信息_职能分类.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_附加信息_校验数据.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/项目详情/GP10项目详情_编辑基本信息_行业分类.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA05我的收藏夹/EBFA05我的收藏夹_新增备注.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目执行/_02GP10项目详情_项目执行_到新建Offer.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_搜索学历.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目执行/_03GP10项目详情_项目执行_提交offer到提交入职.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_工作经历_校验数据.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_个人信息_校验数据.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_教育经历.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_工作经历.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_教育经历_校验数据.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_附加信息.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_项目经历_校验数据.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPPM/GPPM10Page.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/设置职位状态/GP10项目详情_暂停职位.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/设置职位状态/GP10项目详情_恢复职位.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/设置职位状态/GP10项目详情_关闭职位.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GC/GC18Page.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/pom.xml" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/团队人选/GP10项目详情_全部栏_加入时间默认倒序Tes.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/团队人选/GP10项目详情_全部栏_加入时间默认倒序Test.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/CCL角色/GP10项目详情_全部栏_加入时间默认倒序Tes.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/CCL角色/GP10项目详情_全部栏_加入时间默认倒序Test.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/CCL角色/DHSP06外呼部门分配/GP10项目详情_全部栏_加入时间默认倒序Test.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/DH/DHSP06Page.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/core/BoleBase.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/CCL角色/DHSP06外呼部门分配/DHSP06外呼部门分配_分配或者收回号码.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/CCL角色/DHSP06外呼部门分配/DHSP06外呼部门分配_分配或者收回号码Test.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EBFA13Page.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/CCL角色/插件安排/EBFA13插件安装_生成口令Test.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/open/PublicClass/Public.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GLAC/GLAC01Page.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/BdHomePage.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EBFA03Page.java" />
+        <option value="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/CCL角色/GLAC01实时统计/个人给人选加标签数量Test.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="TestNG" name="DHSP06外呼部门分配_分配或者收回号码Test.test" />
+    </enabled-run-configurations>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="com-beilie-test" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-104" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="bole" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="bole" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="bole" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+              <item name="CCL角色" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="bole" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+              <item name="CCL角色" type="462c0819:PsiDirectoryNode" />
+              <item name="DHSP06外呼部门分配" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="bole" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+              <item name="CCL角色" type="462c0819:PsiDirectoryNode" />
+              <item name="GLAC01实时统计" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="bole" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+              <item name="项目部" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="bole" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+              <item name="项目部" type="462c0819:PsiDirectoryNode" />
+              <item name="_01项目详情" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="bole" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+              <item name="项目部" type="462c0819:PsiDirectoryNode" />
+              <item name="_01项目详情" type="462c0819:PsiDirectoryNode" />
+              <item name="团队人选" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="bole" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+              <item name="项目部" type="462c0819:PsiDirectoryNode" />
+              <item name="人才库" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="bole" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+              <item name="项目部" type="462c0819:PsiDirectoryNode" />
+              <item name="人才库" type="462c0819:PsiDirectoryNode" />
+              <item name="EBFA03人选搜索" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="bole" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+              <item name="项目部" type="462c0819:PsiDirectoryNode" />
+              <item name="项目执行" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="bole" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="bole" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="DH" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workPlace" type="462c0819:PsiDirectoryNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com-beilie-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="bole" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="GLAC" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workPlace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1642663353324" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.1627907" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.beilie.test.bole.cases.CCL角色.DHSP06外呼部门分配" />
+      <recent name="com.beilie.test.bole.cases.CCL角色" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.个人给人选加标签数量Test.test">
+    <configuration name="GP10项目详情_恢复职位.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com-beilie-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beilie.test.bole.cases.项目部.项目详情.设置职位状态.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.beilie.test.bole.cases.项目部.项目详情.设置职位状态" />
+      <option name="MAIN_CLASS_NAME" value="com.beilie.test.bole.cases.项目部.项目详情.设置职位状态.GP10项目详情_恢复职位" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GP10项目详情_关闭职位.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com-beilie-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beilie.test.bole.cases.项目部.项目详情.设置职位状态.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.beilie.test.bole.cases.项目部.项目详情.设置职位状态" />
+      <option name="MAIN_CLASS_NAME" value="com.beilie.test.bole.cases.项目部.项目详情.设置职位状态.GP10项目详情_关闭职位" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="com-beilie-test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beilie.test.TestServer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="个人给人选加标签数量Test.test (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com-beilie-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beilie.test.bole.cases.CCL角色.GLAC01实时统计.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.beilie.test.bole.cases.CCL角色.GLAC01实时统计" />
+      <option name="MAIN_CLASS_NAME" value="com.beilie.test.bole.cases.CCL角色.GLAC01实时统计.个人给人选加标签数量Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="个人给人选加标签数量Test.test (2)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com-beilie-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beilie.test.bole.cases.CCL角色.GLAC01实时统计.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.beilie.test.bole.cases.CCL角色.GLAC01实时统计" />
+      <option name="MAIN_CLASS_NAME" value="com.beilie.test.bole.cases.CCL角色.GLAC01实时统计.个人给人选加标签数量Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="个人给人选加标签数量Test.test (3)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com-beilie-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beilie.test.bole.cases.CCL角色.GLAC01实时统计.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.beilie.test.bole.cases.CCL角色.GLAC01实时统计" />
+      <option name="MAIN_CLASS_NAME" value="com.beilie.test.bole.cases.CCL角色.GLAC01实时统计.个人给人选加标签数量Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="个人给人选加标签数量Test.test (4)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com-beilie-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beilie.test.bole.cases.CCL角色.GLAC01实时统计.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.beilie.test.bole.cases.CCL角色.GLAC01实时统计" />
+      <option name="MAIN_CLASS_NAME" value="com.beilie.test.bole.cases.CCL角色.GLAC01实时统计.个人给人选加标签数量Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="个人给人选加标签数量Test.test" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com-beilie-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beilie.test.bole.cases.CCL角色.GLAC01实时统计.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.beilie.test.bole.cases.CCL角色.GLAC01实时统计" />
+      <option name="MAIN_CLASS_NAME" value="com.beilie.test.bole.cases.CCL角色.GLAC01实时统计.个人给人选加标签数量Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.TestServer" />
+      <item itemvalue="TestNG.个人给人选加标签数量Test.test" />
+      <item itemvalue="TestNG.个人给人选加标签数量Test.test (2)" />
+      <item itemvalue="TestNG.个人给人选加标签数量Test.test (3)" />
+      <item itemvalue="TestNG.个人给人选加标签数量Test.test (4)" />
+      <item itemvalue="TestNG.个人给人选加标签数量Test.test (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.个人给人选加标签数量Test.test" />
+        <item itemvalue="TestNG.个人给人选加标签数量Test.test (1)" />
+        <item itemvalue="TestNG.个人给人选加标签数量Test.test (4)" />
+        <item itemvalue="TestNG.个人给人选加标签数量Test.test (3)" />
+        <item itemvalue="TestNG.个人给人选加标签数量Test.test (2)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdd1fbd6-d29d-4266-aaf8-bbd7697cba88" name="Default Changelist" comment="" />
+      <created>1622016624478</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622016624478</updated>
+      <workItem from="1622016626860" duration="14354000" />
+      <workItem from="1635928382856" duration="1324000" />
+      <workItem from="1636011340594" duration="1153000" />
+      <workItem from="1636101404517" duration="629000" />
+      <workItem from="1641895439364" duration="182000" />
+      <workItem from="1641895712505" duration="612000" />
+      <workItem from="1641971284441" duration="371000" />
+      <workItem from="1641971956421" duration="257000" />
+      <workItem from="1641975177763" duration="35000" />
+      <workItem from="1641975350218" duration="595000" />
+      <workItem from="1641980718886" duration="822000" />
+      <workItem from="1641984286310" duration="714000" />
+      <workItem from="1641985073294" duration="476000" />
+      <workItem from="1641985745034" duration="276000" />
+      <workItem from="1642039385372" duration="17291000" />
+      <workItem from="1642141572853" duration="12758000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="个人给人选加标签数量Test_test - 2022.01.14 at 16h 17m 28s.xml">
+      <configuration name="个人给人选加标签数量Test.test" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="个人给人选加标签数量Test_test - 2022.01.14 at 16h 35m 02s.xml">
+      <configuration name="个人给人选加标签数量Test.test" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="个人给人选加标签数量Test_test - 2022.01.14 at 16h 54m 00s.xml">
+      <configuration name="个人给人选加标签数量Test.test" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="个人给人选加标签数量Test_test_(1) - 2022.01.14 at 16h 56m 59s.xml">
+      <configuration name="个人给人选加标签数量Test.test (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="个人给人选加标签数量Test_test - 2022.01.14 at 17h 02m 02s.xml">
+      <configuration name="个人给人选加标签数量Test.test" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="个人给人选加标签数量Test_test - 2022.01.14 at 17h 05m 46s.xml">
+      <configuration name="个人给人选加标签数量Test.test" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="个人给人选加标签数量Test_test - 2022.01.14 at 17h 07m 44s.xml">
+      <configuration name="个人给人选加标签数量Test.test" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="个人给人选加标签数量Test_test - 2022.01.14 at 17h 16m 08s.xml">
+      <configuration name="个人给人选加标签数量Test.test" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="个人给人选加标签数量Test_test - 2022.01.14 at 17h 17m 31s.xml">
+      <configuration name="个人给人选加标签数量Test.test" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="个人给人选加标签数量Test_test - 2022.01.14 at 21h 28m 52s.xml">
+      <configuration name="个人给人选加标签数量Test.test" configurationId="TestNG" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="51849000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.40191898" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.07473684" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.22" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.6023454" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32142857" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32995737" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32995737" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/收款/CCL/_01GPRV01收款计划_创建收款.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/建项目_分配项目/_01GP00创建项目.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/core/BoleBase.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_个人简评_校验数据.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_个人简评.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_项目经历.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/项目详情/GP10项目详情_编辑基本信息_职能分类.java" />
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_附加信息_校验数据.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/项目详情/GP10项目详情_编辑基本信息_行业分类.java" />
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA05我的收藏夹/EBFA05我的收藏夹_新增备注.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目执行/_02GP10项目详情_项目执行_到新建Offer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_工作经历_校验数据.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="119" column="33" selection-start-line="119" selection-start-column="33" selection-end-line="119" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_个人信息_校验数据.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="117" column="17" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GC/GC12Page.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_项目经历_校验数据.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="89" column="25" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_附加信息.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA02确认入库/EBFA02确认入库_教育经历_校验数据.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_工作经历.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="92" column="25" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA08人选详情/EBFA08人选详情_编辑简历_教育经历.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目执行/_03GP10项目详情_项目执行_提交offer到提交入职.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="73" column="25" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/团队人选/GP10项目详情_全部栏_加入时间默认倒序.java" />
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GC/GC18Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="327" selection-start-line="327" selection-end-line="327" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/设置职位状态/GP10项目详情_暂停职位.java" />
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/设置职位状态/GP10项目详情_恢复职位.java" />
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目详情/设置职位状态/GP10项目详情_关闭职位.java" />
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="824">
+          <caret line="146" column="21" selection-start-line="146" selection-start-column="17" selection-end-line="146" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/团队人选/GP10项目详情_新增简历_加入项目Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/Test/parameter/DataProviderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/op/Tester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#1462#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/CCL角色/GP10项目详情_全部栏_加入时间默认倒序Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPPM/GPPM10Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GC/GC01Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-481">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GC/GC02Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GP/GPXX/GP10Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/core/Common.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/团队人选/GP10项目详情_全部栏_加入时间默认倒序Tes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/_01项目详情/团队人选/GP10项目详情_全部栏_加入时间默认倒序Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EBFA11Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EBFA13Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/CCL角色/插件安排/EBFA13插件安装_生成口令Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/CCL角色/DHSP06外呼部门分配/DHSP06外呼部门分配_分配或者收回号码Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="19" column="64" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="19" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/DH/DHSP06Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/项目执行/_01GP10项目详情_项目执行_到发送推荐报告.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="169" column="47" lean-forward="true" selection-start-line="169" selection-start-column="34" selection-end-line="169" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/main/java/com/beilie/test/seleniums/core/UIPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/BdHomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5402">
+          <caret line="150" column="17" selection-start-line="150" selection-start-column="13" selection-end-line="150" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/GLAC/GLAC01Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/项目部/人才库/EBFA03人选搜索/EBFA03人选搜索_搜索学历.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/pages/EB/EBFA03Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="146" column="32" selection-start-line="146" selection-start-column="22" selection-end-line="146" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/open/PublicClass/Public.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.11/testng-6.11.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="465" selection-start-line="465" selection-end-line="465" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/core/BoleBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/src/test/java/com/beilie/test/bole/cases/CCL角色/GLAC01实时统计/个人给人选加标签数量Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>workPlace</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.1627907" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

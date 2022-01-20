@@ -11,8 +11,10 @@ public class EBFA01上传简历_教育信息_校验必填项  extends BoleBase {
     public void test ()throws IllegalAccessException, InstantiationException, InterruptedException {
         BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 
+        bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
         EBFA01Page eBFA01Page = (EBFA01Page) bdHomePage
-                .clickMenus(" 中文简历库", "上传简历")//点击菜单栏
+                .clickFirstMenu_resumeLibrary().sleepForSeconds(1)//点击一级菜单：中文简历库
+                .clickSecondMenu_upResume()//点击二级菜单：上传简历
                 .switchToNewIframe1("EBFA01", EBFA01Page.class).sleepForSeconds(1);
 
         String randomStr= Public.generateString(8);//8位随机字符串
@@ -25,9 +27,6 @@ public class EBFA01上传简历_教育信息_校验必填项  extends BoleBase {
                 .workExperience_function_click()//点击目前职能的icon
                 .functionSingleComponent()//选择职能组件
 
-                .component_icon(2)//点击所在行业的icon
-                .industryComponent()//行业公共组件
-
                 .input_bcakSpace("请输入学校名称",4)//将学校名称 键盘删掉
                 .clickSpan("确定").sleepForSeconds(2)
                 .div_getValue("学校名称不能为空")//根据学校名称校验 获取元素
@@ -36,8 +35,7 @@ public class EBFA01上传简历_教育信息_校验必填项  extends BoleBase {
                 .educations_time_delete(0)//×掉已选的开始就读时间
                 .educations_endTime_delete()//×掉已选的结束就读时间
                 .clickSpan("确定").sleepForSeconds(2)
-                .Span_Value("开始时间不能为空")//根据开始时间校验 获取元素
-                .Span_Value("结束时间不能为空")//根据结束时间校验 获取元素
+                .div_getValue("开始时间或结束时间不能为空")//获取时间校验的值
                 .education_calendar_months("开始时间")//选开始时间 并且选中至今
                 .clickSpan("确定").sleepForSeconds(1)
                 .checkTip().sleepForSeconds(2);//简历入库后 校验提示；

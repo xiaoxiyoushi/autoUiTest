@@ -11,9 +11,12 @@ public class _01EBFA04简历搜索_跨租户_确认入库 extends BoleBase {
     @Test
     public void test ()throws IllegalAccessException, InstantiationException, InterruptedException {
         BdHomePage bdHomePage = login("68659106", "888888").sleepForSeconds(3);
+        bdHomePage.closeHideMenue();
 
+        //bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
         EBFA04Page eBFA04Page = (EBFA04Page) bdHomePage
-                .clickMenus(" 中文简历库", "简历搜索")//点击菜单栏
+                .clickFirstMenu_resumeLibrary().sleepForSeconds(1)//点击一级菜单：中文简历库
+                .clickSecondMenu_resumeSearch()//点击二级菜单：简历搜索
                 .switchToNewIframe1("EBFA04", EBFA04Page.class).sleepForSeconds(1);
 
         String randomStr= Public.generateString(8);//8位随机字符串

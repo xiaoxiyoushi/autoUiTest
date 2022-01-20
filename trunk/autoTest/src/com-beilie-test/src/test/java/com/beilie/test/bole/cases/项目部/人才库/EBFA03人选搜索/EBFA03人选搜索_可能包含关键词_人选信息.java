@@ -13,7 +13,8 @@ public class EBFA03人选搜索_可能包含关键词_人选信息 extends BoleB
         BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 
         EBFA03Page eBFA03Page = (EBFA03Page) bdHomePage
-                .clickMenus(" 中文简历库", "人选搜索")//点击菜单栏
+                .clickMenus("\n" +
+                        "          中文简历库", "人选搜索")//点击菜单栏
                 .switchToNewIframe1("EBFA03", EBFA03Page.class).sleepForSeconds(1);
 
         List<String> list=new ArrayList<String>();

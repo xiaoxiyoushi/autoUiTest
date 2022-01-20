@@ -149,12 +149,12 @@ public class GP00Page extends Public<GP00Page> {
         return this;
     }
 
-    public GP00Page submitProj(String save,String submit)throws InterruptedException{
-        this.findByXPath("//div[text()=\""+save+"\"]").click();
+    /*public GP00Page submitProj(String save,String submit)throws InterruptedException{
+        this.findByXPath("//span[text()=\""+save+"\"]").click();
         this.sleepForSeconds(1);
-        this.findByXPath("//div[text()=\""+submit+"\"]").click();
+        this.findByXPath("//span[text()=\""+submit+"\"]").click();
         return this;
-    }
+    }*/
 
     public GP00Page unconfirmedEmail(String str)throws InterruptedException{
         //Element element=this.findByXPath("//span[text()=\""+str+"\"]");

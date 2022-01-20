@@ -143,4 +143,12 @@ public class EBFA03Page extends Public<EBFA03Page> {
         return this;
     }
 
+    //添加标签，点击确定
+    public EBFA03Page tagConfirm(){
+        this.findById("efAddTags_footer")
+        .findByClassName("ml20").click()
+        ;
+        return this;
+    }
+
 }

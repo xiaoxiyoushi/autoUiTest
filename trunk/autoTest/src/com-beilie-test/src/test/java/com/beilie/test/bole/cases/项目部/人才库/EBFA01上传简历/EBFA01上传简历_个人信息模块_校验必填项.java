@@ -11,12 +11,14 @@ public class EBFA01上传简历_个人信息模块_校验必填项 extends BoleB
     public void test ()throws IllegalAccessException, InstantiationException, InterruptedException {
         BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 
+        bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
         EBFA01Page eBFA01Page = (EBFA01Page) bdHomePage
-                .clickMenus(" 中文简历库", "上传简历")//点击菜单栏
+                .clickFirstMenu_resumeLibrary().sleepForSeconds(1)//点击一级菜单：中文简历库
+                .clickSecondMenu_upResume()//点击二级菜单：上传简历
                 .switchToNewIframe1("EBFA01", EBFA01Page.class).sleepForSeconds(1);
 
         String randomStr= Public.generateString(8);//8位随机字符串
-        int randomNum=Public.generateNumber1(20);//0-19位随机数
+        //int randomNum=Public.generateNumber1(20);//0-19位随机数
 
         eBFA01Page.judgeWay()
                 .uploadResume("C:\\Users\\86182\\Desktop\\resume\\吕先生.docx").sleepForSeconds(3)//.docx文件
@@ -25,8 +27,8 @@ public class EBFA01上传简历_个人信息模块_校验必填项 extends BoleB
                 .workExperience_function_click()//点击目前职能的icon
                 .functionSingleComponent()//选择职能组件
 
-                .component_icon(2)//点击所在行业的icon
-                .industryComponent()//行业公共组件
+                /*.workExperience_function_click()//点击所在行业的icon
+                .industryComponent()//行业公共组件*/
 
                 .input_bcakSpace("请输入姓名",3)//将吕先生 键盘删掉
                 .clickSpan("确定").sleepForSeconds(2)

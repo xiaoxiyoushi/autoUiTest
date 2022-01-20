@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="comparison-data-project">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/target/comparison-data-project.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

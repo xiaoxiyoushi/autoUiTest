@@ -12,7 +12,8 @@ public class EBFA07我的分组_新增分组 extends BoleBase {
         BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 
         EBFA07Page eBFA07Page = (EBFA07Page) bdHomePage
-                .clickMenus(" 中文简历库", "我的分组")//点击菜单栏
+                .clickMenus("\n" +
+                        "          中文简历库", "我的分组")//点击菜单栏
                 .switchToNewIframe1("EBFA07", EBFA07Page.class).sleepForSeconds(1);
 
         String randomStr="分组"+Public.generateString(8);//10位随机字符串

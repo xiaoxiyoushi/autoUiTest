@@ -13,7 +13,8 @@ public class EBFA02确认入库_加入项目 extends BoleBase {
         BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 
         EBFA01Page eBFA01Page = (EBFA01Page) bdHomePage
-                .clickMenus(" 中文简历库", "上传简历")//点击菜单栏
+                .clickMenus("\n" +
+                        "          中文简历库", "上传简历")//点击菜单栏
                 .switchToNewIframe1("EBFA01", EBFA01Page.class).sleepForSeconds(1);
 
         eBFA01Page.judgeWay()

@@ -14,7 +14,8 @@ public class _03EBFA04简历搜索_跨租户_打开已入库的人选 extends Bo
         BdHomePage bdHomePage = login("68659106", "888888").sleepForSeconds(3);
 
         EBFA04Page eBFA04Page = (EBFA04Page) bdHomePage
-                .clickMenus(" 中文简历库", "简历搜索")//点击菜单栏
+                .clickMenus("\n" +
+                        "          中文简历库", "简历搜索")//点击菜单栏
                 .switchToNewIframe1("EBFA04", EBFA04Page.class).sleepForSeconds(1);
 
         String mustKeywords = "18012558122";
@@ -24,8 +25,7 @@ public class _03EBFA04简历搜索_跨租户_打开已入库的人选 extends Bo
                 .clickAvatar(0)//点击头像
                 .switchToNewIframe(0, EBFA02Page.class).sleepForSeconds(2);
 
-        eBFA02Page.Span_Value("EBFA02")
-        .Span_Value("确认入库")
+        eBFA02Page.div_getValue(" EBFA02 | 确认入库 ")
         .checkRightResume();
     }
 }

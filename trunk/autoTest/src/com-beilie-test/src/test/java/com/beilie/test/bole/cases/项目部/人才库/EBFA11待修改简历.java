@@ -13,13 +13,16 @@ public class EBFA11待修改简历 extends BoleBase {
         BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 
         EBFA11Page eBFA11Page = (EBFA11Page) bdHomePage
-                .clickMenus(" 中文简历库", "待修改简历")//点击菜单栏
+                .clickMenus("\n" +
+                        "          中文简历库", "待修改简历")//点击菜单栏
                 .switchToNewIframe1("EBFA11", EBFA11Page.class).sleepForSeconds(3);
 
         EBFA10Page eBFA10Page = (EBFA10Page) eBFA11Page.table_td_aClick(1, 0, 0, 0)//点击编辑
                 .switchToNewIframe(0, EBFA10Page.class);
 
-        String value = eBFA10Page.clickSpan("确定").sleepForSeconds(1)
+        String value = eBFA10Page
+                .divClass_textarea_send("projectContent_div mt20 textarea_newClass ml30","该人选有海外背景")
+                .clickSpan("确定").sleepForSeconds(1)
                 .spanClass("ef-modal-ef-model-confirm-b-span");
 
         Assert.assertEquals("更新数据成功。",value);

@@ -109,6 +109,11 @@ public class EBFA10Page extends Public<EBFA10Page> {
         return this;
     }
 
+    //清除
+    public EBFA10Page textarea_clear(){
+        this.findByXPath("//div[@class=\"projectContent_div mt20 textarea_newClass ml30\"]/textarea").clear();
 
+        return this;
+    }
 
 }

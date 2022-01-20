@@ -8,11 +8,12 @@ import org.junit.Test;
 
 public class EBLK03升级锁额度管理_新增升级锁 extends BoleBase {
     @Test
-    public void 成功创建项目并且跳到下一个页面 ()throws IllegalAccessException, InstantiationException, InterruptedException {
+    public void test ()throws IllegalAccessException, InstantiationException, InterruptedException {
         BdHomePage bdHomePage = manageLogin("13312312323", "1").sleepForSeconds(3);
 
         EBLK03Page eBLK03Page=(EBLK03Page)bdHomePage
-                .clickMenus(" 人才库管理","升级锁额度管理")//点击菜单栏
+                .clickMenus("\n" +
+                        "          人才库管理","升级锁额度管理")//点击菜单栏
                 .switchToNewIframe1("EBLK03", EBLK03Page.class).sleepForSeconds(1);
 
         int lockNumb=Public.generateNumber2(100);

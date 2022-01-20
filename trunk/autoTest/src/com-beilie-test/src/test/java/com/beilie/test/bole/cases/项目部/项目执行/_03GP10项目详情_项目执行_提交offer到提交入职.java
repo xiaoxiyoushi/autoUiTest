@@ -22,7 +22,8 @@ public class _03GP10项目详情_项目执行_提交offer到提交入职 extends
 
     public void process(BdHomePage bdHomePage) throws IllegalAccessException, InstantiationException, InterruptedException{
         GPPM10Page gPPM10Page = (GPPM10Page) bdHomePage
-                .clickMenus(" 项目管理", "我的项目")//点击菜单栏
+                .clickMenus("\n" +
+                        "          项目管理", "我的项目")//点击菜单栏
                 .switchToNewIframe1("GPPM10", GPPM10Page.class).sleepForSeconds(1);
 
         String randomStr = Public.generateString(8);//8位随机字符串
@@ -31,7 +32,6 @@ public class _03GP10项目详情_项目执行_提交offer到提交入职 extends
         String mailbox = "458324803@qq.com" + randomStr;
 
         GP10Page gP10Page = (GP10Page) gPPM10Page
-                .selectName(0)//选择项目名称
                 .inputClientName("请输入项目名称", "卖麦芽糖的")//输入项目名称
                 .clickSearch()
                 .sleepForSeconds(2)
@@ -39,11 +39,13 @@ public class _03GP10项目详情_项目执行_提交offer到提交入职 extends
                 .switchToNewIframe(0, GP10Page.class).sleepForSeconds(3);
 
         GP14Page gP14Page = (GP14Page) gP10Page
-                .clickLi("企业录用").sleepForSeconds(2)
+                .Li_click("企业录用").sleepForSeconds(2)
                 .clickName()
                 .switchToNewIframe(1, GP14Page.class).sleepForSeconds(3);
 
-        GPPC01Page gPPC01Page = (GPPC01Page) gP14Page.clickSubmitInterviewBtn()
+        GPPC01Page gPPC01Page = (GPPC01Page) gP14Page
+                //点击【跟踪入职情况-高超OjqzHV1M-卖麦芽糖的-上海麦芽糖公司】按钮
+                .carryButton_click()
                 .switchToNewIframe(2, GPPC01Page.class).sleepForSeconds(3);
 
         GP14Page gP14Page_1 = (GP14Page) gPPC01Page
@@ -51,13 +53,18 @@ public class _03GP10项目详情_项目执行_提交offer到提交入职 extends
                 .clickSure()
                 .switchToNewIframe(1, GP14Page.class).sleepForSeconds(1);
 
-        GP22Page gP22Page = (GP22Page) gP14Page_1.clickSubmitInterviewBtn()
+        GP22Page gP22Page = (GP22Page) gP14Page_1
+                //点击【审核背调信息-高超OjqzHV1M-卖麦芽糖的-上海麦芽糖公司】按钮
+                .carryButton_click()
                 .switchToNewIframe(2, GP22Page.class).sleepForSeconds(3);
 
-        GP14Page gP14Page_3 = (GP14Page) gP22Page.clickButton("通过")
+        GP14Page gP14Page_3 = (GP14Page) gP22Page
+                .clickButton("通过")
                 .switchToNewIframe(1, GP14Page.class).sleepForSeconds(3);
 
-        GP25Page gP25Page = (GP25Page) gP14Page_3.clickSubmitInterviewBtn()
+        GP25Page gP25Page = (GP25Page) gP14Page_3
+                //点击【提交背调反馈结果-高超OjqzHV1M-卖麦芽糖的-上海麦芽糖公司】按钮
+                .carryButton_click()
                 .switchToNewIframe(2, GP25Page.class).sleepForSeconds(3);
 
         GP11Page gP11Page = (GP11Page) gP25Page
@@ -71,7 +78,7 @@ public class _03GP10项目详情_项目执行_提交offer到提交入职 extends
                 .confirmTime("确认日期")
                 .confirmTime("预计上班日期")
                 .clickStatusInput("状态")
-                .clickLi("录用")
+                .Li_click("录用")
                 .label_followingDiv_clickInput("提醒对象").sleepForSeconds(1)
                 .labelClick("(cc41)")
                 .clickConfirm().sleepForSeconds(1)
@@ -79,39 +86,46 @@ public class _03GP10项目详情_项目执行_提交offer到提交入职 extends
                 .clickSubmit()
                 .switchToNewIframe(1, GP14Page.class).sleepForSeconds(3);
 
-        GP27Page gP27Page = (GP27Page) gP14Page_5.clickSubmitInterviewBtn()
+        GP27Page gP27Page = (GP27Page) gP14Page_5
+                //点击【跟踪入职情况-高超OjqzHV1M-卖麦芽糖的-上海麦芽糖公司】按钮
+                .carryButton_click()
                 .switchToNewIframe(2, GP27Page.class).sleepForSeconds(3);
 
-        GP14Page gP14Page_6 = (GP14Page) gP27Page.labelClick("已入职").sleepForSeconds(1)
+        GP14Page gP14Page_6 = (GP14Page) gP27Page
+                .labelClick("已入职").sleepForSeconds(1)
                 .clickReport()
                 .switchToNewIframe(1, GP14Page.class).sleepForSeconds(3);
 
         GP13Page gP13Page = (GP13Page) gP14Page_6
                 .clickSpan("创建入职")
-                .clickConfirmBtn()
+                //在 创建入职 弹窗，点击【确定】按钮
+                .tanchuang_quedingButton_click()
                 .switchToNewIframe(2, GP13Page.class).sleepForSeconds(3);
 
         GP14Page gP14Page_7 = (GP14Page) gP13Page.clickInputPlaceholder("入职时间")
                 .label_calendar_today("入职时间")
-                .clickSpan("GP13")
+                .labelClick("保证期结束时间")
                 .clickInputPlaceholder("试用期结束")
+                .scrollBar()
                 .label_calendar_today("保证期结束时间")
-                .clickSpan("GP13")
+                .labelClick("保证期结束时间")
                 .clickInputPlaceholder("提醒时间")
                 .label_calendar_today("提醒时间")
-                .clickSpan("GP13")
+                .labelClick("保证期结束时间")
                 .label_followingDiv_clickInput("提醒对象")
                 .div_followingDiv_input_click("人员：")
                 .sure_click("提醒对象")
-                .scrollBar()
+                //.scrollBar()
                 .div_class_button("btns").sleepForSeconds(1)
                 .switchToNewIframe(1, GP14Page.class).sleepForSeconds(1);
 
-        GP10Page gP10Page_1 = (GP10Page) gP14Page_7.img_altClick("关闭")
+        GP10Page gP10Page_1 = (GP10Page) gP14Page_7
+                .i_classClick("icon-btn ivu-icon bole icon-close2")//点击X
                 .switchToNewIframe(0, GP10Page.class).sleepForSeconds(1);
 
 
-        gP10Page_1.img_altClick("关闭").sleepForSeconds(1);
+        gP10Page_1.i_classClick("icon-btn ivu-icon bole icon-close2")//点击X
+                .sleepForSeconds(1);
     }
 
 

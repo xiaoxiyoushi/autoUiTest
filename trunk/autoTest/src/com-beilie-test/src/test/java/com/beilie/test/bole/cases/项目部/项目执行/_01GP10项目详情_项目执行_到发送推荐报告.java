@@ -25,7 +25,8 @@ public class _01GP10项目详情_项目执行_到发送推荐报告 extends Bole
 
     public void process(BdHomePage bdHomePage) throws IllegalAccessException, InstantiationException, InterruptedException {
         GPPM10Page gPPM10Page = (GPPM10Page) bdHomePage
-                .clickMenus(" 项目管理", "我的项目")//点击菜单栏
+                .clickMenus("\n" +
+                        "          项目管理", "我的项目").sleepForSeconds(2)//点击菜单栏
                 .switchToNewIframe1("GPPM10", GPPM10Page.class).sleepForSeconds(1);
 
         String randomStr = Public.generateString(8);//8位随机字符串
@@ -34,14 +35,13 @@ public class _01GP10项目详情_项目执行_到发送推荐报告 extends Bole
         String mailbox = "158324803@qq.com" + randomStr;
 
         GP10Page gP10Page = (GP10Page) gPPM10Page
-                .selectName(0)//选择项目名称
                 .inputClientName("请输入项目名称", "卖麦芽糖的")//输入项目名称
                 .clickSearch()
                 .sleepForSeconds(2)
                 .table_td_aClick(0, 0)
                 .switchToNewIframe(0, GP10Page.class).sleepForSeconds(3);
 
-        gP10Page.clickSort().sleepForSeconds(1);//点击正序
+        gP10Page.span_followingSpan_i_click("人选进程").sleepForSeconds(1);//点击正序
 
         for (int i = 0; i < 10; i++) {
             gP10Page = (GP10Page) gP10Page.switchToNewIframe(0, GP10Page.class);
@@ -64,7 +64,7 @@ public class _01GP10项目详情_项目执行_到发送推荐报告 extends Bole
                         .switchToNewIframe(1, GP14Page.class).sleepForSeconds(3);
 
                 GP12Page gP12Page = (GP12Page) gP14Page.clickSpan("创建面试")
-                        .clickConfirmBtn().sleepForSeconds(1)
+                        .clickConfirmBtn("ivu-btn ivu-btn-primary ivu-btn-large").sleepForSeconds(1)
                         .switchToNewIframe(2, GP12Page.class).sleepForSeconds(3);
 
                 GP14Page gP14Page_1 = (GP14Page) gP12Page.img_altClick("关闭")
@@ -98,7 +98,7 @@ public class _01GP10项目详情_项目执行_到发送推荐报告 extends Bole
                         .clickConfirmBtn().sleepForSeconds(1)////点击提示的【确定】按钮
                         .checkTip_addProject(name)//校对提示 加入项目成功
                         .clickConfirmBtn()//点击提示的【确定】按钮
-                        .img_altClick("关闭")//点击X
+                        .i_classClick("icon-btn ivu-icon bole icon-close2")//点击X
                         .switchToNewIframe(0, GP10Page.class).sleepForSeconds(3);
 
                 GP14Page gP14Page = (GP14Page) gP10Page_1
@@ -108,6 +108,7 @@ public class _01GP10项目详情_项目执行_到发送推荐报告 extends Bole
                         .switchToNewIframe(1, GP14Page.class).sleepForSeconds(3);
 
                 carry(gP14Page, name);
+                break;
             }
         }
     }
@@ -120,28 +121,29 @@ public class _01GP10项目详情_项目执行_到发送推荐报告 extends Bole
                 .switchToNewIframe(2, EBFA08Page.class).sleepForSeconds(3);
 
         String message = eBFA08Page.clickSpan("生成推荐报告").sleepForSeconds(1)//点击 生成推荐报告
-                .span_class("ef-page-button-span ef-panel-flexstyle");
+                .div_Value(" 添加推荐报告成功 ");
 
         if (message.equals("添加推荐报告成功")) {
             EB0701Page eB0701Page = (EB0701Page) eBFA08Page
                     .switchToNewIframe(3, EB0701Page.class).sleepForSeconds(3);
 
-            eB0701Page.img_altClick("关闭");
+            eB0701Page.i_classClick("icon-btn ivu-icon ivu-icon-undefined icon-close2");//点击关闭
 
             eBFA08Page = (EBFA08Page) eBFA08Page
                     .switchToNewIframe(2, EBFA08Page.class).sleepForSeconds(3);
         }
 
-        GP14Page gP14Page_1 = (GP14Page) eBFA08Page.img_altClick("关闭")
+        GP14Page gP14Page_1 = (GP14Page) eBFA08Page.i_classClick("icon-btn ivu-icon bole icon-close2")//点击关闭
                 .switchToNewIframe(1, GP14Page.class).sleepForSeconds(3);
 
         GP18Page gP18Page = (GP18Page) gP14Page_1
                 .clickSpan("发送JD-" + name + project_company)
                 .switchToNewIframe(2, GP18Page.class).sleepForSeconds(3);
 
-        GP19Page gP19Page = (GP19Page) gP18Page.clickJD()
-                .scrollBar()
-                .clickSpan("确定")
+        GP19Page gP19Page = (GP19Page) gP18Page
+                //勾选 线下已发JD
+                .labelClass_Click("offline-checkbox ivu-checkbox-wrapper ivu-checkbox-default")
+                .clickSpan("保存").sleepForSeconds(2)
                 .switchToNewIframe(2, GP19Page.class).sleepForSeconds(3);
 
         GP14Page gP14Page_2 = (GP14Page) gP19Page.clickSpan("个人信息已确认")
@@ -159,13 +161,13 @@ public class _01GP10项目详情_项目执行_到发送推荐报告 extends Bole
                 .clickSpan("审核推荐报告-" + name + project_company)
                 .switchToNewIframe(2, GP28Page.class).sleepForSeconds(3);
 
-        GP14Page gP14Page_4 = (GP14Page) gP28Page.clickButton("通过")
+        GP14Page gP14Page_4 = (GP14Page) gP28Page.clickSpan("通过")
                 .switchToNewIframe(1, GP14Page.class).sleepForSeconds(3);
 
-        GP10Page gP10Page_3 = (GP10Page) gP14Page_4.img_altClick("关闭")//点击X
+        GP10Page gP10Page_3 = (GP10Page) gP14Page_4.i_classClick("icon-btn ivu-icon bole icon-close2")//点击X
                 .switchToNewIframe(0, GP10Page.class).sleepForSeconds(3);
 
-        BdHomePage bdHomePage_1 = (BdHomePage) gP10Page_3.img_altClick("关闭")//点击X
+        BdHomePage bdHomePage_1 = (BdHomePage) gP10Page_3.i_classClick("icon-btn ivu-icon bole icon-close2")//点击X
                 .switchOutIframe(BdHomePage.class).sleepForSeconds(1);
 
         GPRR01Page gPRR01Page = (GPRR01Page) bdHomePage_1
@@ -174,11 +176,12 @@ public class _01GP10项目详情_项目执行_到发送推荐报告 extends Bole
 
         GPRR02Page gPRR02Page = (GPRR02Page) gPRR01Page.clickSpan("搜索").sleepForSeconds(2)
                 .selectCandidate()
-                .addRecommend()
+                //点击按钮【添加到推荐列表】
+                .button_classClick("mr-2 ivu-btn ivu-btn-primary")
                 .clickSpan("确定").sleepForSeconds(1)
                 .clickSpan("查看待推荐列表")
                 .switchToNewIframe(0, GPRR02Page.class).sleepForSeconds(3);
 
-        gPRR02Page.clickSpan("发送Email").sleepForSeconds(2);
+        gPRR02Page.clickSpan("发送报告").sleepForSeconds(2);
     }
 }

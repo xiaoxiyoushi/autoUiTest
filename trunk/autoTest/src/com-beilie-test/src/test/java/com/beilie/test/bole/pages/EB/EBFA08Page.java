@@ -1,12 +1,13 @@
 package com.beilie.test.bole.pages.EB;
 
+import com.beilie.test.bole.core.Common;
 import com.beilie.test.open.PublicClass.Public;
 import org.junit.Assert;
 
 import java.util.List;
 
 //EBFA08人选详情
-public class EBFA08Page extends Public<EBFA08Page> {
+public class EBFA08Page extends Common<EBFA08Page> {
     /*
     获取手机号
      */
@@ -107,16 +108,15 @@ public class EBFA08Page extends Public<EBFA08Page> {
     public EBFA08Page checkResume_allPersonalInform(List<String> list_1,List<String> list,String phone){
         this.findByXPath("//span[text()=\"联系电话：\"]/following-sibling::span/strong[text()=\""+phone+"\"]").getText();//获取到 手机，就验证成功
         for (int i=0;i<list.size();i++){
-            String a=this.findByXPath("//span[text()=\""+list_1.get(i)+"\"]/following-sibling::span[text()=\""+list.get(i)+"\"]")
-                    .getText();//获取到 性别、年龄、现居住地、邮箱，就验证成功
+            String a=this.findByXPath("//span[text()=\""+list_1.get(i)+"\"]/following-sibling::span[text()=\""+list.get(i)+"\"]").getText();//获取到 性别、年龄、现居住地、邮箱，就验证成功
+            String str=a;
         }
-
         return this;
     }
 
     //校对简历详情里的 个人简评
     public EBFA08Page checkResume_personalIntroduce(String actualPersonalIntroduce){
-        String personalIntroduce=this.findByClassName("cLines").getText();
+        String personalIntroduce=this.findByXPath("//div[@class=\"c3 pl35 text-break ivu-col ivu-col-span-24\"]").getText();
         Assert.assertEquals(personalIntroduce,actualPersonalIntroduce);
 
         return this;
@@ -175,6 +175,33 @@ public class EBFA08Page extends Public<EBFA08Page> {
     public String value_efpage(){
         String value=this.findByClassName(" messageContent").getText();
         return value;
+    }
+
+    /*
+    推荐报告栏
+     */
+    //绑定报告按钮置灰
+    public EBFA08Page checkBindBtn(){
+        String btn_class=button_followingBtn_Class("currency_btn_size click_btn_bgf ivu-btn ivu-btn-button");
+        Assert.assertEquals("currency_btn_size disabled_btn_bgbf   ivu-btn ivu-btn-button",btn_class);
+        return this;
+    }
+    //核对推荐职位
+    public EBFA08Page checkRecommendJob(){
+        String recommendJob=this.findByClassName("contentListInfo")
+                .findListByTagName("p").get(1)
+                .findByTagName("span")
+                .getText();
+        Assert.assertEquals("卖麦芽糖的",recommendJob);
+        return this;
+    }
+
+    //点击“生成推荐报告”
+    public EBFA08Page recommndReport_click(){
+this.findByClassName("newBtnDiv")
+.findByTagName("li").click()
+        ;
+       return this;
     }
 
 

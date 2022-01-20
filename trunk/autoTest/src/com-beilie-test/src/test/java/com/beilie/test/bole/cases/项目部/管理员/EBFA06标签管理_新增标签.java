@@ -12,7 +12,8 @@ public class EBFA06标签管理_新增标签 extends BoleBase {
         BdHomePage bdHomePage = manageLogin("13312312323", "1").sleepForSeconds(3);
 
         EBFA06Page eBFA06Page=(EBFA06Page)bdHomePage
-                .clickMenus(" 中文简历库","标签管理")//点击菜单栏
+                .clickMenus("\n" +
+                        "          中文简历库","标签管理")//点击菜单栏
                 .switchToNewIframe1("EBFA06",EBFA06Page.class).sleepForSeconds(1);
 
         String label="高校"+Public.generateString(8);

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.beilie:com-beilie-core-kafka:1.0.3-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-core-kafka/1.0.3-SNAPSHOT/com-beilie-core-kafka-1.0.3-20220110.025504-120.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-core-kafka/1.0.3-SNAPSHOT/com-beilie-core-kafka-1.0.3-20220110.025504-120-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-core-kafka/1.0.3-SNAPSHOT/com-beilie-core-kafka-1.0.3-20220110.025504-120-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

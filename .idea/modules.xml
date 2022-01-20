@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/com-beilie-test.iml" filepath="$PROJECT_DIR$/trunk/autoTest/src/com-beilie-test/com-beilie-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/workPlace.iml" filepath="$PROJECT_DIR$/.idea/workPlace.iml" />
+    </modules>
+  </component>
+</project>

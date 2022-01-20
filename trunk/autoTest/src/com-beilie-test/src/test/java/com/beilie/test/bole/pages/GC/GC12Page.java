@@ -48,11 +48,12 @@ public class GC12Page extends Public<GC12Page> {
 
     //联系人
     public GC12Page ContactPerson(String Landline) throws InterruptedException{
-        element(5).findByClassName("ivu-select-selection").click().sleepForSeconds(1);//点击联系人框
+        element(5).findByClassName("ivu-select-placeholder").click().sleepForSeconds(1);//点击联系人框
         element(5).findListByTagName("li").get(1).click();//选择联系人
 
         String Landline1=Landline+Public.generateString(6);
-        element(5).findByTagName("input").sendKeys(Landline1);//输入座机号
+        //element(5).findByTagName("input").sendKeys(Landline1);//输入座机号
+        sendInputPlaceholder("区号-座机号-分机",Landline1);
         return this;
     }
 
@@ -69,17 +70,17 @@ public class GC12Page extends Public<GC12Page> {
         String charges="1收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准收费标准";
         String annualSalaryDefinition="2年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义年薪定义";
         String paymentMethods="3付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式付费方式";
-        this.findById("editor1").findByTagName("div").sendKeys(charges);//收费标准
-        this.findById("editor2").findByTagName("div").sendKeys(annualSalaryDefinition);//年薪定义
-        this.findById("editor3").findByTagName("div").sendKeys(paymentMethods);//付费方式
+        div_dataplaceholder_send("请输入收费标准不超过1024字",charges);//收费标准
+        div_dataplaceholder_send("请输入年薪定义不超过1024字",annualSalaryDefinition);//年薪定义
+        div_dataplaceholder_send("请输入付费方式不超过1024字",paymentMethods);//付费方式
         return this;
     }
 
     //上传合同附件
     public GC12Page uploadFile(){
-        this.findByClassName("ivu-upload").findByTagName("input").sendKeys("C:\\Users\\86182\\Desktop\\文件格式\\风景1.JPG");
-        this.findByClassName("ivu-upload").findByTagName("input").sendKeys("C:\\Users\\86182\\Desktop\\文件格式\\PDF文件.PDF");
-        this.findByClassName("ivu-upload").findByTagName("input").sendKeys("C:\\Users\\86182\\Desktop\\文件格式\\小写pdf文件.pdf");
+        divClass_input_send("ivu-upload ivu-upload-select","C:\\Users\\86182\\Desktop\\文件格式\\风景1.JPG");
+        divClass_input_send("ivu-upload ivu-upload-select","C:\\Users\\86182\\Desktop\\文件格式\\PDF文件.PDF");
+        divClass_input_send("ivu-upload ivu-upload-select","C:\\Users\\86182\\Desktop\\文件格式\\小写pdf文件.pdf");
         return this;
     }
 

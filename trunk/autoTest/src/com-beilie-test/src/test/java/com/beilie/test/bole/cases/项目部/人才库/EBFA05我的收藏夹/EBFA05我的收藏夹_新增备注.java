@@ -14,7 +14,8 @@ public class EBFA05我的收藏夹_新增备注 extends BoleBase {
         BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 
         EBFA05Page eBFA05Page = (EBFA05Page) bdHomePage
-                .clickMenus(" 中文简历库", "我的收藏夹")//点击菜单栏
+                .clickMenus("\n" +
+                        "          中文简历库", "我的收藏夹")//点击菜单栏
                 .switchToNewIframe1("EBFA05", EBFA05Page.class).sleepForSeconds(3);
 
         int n = Public.generateNumber0_n_1(3);
@@ -38,7 +39,7 @@ public class EBFA05我的收藏夹_新增备注 extends BoleBase {
                 .clickAvatar(0)//点击头像
                 .switchToNewIframe(0, EBFA08Page.class).sleepForSeconds(2);
 
-        String remark_3 = eBFA08Page.clickLi("备注").sleepForSeconds(1)//切换 备注栏
+        String remark_3 = eBFA08Page.Li_click("备注").sleepForSeconds(1)//切换 备注栏
                 .getSpanValue(remark);
 
     }

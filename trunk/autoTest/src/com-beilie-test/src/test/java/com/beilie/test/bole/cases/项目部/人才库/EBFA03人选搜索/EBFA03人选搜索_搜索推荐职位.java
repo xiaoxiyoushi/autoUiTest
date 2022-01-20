@@ -23,7 +23,7 @@ public class EBFA03人选搜索_搜索推荐职位 extends BoleBase {
         .switchToNewIframe(0, EBFA08Page.class).sleepForSeconds(2);
 
         EB0301Page eB0301Page=(EB0301Page)eBFA08Page
-        .clickLi("推荐报告")//切换 推荐报告栏
+        .Li_click("推荐报告")//切换 推荐报告栏
         .sleepForSeconds(2)
         .click_Recommend()//点击  查看报告
         .switchToNewIframe(1, EB0301Page.class).sleepForSeconds(2);

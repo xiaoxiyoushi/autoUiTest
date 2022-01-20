@@ -18,7 +18,8 @@ public class EBFA02确认入库_教育经历_校验数据 extends BoleBase {
         BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 
         EBFA04Page eBFA04Page = (EBFA04Page) bdHomePage
-                .clickMenus(" 中文简历库", "简历搜索")//点击菜单栏
+                .clickMenus("\n" +
+                        "          中文简历库", "简历搜索")//点击菜单栏
                 .switchToNewIframe1("EBFA04", EBFA04Page.class).sleepForSeconds(1);
 
         String randomStr = Public.generateString(8);//8位随机字符串
@@ -90,7 +91,7 @@ public class EBFA02确认入库_教育经历_校验数据 extends BoleBase {
         .checkResume_education(colleage,major)//校对简历详情里的 学校名称、专业名称
         .clickSpan("生成推荐报告").sleepForSeconds(1)//点击 生成推荐报告
         .Span_Value("生成推荐报告成功")//框架上 提示生成推荐报告成功
-        .clickLi("推荐报告")//切换 推荐报告栏
+        .Li_click("推荐报告")//切换 推荐报告栏
         .sleepForSeconds(2)
         .click_Recommend()//点击  查看报告
         .switchToNewIframe(1, EB0301Page.class).sleepForSeconds(2);

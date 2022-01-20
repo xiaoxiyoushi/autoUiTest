@@ -1,0 +1,36 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com-beilie-test 1.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ com-beilie-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ com-beilie-test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 22 source files to D:\workPlace\trunk\autoTest\src\com-beilie-test\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /D:/workPlace/trunk/autoTest/src/com-beilie-test/src/main/java/com/beilie/test/seleniums/core/Engine.java:[12,35] 程序包sun.plugin.javascript.navig不存在
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.096 s
+[INFO] Finished at: 2021-11-05T16:28:12+08:00
+[INFO] Final Memory: 47M/304M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project com-beilie-test: Compilation failure
+[ERROR] /D:/workPlace/trunk/autoTest/src/com-beilie-test/src/main/java/com/beilie/test/seleniums/core/Engine.java:[12,35] 程序包sun.plugin.javascript.navig不存在
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

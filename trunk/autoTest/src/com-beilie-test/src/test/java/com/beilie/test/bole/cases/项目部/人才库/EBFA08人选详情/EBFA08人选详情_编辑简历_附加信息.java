@@ -15,7 +15,8 @@ public class EBFA08人选详情_编辑简历_附加信息 extends BoleBase {
         BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 
         EBFA01Page eBFA03Page = (EBFA01Page) bdHomePage
-                .clickMenus(" 中文简历库", "人选搜索")//点击菜单栏
+                .clickMenus("\n" +
+                        "          中文简历库", "人选搜索")//点击菜单栏
                 .switchToNewIframe1("EBFA03", EBFA01Page.class).sleepForSeconds(1);
 
         String randomStr = Public.generateString(8);//8位随机字符串
@@ -32,18 +33,20 @@ public class EBFA08人选详情_编辑简历_附加信息 extends BoleBase {
                 .switchToNewIframe(1, EBFA10Page.class).sleepForSeconds(1);
 
         String extraInform="附加信息"+randomStr;
-        EBFA08Page eBFA08Page_1=(EBFA08Page)eBFA10Page.clearAddInform()//清除附加信息
+        EBFA08Page eBFA08Page_1=(EBFA08Page)eBFA10Page
+                //.clearAddInform()//清除附加信息
+                .textarea_clear()
                 .sleepForSeconds(1)
                 .sendAddInform(extraInform)//输入附加信息内容
                 .clickSpan("确定").sleepForSeconds(1)//点击【确定】按钮
                 .checkTip().sleepForSeconds(2)//校对提示 更新简历成功，点击【确定】按钮 关掉页面
                 .switchToNewIframe(0, EBFA08Page.class).sleepForSeconds(2);
 
-        EB0301Page eB0301Page=(EB0301Page)eBFA08Page_1.img_altClick("刷新").sleepForSeconds(2)//刷新页面
+        EB0301Page eB0301Page=(EB0301Page)eBFA08Page_1.i_classClick("icon-btn ivu-icon bole icon-refresh2").sleepForSeconds(2)//刷新页面
                 .checkResume_addInform(extraInform)//校对简历详情里的 附加信息内容
                 .clickSpan("生成推荐报告").sleepForSeconds(1)//点击 生成推荐报告
-                .Span_Value("生成推荐报告成功")//框架上 提示生成推荐报告成功
-                .clickLi("推荐报告")//切换 推荐报告栏
+                .div_getValue(" 生成推荐报告成功 ")//框架上 提示生成推荐报告成功
+                .Li_click("推荐报告")//切换 推荐报告栏
                 .sleepForSeconds(2)
                 .click_Recommend()//点击  查看报告
                 .switchToNewIframe(1, EB0301Page.class).sleepForSeconds(2);

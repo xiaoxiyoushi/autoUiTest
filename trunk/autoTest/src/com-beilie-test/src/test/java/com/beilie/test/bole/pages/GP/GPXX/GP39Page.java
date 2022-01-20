@@ -64,7 +64,10 @@ public Map<String,Object> getValue(){
 
     //点击【搜索】按钮
     public GP39Page clickSearchButton(){
-        this.findByXPath("//button[text()=\"搜索\"]").click();
+    String search="\n" +
+            "              搜索\n" +
+            "            ";
+        this.findByXPath("//button[text()=\""+search+"\"]").click();
         return this;
     }
 

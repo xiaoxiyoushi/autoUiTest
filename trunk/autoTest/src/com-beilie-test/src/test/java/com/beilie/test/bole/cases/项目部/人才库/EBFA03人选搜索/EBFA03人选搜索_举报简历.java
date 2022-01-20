@@ -14,7 +14,8 @@ public class EBFA03人选搜索_举报简历 extends BoleBase {
         BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 
         EBFA03Page eBFA03Page = (EBFA03Page) bdHomePage
-                .clickMenus(" 中文简历库", "人选搜索")//点击菜单栏
+                .clickMenus("\n" +
+                        "          中文简历库", "人选搜索")//点击菜单栏
                 .switchToNewIframe1("EBFA03", EBFA03Page.class).sleepForSeconds(3);
 
         String str = "该人选简历造假" + Public.generateString(8);

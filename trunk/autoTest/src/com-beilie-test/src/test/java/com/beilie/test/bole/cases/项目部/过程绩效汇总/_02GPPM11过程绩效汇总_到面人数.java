@@ -13,7 +13,8 @@ public class _02GPPM11过程绩效汇总_到面人数 extends BoleBase {
         BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 
         GPPM11Page gPPM11Page = (GPPM11Page) bdHomePage
-                .clickMenus(" 报表管理", "过程绩效汇总")//点击菜单栏
+                .clickMenus("\n" +
+                        "          报表管理", "过程绩效汇总")//点击菜单栏
                 .switchToNewIframe1("GPPM11", GPPM11Page.class).sleepForSeconds(1);
 
         int n = gPPM11Page.clickInputPlaceholder("统计月份")
@@ -41,10 +42,11 @@ public class _02GPPM11过程绩效汇总_到面人数 extends BoleBase {
         _02GP10项目详情_项目执行_到新建Offer g=new _02GP10项目详情_项目执行_到新建Offer();
         g.process(bdHomePage1);
 
-        GPPM11Page gPPM11Page_1 = (GPPM11Page) bdHomePage1.clickMenus(" 报表管理", "过程绩效汇总")
+        GPPM11Page gPPM11Page_1 = (GPPM11Page) bdHomePage1.clickMenus("\n" +
+                "          报表管理", "过程绩效汇总")
                 .switchToNewIframe1("GPPM11", GPPM11Page.class).sleepForSeconds(1);
 
-        //重新获取 线上发送报告数的值
+        //重新获取 到面人数的值
         String reportNumb_1 = gPPM11Page_1.table_td_list_aClick(0, 0, 0).sleepForSeconds(1)
                 .clickSpan("重新生成报表").sleepForSeconds(1)
                 .table_td_divValue(1, 0, 4);

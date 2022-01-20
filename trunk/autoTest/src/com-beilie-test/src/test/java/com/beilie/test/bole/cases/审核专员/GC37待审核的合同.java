@@ -13,7 +13,8 @@ public class GC37待审核的合同 extends BoleBase {
         BdHomePage bdHomePage = login("68657209", "1").sleepForSeconds(3);
         GC37Page gc37Page = (GC37Page) bdHomePage
                 //.clickClientManger("待审核的合同",14)//开发环境dululu
-                .clickMenus(" 客户合同", "待审核的合同")//点击菜单栏
+                .clickMenus("\n" +
+                        "          客户合同", "待审核的合同")//点击菜单栏
                 .switchToNewIframe1("GC37", GC37Page.class).sleepForSeconds(3);
 
         //获取审核合同的公司名称

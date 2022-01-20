@@ -1,9 +1,10 @@
 package com.beilie.test.bole.pages.GC;
 
+import com.beilie.test.open.PublicClass.Public;
 import com.beilie.test.seleniums.core.Element;
 import com.beilie.test.seleniums.core.UIPage;
 
-public class GCCM02Page extends UIPage<GCCM02Page> {
+public class GCCM02Page extends Public<GCCM02Page> {
     //第i行，第j个
     public Element element(int i,int j){
         Element element=this.findById("homeIndex")

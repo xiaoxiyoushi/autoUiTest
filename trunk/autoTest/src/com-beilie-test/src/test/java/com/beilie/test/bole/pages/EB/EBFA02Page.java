@@ -4,7 +4,7 @@ import com.beilie.test.open.PublicClass.Public;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 
-public class EBFA02Page extends Public<EBFA02Page> {
+public class EBFA02Page extends EBFAPage<EBFA02Page> {
     //点击性别，随机选择 男、女
     public EBFA02Page click_sex(int n){
         this.findById("vailsex")
@@ -24,7 +24,9 @@ public class EBFA02Page extends Public<EBFA02Page> {
         String value=getSpanValue("添加到收藏夹成功");
         Assert.assertEquals(value,"添加到收藏夹成功");
 
-        this.findByClassName("bigokbutton").click();//点击确定按钮
+        this.findById("EFmodal")
+                .findByTagName("button").click();//点击确定按钮
+        //this.findByClassName("bigokbutton").click();//点击确定按钮
         return this;
     }
 
@@ -32,7 +34,8 @@ public class EBFA02Page extends Public<EBFA02Page> {
     public EBFA02Page checkTip_addProject(String name){
         String value=getSpanValue("添加人选["+name+"]到项目成功。");
 
-        this.findByClassName("bigokbutton").click();//点击确定按钮
+        this.findById("EFmodal")
+                .findByTagName("button").click();//点击确定按钮
         return this;
     }
 

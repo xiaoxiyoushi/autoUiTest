@@ -3,7 +3,7 @@ package com.beilie.test.bole.pages.EB;
 import com.beilie.test.open.PublicClass.Public;
 import org.junit.Assert;
 
-public class EBFA01Page extends Public<EBFA01Page> {
+public class EBFA01Page extends EBFAPage<EBFA01Page> {
 
     /*
     判断当前是粘贴还是上传方式
@@ -72,14 +72,18 @@ public class EBFA01Page extends Public<EBFA01Page> {
 
     //校对提示 上传简历成功
     public EBFA01Page checkTip(){
-        String value=getSpanValue("上传简历成功");
+        //String value=getSpanValue("上传简历成功");
+        String value=divClass_value("ef-modal-message");
+
        Assert.assertEquals(value,"上传简历成功");
+
+
         return this;
     }
 
     //校对提示 加入项目成功
     public EBFA01Page checkTip_addProject(String name){
-        String tips=this.findByClassName("ef-modal-ef-model-confirm-b-span").getText();
+        String tips=this.findByClassName("ef-modal-message").getText();
         String name_1="添加人选["+name+"]到项目成功。";
         Assert.assertEquals(tips,name_1);
         return this;
@@ -87,29 +91,37 @@ public class EBFA01Page extends Public<EBFA01Page> {
 
     //点击提示的【确定】按钮
     public EBFA01Page clickConfirmBtn(){
-        this.findByClassName("bigokbutton").click();
+        //this.findByClassName("bigokbutton").click();
+        this.findByXPath("//div[@class=\"ef-modal v-transfer-dom\"]//button").click();
         return this;
     }
 
     //点击地点的叉号
     public EBFA01Page peopleInfo_location_delete(){
         this.findById("vailPeopleInfo")
-                .findById("selectFunSpan0")
-                .findByClassName("mr5").click();
+               // .findById("selectFunSpan0")
+                .findByClassName("ivu-icon-md-close").click();
         return this;
     }
 
     //点击现居住地的icon
     public EBFA01Page peopleInfo_location_click(){
         this.findById("vailPeopleInfo")
-                .findByClassName("searchFun_ebfa_select_input_div_img").click();
+                .findByClassName("icon-region").click();
         return this;
     }
 
     //点击目前职能的icon
     public EBFA01Page workExperience_function_click(){
         this.findById("vailworkExperience")
-                .findByClassName("searchFun_ebfa_select_input_div_img").click();
+                .findByClassName("icon-function").click();
+        return this;
+    }
+
+    //点击所在行业的icon
+    public EBFA01Page workExperience_industry_click(){
+        this.findById("vailworkExperience")
+                .findByClassName("icon-industry").click();
         return this;
     }
 
@@ -162,19 +174,19 @@ public class EBFA01Page extends Public<EBFA01Page> {
         return this;
     }
 
-    //在点击组件的叉号
+    /*//在点击组件的叉号
     public EBFA01Page component_delete(int n){
         this.findListByXPath("//span[text()=\"x\"]").get(n).click();
         return this;
-    }
+    }*/
 
-    //点击组件的icon
+    /*//点击组件的icon
     public EBFA01Page component_icon(int n){
         this.findListById("searchFun_ebfa_select_border_div").get(n)
                 .findByTagName("img")
                 .click();
         return this;
-    }
+    }*/
 
     //点击性别，随机选择 男、女
     public EBFA01Page click_sex(int n){

@@ -2,6 +2,8 @@ package com.beilie.test.bole.pages.GC;
 
 import com.beilie.test.open.PublicClass.Public;
 import com.beilie.test.seleniums.core.Element;
+import org.junit.Assert;
+
 import java.util.List;
 
 //GC01客户基本信息
@@ -91,6 +93,13 @@ public class GC01Page extends Public<GC01Page> {
                 break;
             }
         }
+        return this;
+    }
+
+    //校验 没有锁的倒计时
+    public GC01Page checkNoLockCutdown(){
+        String str=this.findByClassName("overTime").getText();
+        Assert.assertEquals("",str);
         return this;
     }
 

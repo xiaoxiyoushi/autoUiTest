@@ -1,7 +1,9 @@
 package com.beilie.test;
 
+import com.beilie.gaohr.contract.GPService;
 import com.beilie.platform.es.controller.nosession.NoSession_LoginController;
 import com.beilie.platform.es.service.ESUE01Service;
+import io.protostuff.GraphProtostuffOutput;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -21,6 +23,7 @@ import java.util.Random;
 @SpringBootApplication
 @EnableFeignClients(clients = {
         ESUE01Service.class,
+        GPService.class,
         NoSession_LoginController.class
 })
 public class TestServer {

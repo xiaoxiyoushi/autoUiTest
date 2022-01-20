@@ -75,6 +75,13 @@ public class GCCM01Page extends Public<GCCM01Page> {
         return this;
     }
 
+    //校对提示
+    public GCCM01Page checkTips_lock(){
+        String str=this.findByClassName("ef-model-confirm-b-span").getText();
+        Assert.assertEquals(str,"创建客户并锁定成功");
+        return this;
+    }
+
     /*
     批量导入
      */
@@ -145,4 +152,11 @@ public class GCCM01Page extends Public<GCCM01Page> {
         return this;
     }
 
+    public GCCM01Page checkedLock(){
+        String class_=this.findByXPath("//label[text()=\" 自动锁定客户\"]").getAttribute("class");
+        if (class_.equals("ivu-checkbox-wrapper ivu-checkbox-default")) {
+            this.findByXPath("//label[text()=\" 自动锁定客户\"]").click();
+        }
+        return this;
+    }
 }

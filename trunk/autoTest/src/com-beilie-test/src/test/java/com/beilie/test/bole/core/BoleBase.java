@@ -6,8 +6,19 @@ import com.beilie.test.open.hunters.pages.LoginPage;
 import com.beilie.test.seleniums.core.TestCaseBase;
 
 public class BoleBase extends TestCaseBase {
+    protected BdHomePage cclLogin() throws IllegalAccessException, InstantiationException ,InterruptedException{
+        LoginPage loginPage = (LoginPage) engine.createPage("http://47.110.140.203/#/home", LoginPage.class);
+        return (BdHomePage)loginPage
+                .clickAccountLogin().sleepForSeconds(1)
+                .userName("66624284")
+                .password("888888")
+                //.captcha("1234")
+                .submit()
+                .transfer(BdHomePage.class);
+    }
+
     protected BdHomePage login(String userName, String password) throws IllegalAccessException, InstantiationException ,InterruptedException{
-        //LoginPage loginPage = (LoginPage) engine.createPage("http://192.168.5.205/#/home", LoginPage.class);
+        //LoginPage loginPage = (LoginPage) engine.createPage("http://192.168.5.215/#/home", LoginPage.class);
         LoginPage loginPage = (LoginPage) engine.createPage("http://192.168.5.215/#/home", LoginPage.class);
         return (BdHomePage)loginPage
                 .clickAccountLogin().sleepForSeconds(1)
@@ -28,7 +39,7 @@ public class BoleBase extends TestCaseBase {
     }
 
     protected BdHomePage manageLogin(String userName, String password) throws IllegalAccessException, InstantiationException {
-        LoginPage loginPage = (LoginPage) engine.createPage("http://192.168.5.222:8088/cas/login?modeType=hunterCompany&service=http%3A%2F%2F192.168.5.215%2Flogin", LoginPage.class);
+        LoginPage loginPage = (LoginPage) engine.createPage("http://192.168.5.223:8088/cas/login?modeType=hunterCompany&service=http%3A%2F%2F192.168.5.215%2Flogin", LoginPage.class);
         //LoginPage loginPage = (LoginPage) engine.createPage("http://192.168.5.205:8088/cas/login?modeType=hunterCompany&service=http%3A%2F%2F192.168.5.205%2Flogin#/home", LoginPage.class);
         return (BdHomePage)loginPage
                 .clickAccountLogin()

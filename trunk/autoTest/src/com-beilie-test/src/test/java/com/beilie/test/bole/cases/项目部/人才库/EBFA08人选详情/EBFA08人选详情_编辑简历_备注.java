@@ -15,7 +15,8 @@ public class EBFA08人选详情_编辑简历_备注 extends BoleBase {
         BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 
         EBFA01Page eBFA03Page = (EBFA01Page) bdHomePage
-                .clickMenus(" 中文简历库", "人选搜索")//点击菜单栏
+                .clickMenus("\n" +
+                        "          中文简历库", "人选搜索")//点击菜单栏
                 .switchToNewIframe1("EBFA03", EBFA01Page.class).sleepForSeconds(1);
 
         String randomStr = Public.generateString(8);//8位随机字符串

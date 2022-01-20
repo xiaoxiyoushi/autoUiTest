@@ -17,8 +17,10 @@ public class EBFA02确认入库_个人信息_校验数据 extends BoleBase {
     public void test ()throws IllegalAccessException, InstantiationException, InterruptedException, InvocationTargetException{
         BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 
+        bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
         EBFA04Page eBFA04Page = (EBFA04Page) bdHomePage
-                .clickMenus(" 中文简历库", "简历搜索")//点击菜单栏
+                .clickFirstMenu_resumeLibrary().sleepForSeconds(1)//点击一级菜单：中文简历库
+                .clickSecondMenu_resumeSearch()//点击二级菜单：简历搜索
                 .switchToNewIframe1("EBFA04", EBFA04Page.class).sleepForSeconds(1);
 
         String randomStr= Public.generateString(8);//8位随机字符串
@@ -59,14 +61,20 @@ public class EBFA02确认入库_个人信息_校验数据 extends BoleBase {
                 .clearInput("请输入公司名称")//清掉原来公司名称
                 .sendInputPlaceholder("请输入公司名称","长沙睿展数据科技有限公司")//输入公司名称
 
-                .label_followingDiv_clickimg("目前职能：").sleepForSeconds(1)//点击目前职能的icon
+                .i_classClick("ivu-icon bole select-editor-input__icon icon-function cursor-pointer").sleepForSeconds(1)//点击目前职能的icon
+                //.label_followingDiv_clickI("目前职能：").sleepForSeconds(1)//点击目前职能的icon
                 .functionSingleComponent()//选择职能组件
 
-                .label_followingDiv_clickimg("所在行业：")//点击所在行业的icon
-                .industryComponent()//选择行业组件
+                /*.label_followingDiv_clickI("所在行业：")//点击所在行业的icon
+                .industryComponent()//选择行业组件*/
 
-                .label_followingDiv_clickimg("现居住地：")//点击现居住地的icon
-                .placeComponent_getValue();//获取工作地点值
+                /*.label_followingDiv_clickI("现居住地：")//点击现居住地的icon
+                .placeComponent_getValue();//获取工作地点值*/
+
+                .input_bcakSpace("请选择现居住地",1).sleepForSeconds(1)//清掉现居住地
+                .inputPlaceholder_parentDiv_parentDiv_iClick("请选择现居住地").sleepForSeconds(1)//点击现居住地的icon
+                .workPlaceComponent()//选择地点组件
+                .label_followingDiv_spanValue("现居住地：");//获取工作地点值
 
         switch (sex_numb){
             case 1:
@@ -114,8 +122,9 @@ public class EBFA02确认入库_个人信息_校验数据 extends BoleBase {
         EB0301Page eB0301Page=(EB0301Page)eBFA08Page
         .checkResume_allPersonalInform(list_1,list,phone)//校对简历详情里的 电话、性别、年龄、现居住地、邮箱
         .clickSpan("生成推荐报告").sleepForSeconds(1)//点击 生成推荐报告
-        .Span_Value("生成推荐报告成功")//框架上 提示生成推荐报告成功
-        .clickLi("推荐报告")//切换 推荐报告栏
+
+                //框架上 提示生成推荐报告成功
+        .Li_click("推荐报告")//切换 推荐报告栏
         .sleepForSeconds(2)
         .clickSpan(name)
         .switchToNewIframe(1, EB0301Page.class).sleepForSeconds(2);

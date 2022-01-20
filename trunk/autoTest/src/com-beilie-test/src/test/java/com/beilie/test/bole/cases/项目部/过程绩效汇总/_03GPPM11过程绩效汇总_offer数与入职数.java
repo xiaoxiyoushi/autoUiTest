@@ -13,7 +13,8 @@ public class _03GPPM11过程绩效汇总_offer数与入职数 extends BoleBase {
         BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 
         GPPM11Page gPPM11Page = (GPPM11Page) bdHomePage
-                .clickMenus(" 报表管理", "过程绩效汇总")//点击菜单栏
+                .clickMenus("\n" +
+                        "          报表管理", "过程绩效汇总")//点击菜单栏
                 .switchToNewIframe1("GPPM11", GPPM11Page.class).sleepForSeconds(1);
 
         int n = gPPM11Page.clickInputPlaceholder("统计月份")
@@ -43,7 +44,8 @@ public class _03GPPM11过程绩效汇总_offer数与入职数 extends BoleBase {
         _03GP10项目详情_项目执行_提交offer到提交入职 g=new _03GP10项目详情_项目执行_提交offer到提交入职();
         g.process(bdHomePage1);
 
-        GPPM11Page gPPM11Page_1 = (GPPM11Page) bdHomePage1.clickMenus(" 报表管理", "过程绩效汇总")
+        GPPM11Page gPPM11Page_1 = (GPPM11Page) bdHomePage1.clickMenus("\n" +
+                "          报表管理", "过程绩效汇总")
                 .switchToNewIframe1("GPPM11", GPPM11Page.class).sleepForSeconds(1);
 
         //重新获取 offer数的值、入职数的值
