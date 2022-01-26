@@ -13,7 +13,9 @@ public class GP58Page extends Public<GP58Page> {
     }
 
     public GP58Page clickClientName(){
-        elements().get(0).findListByTagName("td").get(0).findByTagName("a").click();
+        //elements().get(0).findListByTagName("td").get(0).findByTagName("a").click();
+        this.findByClassName("ivu-table-cell-ellipsis")
+                .findByTagName("a").click();
         return this;
     }
 }

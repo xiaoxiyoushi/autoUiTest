@@ -13,7 +13,7 @@ import java.util.Map;
 //GP10项目详情页面
 public class GP10Page extends Common<GP10Page> {
     public GP10Page checkParagraph(String value_1, String value_2, String value_3) {
-        List<Element> elements = this.findByClassName("ivu-col-span-23").findListByTagName("p");
+        List<Element> elements = this.findListByXPath("//span[text()=\"项目要点\"]/parent::h2/following-sibling::div//p");
         String firstParag = elements.get(0).getText();
         String secondParag = elements.get(1).getText();
         String thirdParag = elements.get(2).getText();

@@ -23,14 +23,14 @@ public class GP00Page extends Public<GP00Page> {
     }
 
     //点击行业分类框
-    public GP00Page clickIndustryInput(){
-        this.findByClassName("industryIcon").findByTagName("input").click();
+    public GP00Page clickIndustryIcon(){
+        this.findByClassName("icon-industry").click();
         return this;
     }
 
     //点击职能分类框
-    public GP00Page clickFunctInput(){
-        this.findByClassName("functionIcon").findByTagName("input").click();
+    public GP00Page clickFunctIcon(){
+        this.findByClassName("icon-function").click();
         return this;
     }
 
@@ -87,16 +87,12 @@ public class GP00Page extends Public<GP00Page> {
 
 //勾选地址复选框
     public GP00Page clickCheckbox(){
-        this.findByClassName("myCheckedAddress").findByTagName("input")
-                .click();
+        divClass("address-checkboxs ivu-checkbox-group ivu-checkbox-default");
         return this;
     }
 
     public GP00Page submitAddress(){
-        this.findByClassName("newAddUsualModal_footer")
-                .findByXPath("//div[text()=\"\n" +
-                        "        确定\n" +
-                        "      \"]")
+        this.findByXPath("//div[@class=\"ivu-modal-wrap vertical-center-modal modelH100\"]//button[@class=\"ivu-btn ivu-btn-primary\"]")
                 .click();
         return this;
     }
@@ -131,7 +127,8 @@ public class GP00Page extends Public<GP00Page> {
     public GP00Page education() throws InterruptedException{
         this.findByClassName("edQu").findByXPath("//span[text()=\"请选择\"]").click();
         this.sleepForSeconds(1);
-        this.findByXPath("//li[text()=\"硕士\"]").click();
+        this.findByXPath("//li[text()=\"硕士\n" +
+                "                    \"]").click();
         return this;
     }
 
@@ -166,7 +163,7 @@ public class GP00Page extends Public<GP00Page> {
 
         try {
 //            Element element=this.findByXPath("//span[text()=\""+str+"\"]");
-            this.clickButton("确定");
+            this.findByXPath("//div[text()=\"邮箱尚未确认，提交后请及时联系保护BD[bd12]进行确认，以免影响推荐报告的发送\"]/parent::div/parent::div/following-sibling::div//span").click();
         } /*catch (NoSuchElementException e,No) {
             e.printStackTrace();
         }*/catch (Exception e) {

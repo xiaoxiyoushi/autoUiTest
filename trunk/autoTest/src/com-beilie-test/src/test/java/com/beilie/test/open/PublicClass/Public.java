@@ -249,23 +249,28 @@ public class Public<T extends Public> extends UIPage<T> {
     //选择职能组件,可以选多个职能
     public T functionComponent() {
         int n = generateNumber1(2);//0-1间的随机数
-        String str = "";
-        while (!StringUtils.equals(str, "changeInfo_function ef-primary-color")) {
-            int FunctionSize = this.findListById("stab.level").get(n)
+        String str ="";
+        while (!StringUtils.equals(str,"2")) {
+            /*int FunctionSize = this.findListByXPath("//div[@class=\"ef-function-selector-block\"]").get(n)
+                    .findListByTagName("li").size();//获取职能个数*/
+            int FunctionSize = this.findListByXPath("//div[@class=\"tab-layout-body\"]//ul").get(n)
                     .findListByTagName("li").size();//获取职能个数
 
             int m = generateNumber1(FunctionSize);//0-firstFunctionSize间的随机数
-            this.findListById("stab.level").get(n)
+            this.findListByXPath("//div[@class=\"tab-layout-body\"]//ul").get(n)
                     .findListByTagName("li").get(m).click();//点击职能
 
             n = 0;
-            int numb = this.findByClassName("headInfo_function")
-                    .findListByTagName("span").size();
-            str = this.findByClassName("headInfo_function")
-                    .findListByTagName("span").get(1).getAttribute("class");//获取选中的职能的class属性
+            /*int numb = this.findByClassName("headInfo_function")
+                    .findListByTagName("span").size();*/
+            /*str = this.findByClassName("headInfo_function")
+                    .findListByTagName("span").get(1).getAttribute("class");//获取选中的职能的class属性*/
+            int i=this.findListByXPath("//span[text()=\"选择职能：\"]/parent::div/span").size();//组件头的span个数
+            str=i+"";
         }
 
-        this.findByClassName("industruWrapFooter").findByClassName("ef-confirm-btn").click();//点击确定按钮
+        //this.findByClassName("industruWrapFooter").findByClassName("ef-confirm-btn").click();//点击确定按钮
+        this.findByXPath("//button[@class=\"ivu-btn ivu-btn-primary ivu-btn-large\"]").click();//点击确定按钮
         return (T) this;
     }
 
@@ -1266,9 +1271,6 @@ public class Public<T extends Public> extends UIPage<T> {
     /**
      * 加入项目表
      *
-     * @param arrayList
-     * @param n
-     * @return
      */
    /* public ArrayList<String> addProjectTable(ArrayList<String> arrayList, int n){
         //获取表的行数

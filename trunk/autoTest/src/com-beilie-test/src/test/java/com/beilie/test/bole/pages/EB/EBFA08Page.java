@@ -182,8 +182,8 @@ public class EBFA08Page extends Common<EBFA08Page> {
      */
     //绑定报告按钮置灰
     public EBFA08Page checkBindBtn(){
-        String btn_class=button_followingBtn_Class("currency_btn_size click_btn_bgf ivu-btn ivu-btn-button");
-        Assert.assertEquals("currency_btn_size disabled_btn_bgbf   ivu-btn ivu-btn-button",btn_class);
+        String btn_class=this.findByXPath("//span[text()=\"绑定报告\"]/parent::button").getAttribute("class");
+        Assert.assertEquals("currency_btn_size disabled_btn_bgbf ivu-btn ivu-btn-default",btn_class);
         return this;
     }
     //核对推荐职位

@@ -10,11 +10,11 @@ public class GPRP01Page extends Public<GPRP01Page> {
     核对页面文字：发布到贝猎网、企业基本信息、职位基本信息；
      */
     public GPRP01Page checkInfor(){
-        String str1=this.findByXPath("//span[text()=\"发布到贝猎网\"]").getText();
+        //String str1=this.findByXPath("//span[text()=\"发布到贝猎网\"]").getText();
         String str2=this.findByXPath("//span[text()=\"企业基本信息\"]").getText();
         String str3=this.findByXPath("//h2[text()=\"职位基本信息\"]").getText();
 
-        Assert.assertEquals(str1,"发布到贝猎网");
+        //Assert.assertEquals(str1,"发布到贝猎网");
         Assert.assertEquals(str2,"企业基本信息");
         Assert.assertEquals(str3,"职位基本信息");
       return this;

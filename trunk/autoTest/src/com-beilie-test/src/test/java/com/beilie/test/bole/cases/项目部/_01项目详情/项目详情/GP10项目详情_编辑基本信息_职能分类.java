@@ -5,10 +5,10 @@ import com.beilie.test.bole.pages.BdHomePage;
 import com.beilie.test.bole.pages.GP.GPXX.GP10Page;
 import com.beilie.test.bole.pages.GP.GPPM.GPPM10Page;
 import org.junit.Assert;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class GP10项目详情_编辑基本信息_职能分类 extends BoleBase {
-    @Test
+    //@Test
     public void 校对职能分类 ()throws IllegalAccessException, InstantiationException, InterruptedException {
         BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 

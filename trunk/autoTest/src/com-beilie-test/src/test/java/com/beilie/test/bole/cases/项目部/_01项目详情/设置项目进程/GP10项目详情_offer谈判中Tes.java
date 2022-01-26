@@ -5,7 +5,7 @@ import com.beilie.test.bole.pages.BdHomePage;
 import com.beilie.test.bole.pages.GP.GPPM.GPPM10Page;
 import com.beilie.test.bole.pages.GP.GPXX.GP10Page;
 import com.beilie.test.open.PublicClass.Public;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class GP10项目详情_offer谈判中Tes extends BoleBase {
     @Test

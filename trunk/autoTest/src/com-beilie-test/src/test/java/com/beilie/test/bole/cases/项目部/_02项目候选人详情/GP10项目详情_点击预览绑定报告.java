@@ -9,7 +9,7 @@ import com.beilie.test.bole.pages.GP.GPPM.GPPM10Page;
 import com.beilie.test.bole.pages.GP.GPXX.*;
 import com.beilie.test.open.PublicClass.Public;
 import org.junit.Assert;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class GP10项目详情_点击预览绑定报告 extends BoleBase {
     @Test
@@ -24,9 +24,10 @@ public class GP10项目详情_点击预览绑定报告 extends BoleBase {
     }
 
     public void process(BdHomePage bdHomePage) throws IllegalAccessException, InstantiationException, InterruptedException {
+        bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
         GPPM10Page gPPM10Page = (GPPM10Page) bdHomePage
-                .clickMenus("\n" +
-                        "          项目管理", "我的项目")//点击菜单栏
+                .clickFirstMenu_projectManage().sleepForSeconds(1)//点击一级菜单：项目管理
+                .clickSecondMenu_myProject()//点击二级菜单：我的项目
                 .switchToNewIframe1("GPPM10", GPPM10Page.class).sleepForSeconds(1);
 
         String randomStr = Public.generateString(8);//8位随机字符串
@@ -67,8 +68,18 @@ public class GP10项目详情_点击预览绑定报告 extends BoleBase {
                     .clearInput("请输入电子邮箱")//清掉原来邮箱
                     .sendInputPlaceholder("请输入电子邮箱", mailbox)//输入邮箱值
 
-                    .label_followingDiv_clickimg("目前职能：")//点击目前职能的icon
+                    /*.label_followingDiv_clickimg("目前职能：")//点击目前职能的icon
+                    .functionSingleComponent()//选择职能组件*/
+
+                    .peopleInfo_location_click()//点击现居住地的icon
+                    .workPlaceComponent()//地点公共组件
+
+                    .workExperience_function_click()//点击目前职能的icon
                     .functionSingleComponent()//选择职能组件
+
+                    .workExperience_industry_click()//点击所在行业的icon
+                    .industryComponent()//行业公共组件
+
 
                     .clickSpan("确定").sleepForSeconds(1)//点击【确定】按钮  提交简历
                     .checkTip()////校对提示 上传简历成功
@@ -93,7 +104,7 @@ public class GP10项目详情_点击预览绑定报告 extends BoleBase {
         EB0701Page eB0701Page = (EB0701Page) eBFA08Page
                 .switchToNewIframe(2, EB0701Page.class).sleepForSeconds(3);
 
-        eBFA08Page = (EBFA08Page) eB0701Page.i_classClick("icon-btn ivu-icon ivu-icon-undefined icon-close2")//点击X
+        eBFA08Page = (EBFA08Page) eB0701Page.i_classClick("icon-btn ivu-icon bole icon-close2")//点击X
                 .switchToNewIframe(1, EBFA08Page.class).sleepForSeconds(3);
 
         GP10Page gP10Page_1 = (GP10Page) eBFA08Page.Li_click("推荐报告").sleepForSeconds(1)
@@ -106,7 +117,8 @@ public class GP10项目详情_点击预览绑定报告 extends BoleBase {
                 .switchToNewIframe(1, GP14Page.class).sleepForSeconds(2);
 
         gP14Page.spanClass_click("uploads fr error-color")//点击 删除 按钮
-                .button_classClick("bigokbutton").sleepForSeconds(1);
+                .deleteButton_click().sleepForSeconds(1)
+                .getSpanValue("立即生成");
     }
 
 }

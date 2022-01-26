@@ -8,7 +8,7 @@ import com.beilie.test.bole.pages.GP.GPXX.GP10Page;
 import com.beilie.test.bole.pages.GP.GPXX.GP12Page;
 import com.beilie.test.bole.pages.GP.GPXX.GP14Page;
 import com.beilie.test.open.PublicClass.Public;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 /*
 淘汰人选再加入项目
@@ -27,9 +27,10 @@ public class GP14项目候选人详情_备注人选基本信息 extends BoleBase
     }
 
     public void process(BdHomePage bdHomePage) throws IllegalAccessException, InstantiationException, InterruptedException {
+        bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
         GPPM10Page gPPM10Page = (GPPM10Page) bdHomePage
-                .clickMenus("\n" +
-                        "          项目管理", "我的项目").sleepForSeconds(2)//点击菜单栏
+                .clickFirstMenu_projectManage().sleepForSeconds(1)//点击一级菜单：项目管理
+                .clickSecondMenu_myProject()//点击二级菜单：我的项目
                 .switchToNewIframe1("GPPM10", GPPM10Page.class).sleepForSeconds(1);
 
         String randomStr = Public.generateString(8);//8位随机字符串

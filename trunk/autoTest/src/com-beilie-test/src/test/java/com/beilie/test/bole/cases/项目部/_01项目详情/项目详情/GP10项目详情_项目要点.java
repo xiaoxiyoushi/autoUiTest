@@ -5,16 +5,17 @@ import com.beilie.test.bole.pages.BdHomePage;
 import com.beilie.test.bole.pages.GP.GPXX.GP10Page;
 import com.beilie.test.bole.pages.GP.GPPM.GPPM10Page;
 import com.beilie.test.open.PublicClass.Public;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class GP10项目详情_项目要点 extends BoleBase {
     @Test
     public void 编辑项目要点_校对内容及分段 ()throws IllegalAccessException, InstantiationException, InterruptedException {
         BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 
+        bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
         GPPM10Page gPPM10Page=(GPPM10Page)bdHomePage
-                .clickMenus("\n" +
-                        "          项目管理", "我的项目")//点击菜单栏
+                .clickFirstMenu_projectManage().sleepForSeconds(1)//点击一级菜单：项目管理
+                .clickSecondMenu_myProject()//点击二级菜单：我的项目
                 .switchToNewIframe1("GPPM10", GPPM10Page.class).sleepForSeconds(1);
 
         int i_1 = Public.generateNumber1_n(1000);

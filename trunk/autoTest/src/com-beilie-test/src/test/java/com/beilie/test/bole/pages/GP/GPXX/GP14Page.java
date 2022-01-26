@@ -34,4 +34,9 @@ public class GP14Page extends Common<GP14Page> {
         this.findByXPath("//div[@class=\"itemstyle operation\"]/button").click();
         return this;
     }
+
+    public GP14Page deleteButton_click(){
+        this.findByXPath("//div[text()=\"是否确认删除推荐报告\"]/parent::div/parent::div/following-sibling::div//span[text()=\"确定\"]").click();
+        return this;
+    }
 }

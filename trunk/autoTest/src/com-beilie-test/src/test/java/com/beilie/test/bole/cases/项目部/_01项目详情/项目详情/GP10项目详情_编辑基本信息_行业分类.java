@@ -5,16 +5,17 @@ import com.beilie.test.bole.pages.BdHomePage;
 import com.beilie.test.bole.pages.GP.GPXX.GP10Page;
 import com.beilie.test.bole.pages.GP.GPPM.GPPM10Page;
 import org.junit.Assert;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class GP10项目详情_编辑基本信息_行业分类 extends BoleBase {
-    @Test
+    //@Test
     public void 校对行业分类 ()throws IllegalAccessException, InstantiationException, InterruptedException {
         BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 
+        bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
         GPPM10Page gPPM10Page = (GPPM10Page) bdHomePage
-                .clickMenus("\n" +
-                        "          项目管理", "我的项目")//点击菜单栏
+                .clickFirstMenu_projectManage().sleepForSeconds(1)//点击一级菜单：项目管理
+                .clickSecondMenu_myProject()//点击二级菜单：我的项目
                 .switchToNewIframe1("GPPM10", GPPM10Page.class).sleepForSeconds(1);
 
         GP10Page gP10Page = (GP10Page) gPPM10Page.table_td_aClick(0, 0)

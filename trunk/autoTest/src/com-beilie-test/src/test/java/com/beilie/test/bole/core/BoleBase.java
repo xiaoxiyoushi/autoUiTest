@@ -17,8 +17,18 @@ public class BoleBase extends TestCaseBase {
                 .transfer(BdHomePage.class);
     }
 
+    protected BdHomePage cclLogin_ceshi() throws IllegalAccessException, InstantiationException ,InterruptedException{
+        LoginPage loginPage = (LoginPage) engine.createPage("http://192.168.5.215/#/home", LoginPage.class);
+        return (BdHomePage)loginPage
+                .clickAccountLogin().sleepForSeconds(1)
+                .userName("68658226")
+                .password("1")
+                .captcha("1234")
+                .submit()
+                .transfer(BdHomePage.class);
+    }
+
     protected BdHomePage login(String userName, String password) throws IllegalAccessException, InstantiationException ,InterruptedException{
-        //LoginPage loginPage = (LoginPage) engine.createPage("http://192.168.5.215/#/home", LoginPage.class);
         LoginPage loginPage = (LoginPage) engine.createPage("http://192.168.5.215/#/home", LoginPage.class);
         return (BdHomePage)loginPage
                 .clickAccountLogin().sleepForSeconds(1)

@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.beilie:com-beilie-platform-api:1.0.3-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-platform-api/1.0.3-SNAPSHOT/com-beilie-platform-api-1.0.3-20220110.025524-1058.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-platform-api/1.0.3-SNAPSHOT/com-beilie-platform-api-1.0.3-20220114.072508-1060.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-platform-api/1.0.3-SNAPSHOT/com-beilie-platform-api-1.0.3-20220110.025524-1058-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-platform-api/1.0.3-SNAPSHOT/com-beilie-platform-api-1.0.3-20220114.072508-1060-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-platform-api/1.0.3-SNAPSHOT/com-beilie-platform-api-1.0.3-20220110.025524-1058-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-platform-api/1.0.3-SNAPSHOT/com-beilie-platform-api-1.0.3-20220114.072508-1060-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -1,4 +1,3 @@
-/*
 package com.beilie.test.bole.cases.项目部.建项目_分配项目;
 
 import com.beilie.test.bole.core.BoleBase;
@@ -7,7 +6,7 @@ import com.beilie.test.bole.pages.GP.GPXX.GP06Page;
 import com.beilie.test.bole.pages.GP.GPCT01Page;
 import com.beilie.test.bole.pages.GP.GPRP01Page;
 import com.beilie.test.open.PublicClass.Public;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class _02GPRP01发布到贝猎网Test extends BoleBase {
     @Test
@@ -33,4 +32,3 @@ public class _02GPRP01发布到贝猎网Test extends BoleBase {
         gP06Page.checkInform().sleepForSeconds(1);//校对跳到下一页，抓取里面数据 校对；
        }
     }
-*/

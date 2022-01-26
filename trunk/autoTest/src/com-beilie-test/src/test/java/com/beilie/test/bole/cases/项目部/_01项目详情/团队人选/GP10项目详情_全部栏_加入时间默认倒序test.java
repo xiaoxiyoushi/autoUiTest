@@ -4,13 +4,14 @@ import com.beilie.test.bole.core.BoleBase;
 import com.beilie.test.bole.pages.BdHomePage;
 import com.beilie.test.bole.pages.GP.GPPM.GPPM10Page;
 import com.beilie.test.bole.pages.GP.GPXX.GP10Page;
-import org.junit.Test;
+import org.testng.annotations.Test;
+
 import java.util.Map;
 
-public class GP10项目详情_全部栏_加入时间默认倒序Test extends BoleBase {
-    //@Test
-    public void test ()throws IllegalAccessException, InstantiationException, InterruptedException,Exception {
-        BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
+public class GP10项目详情_全部栏_加入时间默认倒序test extends BoleBase {
+    @Test
+    public void GP10项目详情_全部栏_加入时间默认倒序 ()throws IllegalAccessException, InstantiationException, InterruptedException,Exception {
+        BdHomePage bdHomePage = cclLogin_ceshi().sleepForSeconds(3);
 
         bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
         GPPM10Page gPPM10Page = (GPPM10Page) bdHomePage

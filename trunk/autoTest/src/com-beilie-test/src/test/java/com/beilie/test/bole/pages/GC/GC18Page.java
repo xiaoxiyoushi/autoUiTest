@@ -40,4 +40,9 @@ public class GC18Page extends Public<GC18Page> {
 
         return this;
     }
+
+    public GC18Page createProjectBtn(){
+        this.clickSpan("创建项目");
+        return this;
+    }
 }
