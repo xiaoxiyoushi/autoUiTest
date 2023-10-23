@@ -22,26 +22,28 @@ public class GC11Page extends Public<GC11Page> {
 
      //点击所属行业
     public GC11Page clickIndustry(){
-        element(1).findByClassName("industryIcon").click();
+        i_classClick("select-editor-input__icon cursor-pointer ivu-icon bole icon-industry");
         return this;
     }
 
     //点击联系地址
     public GC11Page clickAddress(){
-        this.findByClassName("locationIcon").click();
+        i_classClick("select-editor-input__icon cursor-pointer ivu-icon bole icon-region");
         return this;
     }
 
     //输入联系地址
     public GC11Page inputAddress(){
-        //element(3).findListByTagName("input").get(1).sendKeys("aaaa");
-        this.findByXPath("//*[@id=\"bg\"]/div[2]/div/form/div[4]/div/div/div/div/div[2]/div/div/div/input").sendKeys("aaaa");
+        this.findByXPath("//input[@placeholder=\"请填写详细地址\"]")
+                .sendKeys("aaaa");
         return this;
     }
 
     //点击确定
     public GC11Page clickSave(){
-        this.findById("GC11_app").findByClassName("ivu-btn-warning").click();
+        this.findListByXPath("//div[@class=\"ef-modal-page-footer ef-page-footer\"]/button")
+                .get(1)
+                .click();
         return this;
     }
 

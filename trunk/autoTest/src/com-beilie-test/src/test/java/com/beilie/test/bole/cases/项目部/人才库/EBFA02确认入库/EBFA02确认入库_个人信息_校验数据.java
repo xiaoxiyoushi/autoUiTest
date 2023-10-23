@@ -7,7 +7,7 @@ import com.beilie.test.bole.pages.EB.EBFA02Page;
 import com.beilie.test.bole.pages.EB.EBFA04Page;
 import com.beilie.test.bole.pages.EB.EBFA08Page;
 import com.beilie.test.open.PublicClass.Public;
-import org.junit.Test;
+import org.testng.annotations.Test;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,15 +15,15 @@ import java.util.List;
 public class EBFA02确认入库_个人信息_校验数据 extends BoleBase {
     @Test
     public void test ()throws IllegalAccessException, InstantiationException, InterruptedException, InvocationTargetException{
-        BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
+        BdHomePage bdHomePage = login("ccGaoFan_userName", "ccGaoFan_password").sleepForSeconds(3);
 
         bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
-        EBFA04Page eBFA04Page = (EBFA04Page) bdHomePage
+        EBFA04Page eBFA04Page = (EBFA04Page) bdHomePage.sleepForSeconds(1)
                 .clickFirstMenu_resumeLibrary().sleepForSeconds(1)//点击一级菜单：中文简历库
-                .clickSecondMenu_resumeSearch()//点击二级菜单：简历搜索
+                .clickSecondMenu_resumeSearch().sleepForSeconds(1)//点击二级菜单：简历搜索
                 .switchToNewIframe1("EBFA04", EBFA04Page.class).sleepForSeconds(1);
 
-        String randomStr= Public.generateString(8);//8位随机字符串
+        int randomStr= Public.generateNumber2(8);//8位随机字符串
         int randomNum=Public.generateNumber1(20);//0-19位随机数
         int sex_numb = 1+Public.generateNumber1(2);//1-2位随机数
         String sex_str="";
@@ -32,9 +32,9 @@ public class EBFA02确认入库_个人信息_校验数据 extends BoleBase {
         String age_str=age_numb+"";
 
         String name="刘敏"+randomStr;
-        String phone="13390833"+randomStr;
+        String phone="3"+ Public.GenerateNumber(10);
         String mailbox="liumin-light@foxmail.com"+randomStr;
-        String mustKeywords="18390833293";
+        String mustKeywords="18390833299";
 
         EBFA02Page eBFA02Page=(EBFA02Page)eBFA04Page
                 .sendInputPlaceholder("请输入必须包含的关键词,用空格隔开",mustKeywords)
@@ -61,9 +61,8 @@ public class EBFA02确认入库_个人信息_校验数据 extends BoleBase {
                 .clearInput("请输入公司名称")//清掉原来公司名称
                 .sendInputPlaceholder("请输入公司名称","长沙睿展数据科技有限公司")//输入公司名称
 
-                .i_classClick("ivu-icon bole select-editor-input__icon icon-function cursor-pointer").sleepForSeconds(1)//点击目前职能的icon
-                //.label_followingDiv_clickI("目前职能：").sleepForSeconds(1)//点击目前职能的icon
-                .functionSingleComponent()//选择职能组件
+                /*.workExperience_function_click()//点击目前职能的icon
+                .functionSingleComponent()//选择职能组件*/
 
                 /*.label_followingDiv_clickI("所在行业：")//点击所在行业的icon
                 .industryComponent()//选择行业组件*/
@@ -71,7 +70,7 @@ public class EBFA02确认入库_个人信息_校验数据 extends BoleBase {
                 /*.label_followingDiv_clickI("现居住地：")//点击现居住地的icon
                 .placeComponent_getValue();//获取工作地点值*/
 
-                .input_bcakSpace("请选择现居住地",1).sleepForSeconds(1)//清掉现居住地
+                //.input_bcakSpace("请选择现居住地",1).sleepForSeconds(1)//清掉现居住地
                 .inputPlaceholder_parentDiv_parentDiv_iClick("请选择现居住地").sleepForSeconds(1)//点击现居住地的icon
                 .workPlaceComponent()//选择地点组件
                 .label_followingDiv_spanValue("现居住地：");//获取工作地点值

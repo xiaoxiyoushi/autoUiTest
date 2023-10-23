@@ -3,19 +3,25 @@ package com.beilie.test.bole.pages.GP.GPXX;
 import com.beilie.test.open.PublicClass.Public;
 
 public class GP11Page extends Public<GP11Page> {
-    public GP11Page selectTime_Many(String str){
+    public GP11Page selectTime_Many(String str) throws InterruptedException{
         this.findByXPath("//label[text()=\""+str+"\"]/following-sibling::div//input").click();
-        this.findByXPath("//label[text()=\""+str+"\"]/following-sibling::div")
-                .findByClassName("ivu-date-picker-cells-cell-next-month").click();
+        this.sleepForSeconds(1);
 
-        this.findByXPath("//span[text()=\"确定\"]").click();//点击【确定】按钮
+        this.findListByClassName("ivu-date-picker-transfer")
+        .get(0)
+        .findByClassName("ivu-date-picker-cells-cell-next-month")
+        .click();
+
+        buttonClass_click("timeConfirm_class");//点击【确定】按钮
         return this;
     }
 
-    public GP11Page confirmTime(String str){
+    public GP11Page confirmTime(String str,int i){
         this.findByXPath("//label[text()=\""+str+"\"]/following-sibling::div//input").click();
-        this.findByXPath("//label[text()=\""+str+"\"]/following-sibling::div")
-                .findByClassName("ivu-date-picker-cells-cell-today").click();
+        this.findListByClassName("ivu-date-picker-transfer")
+                .get(i)
+                .findByClassName("ivu-date-picker-cells-cell-today")
+                .click();
 
         return this;
     }
@@ -31,7 +37,7 @@ public class GP11Page extends Public<GP11Page> {
     }
 
     public GP11Page clickStatusInput(String str){
-        this.findByXPath("//label[text()=\""+str+"\"]/following-sibling::div//span[2]").click();
+        this.findByXPath("//label[text()=\""+str+"\"]/following-sibling::div//span").click();
 
         return this;
     }

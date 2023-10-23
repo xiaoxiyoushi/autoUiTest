@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+    <parameter name ="username" value="18513199586"/>
+    <parameter name ="pass" value="111111"/>
+    <test name="项目部._01项目详情.团队人选">
+
+        <classes>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA05我的收藏夹.EBFA05我的人才库_人选搜索结果_添加标签"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA03人选搜索.EBFA03人选搜索_人选搜索结果_加入项目_添加成功"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA05我的收藏夹.EBFA05我的收藏夹_新增备注"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA05我的收藏夹.EBFA05我的人才库_人选搜索结果_加入项目_校验必填项"/>
+
+            <class name="com.beilie.test.bole.cases.客户部.我的客户._01GHHP00_添加单个客户">
+                <methods>
+                    <include name="_01GHHP00_添加单个客户"/>
+                </methods>
+            </class>
+            <class name="com.beilie.test.bole.cases.客户部.我的客户._02GC01_创建草稿合同"/>
+            <class name="com.beilie.test.bole.cases.客户部.我的客户._03GC12提交合同"/>
+            <class name="com.beilie.test.bole.cases.审核专员.GC37待审核的合同"/>
+
+            <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.删除一级合伙人"/>
+            <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.删除二级合伙人"/>
+            <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.删除三级合伙人"/>
+            <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.新增一级合伙人"/>
+            <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.新增二级合伙人"/>
+            <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.新增三级合伙人"/>
+            <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.搜索一级合伙人"/>
+            <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.搜索二级合伙人"/>
+            <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.搜索三级合伙人"/>
+            <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.备注一级合伙人"/>
+            <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.备注二级合伙人"/>
+            <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.备注三级合伙人"/>
+
+            <class name="com.beilie.test.bole.cases.收款.CCL._01GPRV01收款计划_创建收款"/>
+            <class name="com.beilie.test.bole.cases.收款.CCL._02GPRV01收款计划_确认付款"/>
+
+            <!--EBFA03人选搜索-->
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA03人选搜索.EBFA03人选搜索_举报简历"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA03人选搜索.EBFA03人选搜索_收藏人选"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA03人选搜索.EBFA03人选搜索_搜索职位名称"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA03人选搜索.EBFA03人选搜索_搜索推荐职位"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA03人选搜索.EBFA03人选搜索_搜索学历"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA03人选搜索.EBFA03人选搜索_搜索地点"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA03人选搜索.EBFA03人选搜索_人选搜索结果_添加标签"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA03人选搜索.EBFA03人选搜索_人选搜索结果_标签"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA03人选搜索.EBFA03人选搜索_人选搜索结果_hover人选姓名"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA03人选搜索.EBFA03人选搜索_人选搜索结果_点击人选姓名"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA03人选搜索.EBFA03人选搜索_人选搜索结果_加入项目_搜索操作"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA03人选搜索.EBFA03人选搜索_人选搜索结果_加入项目_校验必填项"/>
+            <!--<class name="com.beilie.test.bole.cases.项目部.人才库.EBFA03人选搜索.EBFA03人选搜索_人选搜索结果_加入项目_添加成功"/>-->
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA03人选搜索.EBFA03人选搜索_清空"/>
+
+            <class name="com.beilie.test.bole.cases.项目部.项目执行._01GP10项目详情_项目执行_到发送推荐报告"/>
+            <!--<class name="com.beilie.test.bole.cases.项目部.项目执行._02GP10项目详情_项目执行_到新建Offer"/>-->
+            <!--<class name="com.beilie.test.bole.cases.项目部.项目执行._03GP10项目详情_项目执行_提交offer到提交入职"/>-->
+
+
+
+            <class name="com.beilie.test.bole.cases.项目部.建项目_分配项目._01GP00创建项目Test"/>
+            <class name="com.beilie.test.bole.cases.项目部.建项目_分配项目._03GP06设置启投时间"/>
+            <class name="com.beilie.test.bole.cases.项目部.建项目_分配项目._04GP05设置项目操作顾问"/>
+
+            <class name="com.beilie.test.bole.cases.项目部._01项目详情.团队人选.GP10项目详情_全部栏_加入时间默认倒序Test"/>
+            <class name="com.beilie.test.bole.cases.项目部._01项目详情.团队人选.GP10项目详情_新增简历_加入项目Test"/>
+            <class name="com.beilie.test.bole.cases.项目部._01项目详情.团队人选.GP10项目详情_添加备注Test"/>
+
+            <class name="com.beilie.test.bole.cases.项目部._01项目详情.设置职位状态.GP10项目详情_关闭职位Test"/>
+            <class name="com.beilie.test.bole.cases.项目部._01项目详情.设置职位状态.GP10项目详情_恢复职位Test"/>
+            <class name="com.beilie.test.bole.cases.项目部._01项目详情.设置职位状态.GP10项目详情_暂停职位Test"/>
+
+            <class name="com.beilie.test.bole.cases.项目部._01项目详情.项目详情.GP10项目详情_项目要点Test"/>
+            <class name="com.beilie.test.bole.cases.项目部._02项目候选人详情.GP10项目详情_点击预览绑定报告Test"/>
+            <class name="com.beilie.test.bole.cases.项目部._02项目候选人详情.GP14项目候选人详情_备注人选基本信息Test"/>
+
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA01上传简历.EBFA01上传简历_个人信息模块_校验必填项"/>
+            <class  name="com.beilie.test.bole.cases.项目部.人才库.EBFA01上传简历.EBFA01上传简历_工作经历_校验必填项"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA01上传简历.EBFA01上传简历_教育信息_校验必填项"/>
+
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA04简历搜索.EBFA04简历搜索_可能包含关键词_简历信息卡片"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA04简历搜索.EBFA04简历搜索_必须包含关键词_简历信息卡片"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA04简历搜索.EBFA04简历搜索_搜索公司名称"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA04简历搜索.EBFA04简历搜索_搜索文件名"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA04简历搜索.EBFA04简历搜索_简历搜索结果_hover人选姓名"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA04简历搜索.EBFA04简历搜索_简历搜索结果_点击人选姓名"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA04简历搜索.EBFA04简历搜索_清空_按钮文案是清空_可点击"/>
+
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA05我的收藏夹.EBFA05我的人才库_取消收藏"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA05我的收藏夹.EBFA05我的人才库_可能包含关键词_人选信息"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA05我的收藏夹.EBFA05我的人才库_必须包含关键词_人选信息"/>
+            <!--<class name="com.beilie.test.bole.cases.项目部.人才库.EBFA05我的收藏夹.EBFA05我的收藏夹_新增备注"/>-->
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA05我的收藏夹.EBFA05我的人才库_清空_按钮文案是清空_可点击"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA05我的收藏夹.EBFA05我的人才库_我的分组_文案"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA05我的收藏夹.EBFA05我的人才库_人选搜索结果_标签"/>
+            <!--<class name="com.beilie.test.bole.cases.项目部.人才库.EBFA05我的收藏夹.EBFA05我的人才库_人选搜索结果_添加标签"/>-->
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA05我的收藏夹.EBFA05我的人才库_人选搜索结果_hover人选姓名"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA05我的收藏夹.EBFA05我的人才库_人选搜索结果_点击人选姓名"/>
+            <!--<class name="com.beilie.test.bole.cases.项目部.人才库.EBFA05我的收藏夹.EBFA05我的人才库_人选搜索结果_加入项目_校验必填项"/>-->
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA05我的收藏夹.EBFA05我的人才库_人选搜索结果_加入项目_搜索操作"/>
+            <class name="com.beilie.test.bole.cases.项目部.人才库.EBFA05我的收藏夹.EBFA05我的人才库_人选搜索结果_搜索分组"/>
+
+            <class name="com.beilie.test.bole.cases.项目部._01项目详情.设置项目进程.GP10项目详情_offer谈判中Test"/>
+            <class name="com.beilie.test.bole.cases.项目部._01项目详情.设置项目进程.GP10项目详情_上班保证期Test"/>
+            <class name="com.beilie.test.bole.cases.项目部._01项目详情.设置项目进程.GP10项目详情_中止Test"/>
+            <class name="com.beilie.test.bole.cases.项目部._01项目详情.设置项目进程.GP10项目详情_已完成Test"/>
+            <class name="com.beilie.test.bole.cases.项目部._01项目详情.设置项目进程.GP10项目详情_暂停Test"/>
+        </classes>
+
+    <!--<classes>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.删除一级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.删除二级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.删除三级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.新增一级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.新增二级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.新增三级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.搜索一级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.搜索二级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.搜索三级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.备注一级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.备注二级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.备注三级合伙人"/>
+    </classes>-->
+
+    </test>
+    <listeners>
+        <listener class-name="com.beilie.test.util.TestReport"/>
+    </listeners>
+</suite>

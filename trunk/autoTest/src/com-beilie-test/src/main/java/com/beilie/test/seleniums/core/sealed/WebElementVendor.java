@@ -9,9 +9,12 @@ import java.util.List;
 
 public class WebElementVendor extends WebAbstractVendor implements Vendor {
     @Override
-    public void waitFor(Integer timeOutInSeconds, ExpectedCondition<Boolean> condition) {
-        throw new RuntimeException();
+    public void waitFor(Integer timeOutInSeconds, String str) {
+
     }
+    /*public void waitFor(Integer timeOutInSeconds, ExpectedCondition<Boolean> condition) {
+
+    }*/
 
     @Override
     public void refresh() {
@@ -22,8 +25,13 @@ public class WebElementVendor extends WebAbstractVendor implements Vendor {
     }
 
     @Override
-    public void execute_script() {
-    }
+    public void execute_script(){}
+
+    @Override
+    public void execute_script1(){}
+
+    @Override
+    public void execute_script2(String str){}
 
     @Override
     public void sendKeys(CharSequence... var1) {
@@ -44,9 +52,9 @@ public class WebElementVendor extends WebAbstractVendor implements Vendor {
         this.myDriver().submit();
     }
 
-    //@Override
-    /*public void execute_script() {
-        this.myDriver().e;
+    /*@Override
+    public void execute_script() {
+        this.myDriver();
     }*/
 
     @Override

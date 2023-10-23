@@ -33,8 +33,9 @@ public class GC02Page extends Public<GC02Page> {
 
     //点击保存
     public GC02Page clickSave(){
-        this.findByClassName("ivu-form-label-right")
-                .findByClassName("ivu-btn-primary").click();
+        this.findListByXPath("//div[@class=\"ef-modal-page-footer ef-page-footer\"]/button")
+                .get(1)
+                .click();
         return this;
     }
 

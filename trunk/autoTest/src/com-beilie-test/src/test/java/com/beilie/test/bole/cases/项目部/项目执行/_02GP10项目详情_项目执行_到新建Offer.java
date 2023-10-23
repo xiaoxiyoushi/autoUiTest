@@ -6,7 +6,7 @@ import com.beilie.test.bole.pages.EQ.EQQB05Page;
 import com.beilie.test.bole.pages.GP.GPPC01Page;
 import com.beilie.test.bole.pages.GP.GPPM.GPPM10Page;
 import com.beilie.test.bole.pages.GP.GPXX.*;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class _02GP10项目详情_项目执行_到新建Offer extends BoleBase {
     @Test
@@ -16,14 +16,15 @@ public class _02GP10项目详情_项目执行_到新建Offer extends BoleBase {
     }
 
     public BdHomePage login() throws IllegalAccessException, InstantiationException, InterruptedException {
-        BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
+        BdHomePage bdHomePage = login("ccl_userName", "ccl_password").sleepForSeconds(3);
         return bdHomePage;
     }
 
     public void process(BdHomePage bdHomePage) throws IllegalAccessException, InstantiationException, InterruptedException {
+        bdHomePage.closeHideMenue().sleepForSeconds(1);//关闭设置隐藏菜单的弹窗
         GPPM10Page gPPM10Page = (GPPM10Page) bdHomePage
-                .clickMenus("\n" +
-                        "          项目管理", "我的项目").sleepForSeconds(2)//点击菜单栏
+                .clickFirstMenu_projectManage().sleepForSeconds(1)//点击一级菜单：项目管理
+                .clickSecondMenu_myProject().sleepForSeconds(1)//点击二级菜单：我的项目
                 .switchToNewIframe1("GPPM10", GPPM10Page.class).sleepForSeconds(1);
 
         GP10Page gP10Page = (GP10Page) gPPM10Page
@@ -49,25 +50,31 @@ public class _02GP10项目详情_项目执行_到新建Offer extends BoleBase {
                 .h2_inputClick("常用地址中选择并添加到面试地址")
                 .labelClick("初试")
                 .labelClick("面试")
-                .label_followingDiv_clickInput("提醒对象：")
-                .secondTask("cc41")
-                .clickConfirm()
+                .label_followingDiv_clickInput("提醒对象：").sleepForSeconds(1)
+                //.clickSpan("四部顾问1号")
+                .selectReminder()
+                //.secondTask("四部顾问1号")
+                .h2_divParent_followingdiv_Click("请选择：", "gp12_reminderComfirm")
                 .clickSpan("保存").sleepForSeconds(1)
-                .clickSubmit()
+                .spanClick("gp12_submit")
                 .switchToNewIframe(1, GP14Page.class).sleepForSeconds(3);
+
 
         GP54Page gP54Page = (GP54Page) gP14Page_1
                 //点击【确认到场情况-高超xxxx-卖麦芽糖的-上海麦芽糖公司】按钮
-                .carryButton_click()
+                .confirmAttendanceButton_click()
                 .switchToNewIframe(2, GP54Page.class).sleepForSeconds(3);
 
         GP52Page gP52Page = (GP52Page) gP54Page.clickInputPlaceholder("请选择时间")
-                .scrollBar().sleepForSeconds(1)
+                //.scrollBar().sleepForSeconds(1)
                 .selectTime().sleepForSeconds(1)
-                .clickSubmit()
+                .spanClick("gp54_submit").sleepForSeconds(2)
+                //.clickSubmit()
                 .switchToNewIframe(2, GP52Page.class).sleepForSeconds(3);
 
-        EQQB05Page eQQB05Page = (EQQB05Page) gP52Page.secondTask("去完成>>>")
+        EQQB05Page eQQB05Page = (EQQB05Page) gP52Page
+                //.secondTask("去完成>>>")
+                .em_click("gp52_goFinish")
                 .switchToNewIframe(3, EQQB05Page.class).sleepForSeconds(3);
 
         GP52Page gP52Page_1 = (GP52Page) eQQB05Page
@@ -75,7 +82,9 @@ public class _02GP10项目详情_项目执行_到新建Offer extends BoleBase {
                 .clickSpan("是")
                 .switchToNewIframe(2, GP52Page.class).sleepForSeconds(3);
 
-        GP14Page gP14Page_3 = (GP14Page) gP52Page_1.clickSubmit()
+        GP14Page gP14Page_3 = (GP14Page) gP52Page_1
+                //.clickSubmit()
+                .buttonClass_click("gp52_submit_class")
                 .switchToNewIframe(1, GP14Page.class).sleepForSeconds(3);
 
         GP53Page gP53Page = (GP53Page) gP14Page_3
@@ -84,7 +93,9 @@ public class _02GP10项目详情_项目执行_到新建Offer extends BoleBase {
                 .sleepForSeconds(2)
                 .switchToNewIframe(2, GP53Page.class).sleepForSeconds(1);
 
-        EQQB05Page eQQB05Page_1 = (EQQB05Page) gP53Page.secondTask("去完成>>>")
+        EQQB05Page eQQB05Page_1 = (EQQB05Page) gP53Page
+                .em_click("gp52_goFinish")
+                //.secondTask("去完成>>>")
                 .switchToNewIframe(3, EQQB05Page.class).sleepForSeconds(3);
 
         GP53Page gP53Page_1 = (GP53Page) eQQB05Page_1
@@ -92,7 +103,9 @@ public class _02GP10项目详情_项目执行_到新建Offer extends BoleBase {
                 .clickSpan("是")
                 .switchToNewIframe(2, GP53Page.class).sleepForSeconds(3);
 
-        GP14Page gP14Page_5 = (GP14Page) gP53Page_1.clickSubmit()
+        GP14Page gP14Page_5 = (GP14Page) gP53Page_1
+                .buttonClass_click("gp52_submit_class")
+                // .clickSubmit()
                 .switchToNewIframe(1, GP14Page.class).sleepForSeconds(3);
 
         GPPC01Page gPPC01Page = (GPPC01Page) gP14Page_5
@@ -101,7 +114,7 @@ public class _02GP10项目详情_项目执行_到新建Offer extends BoleBase {
                 //在“请确定是否进行背景调查”弹窗，点击【确定】按钮
                 .button_classClick("ivu-btn ivu-btn-primary ivu-btn-large").sleepForSeconds(1)
                 //在签订offer小弹窗，点击【确定】按钮
-                .tanchuang_quedingButton_click()
+                .tanchuang_quedingButton_click().sleepForSeconds(1)
                 .switchToNewIframe(2, GPPC01Page.class).sleepForSeconds(1);
 
         GP14Page gP14Page_6 = (GP14Page) gPPC01Page

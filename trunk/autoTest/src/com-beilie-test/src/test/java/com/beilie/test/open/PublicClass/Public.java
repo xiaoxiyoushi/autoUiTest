@@ -2,6 +2,7 @@ package com.beilie.test.open.PublicClass;
 
 import com.beilie.test.seleniums.core.Element;
 import com.beilie.test.seleniums.core.UIPage;
+import com.beilie.test.util.ProUtil;
 import org.apache.commons.lang.StringUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -18,6 +19,8 @@ import java.util.List;
 import java.util.*;
 
 public class Public<T extends Public> extends UIPage<T> {
+    ProUtil pro = new ProUtil("element.properties");
+
     //随机生成字符串
     public static final String ALLCHAR = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -29,6 +32,19 @@ public class Public<T extends Public> extends UIPage<T> {
         }
         return sb.toString();
     }
+
+    //随机生成字符串
+    public static final String ALLNUMBER = "0123456789";
+
+    public static String GenerateNumber(int length) {
+        StringBuffer sb = new StringBuffer();
+        Random random = new Random();
+        for (int i = 0; i < length; i++) {
+            sb.append(ALLNUMBER.charAt(random.nextInt(ALLNUMBER.length())));
+        }
+        return sb.toString();
+    }
+
 
     /*
     要产生随机数，可以使用Java api中java.lang包中的Math类.Math类以静态方法的方式提供常用的数学方法，
@@ -71,6 +87,50 @@ public class Public<T extends Public> extends UIPage<T> {
     }
 
     /*
+    a标签
+     */
+    //根据a标签的内容定位到该元素,并且点击
+    public T aClick(String key) {
+        String locator = pro.getPro(key);
+        this.findByXPath("//a[text()=\"" + locator + "\"]").click();
+        return (T) this;
+    }
+
+    //根据a标签的内容定位到该元素，再获取它后面的兄弟
+    public T firstTask(String str) {
+        this.findByXPath("//a[text()=\"" + str + "\"]/following-sibling::span").click();
+        return (T) this;
+    }
+
+    //根据a标签的内容定位到该元素,并且点击
+    public T secondTask(String str) {
+        this.findByXPath("//a[text()=\"" + str + "\"]").click();
+        return (T) this;
+    }
+
+    //根据a标签的内容定位到该元素,获取该元素的值
+    public T getValue(String str) {
+        String value = this.findByXPath("//a[text()=\"" + str + "\"]").getText();
+        return (T) this;
+    }
+
+    public T clickA(String str, int i) {
+        this.findListByXPath("//a[text()=\"" + str + "\"]").get(i).click();
+        return (T) this;
+    }
+
+    public T a_click(String str) {
+        this.findByXPath("//a[text()=\"" + str + "\"]").click();
+        return (T) this;
+    }
+
+    //根据a标签的class属性定位到该元素,并且点击
+    public T a_classClick(String str) {
+        this.findByXPath("//a[@class=\"" + str + "\"]").click();
+        return (T) this;
+    }
+
+    /*
     i标签
      */
     public T i_class_click() {
@@ -79,6 +139,12 @@ public class Public<T extends Public> extends UIPage<T> {
     }
 
     //根据i标签的class属性定位到该元素,并且点击
+    public T iClass_click(String key) {
+        String locator = pro.getPro(key);
+        this.findByXPath("//i[@class=\"" + locator + "\"]").click();
+        return (T) this;
+    }
+
     public T i_classClick(String class_) {
         this.findByXPath("//i[@class=\"" + class_ + "\"]").click();
         return (T) this;
@@ -424,46 +490,16 @@ public class Public<T extends Public> extends UIPage<T> {
     }*/
 
     /*
-    a标签
-     */
-    //根据a标签的内容定位到该元素，再获取它后面的兄弟
-    public T firstTask(String str) {
-        this.findByXPath("//a[text()=\"" + str + "\"]/following-sibling::span").click();
-        return (T) this;
-    }
-
-    //根据a标签的内容定位到该元素,并且点击
-    public T secondTask(String str) {
-        this.findByXPath("//a[text()=\"" + str + "\"]").click();
-        return (T) this;
-    }
-
-    //根据a标签的内容定位到该元素,获取该元素的值
-    public T getValue(String str) {
-        String value = this.findByXPath("//a[text()=\"" + str + "\"]").getText();
-        return (T) this;
-    }
-
-    public T clickA(String str, int i) {
-        this.findListByXPath("//a[text()=\"" + str + "\"]").get(i).click();
-        return (T) this;
-    }
-
-    public T a_click(String str) {
-        this.findByXPath("//a[text()=\"" + str + "\"]").click();
-        return (T) this;
-    }
-
-    //根据a标签的class属性定位到该元素,并且点击
-    public T a_classClick(String str) {
-        this.findByXPath("//a[@class=\"" + str + "\"]").click();
-        return (T) this;
-    }
-
-    /*
     input标签，根据placeholder属性的值
      */
     //输入input框
+    public T inputPlaceholder_send(String key, String value) {
+        String locator = pro.getPro(key);
+        String locator1 = pro.getPro(value);
+        this.findByXPath("//input[@placeholder=\"" + locator + "\"]").sendKeys(locator1);
+        return (T) this;
+    }
+
     public T sendInputPlaceholder(String str, String value) {
         this.findByXPath("//input[@placeholder=\"" + str + "\"]").sendKeys(value);
         return (T) this;
@@ -506,6 +542,12 @@ public class Public<T extends Public> extends UIPage<T> {
     span标签
      */
     //根据span标签的内容定位到该元素，并且点击该元素
+    public T spanClick(String key) {
+        String locator = pro.getPro(key);
+        this.findByXPath("//span[text()=\""+ locator + "\"]").click();
+        return (T) this;
+    }
+
     public T clickSpan(String str) {
         this.findByXPath("//span[text()=\"" + str + "\"]").click();
         return (T) this;
@@ -532,6 +574,11 @@ public class Public<T extends Public> extends UIPage<T> {
     //根据span标签的内容定位到该元素，再定位前一个兄弟元素label,再点击
     public T span_precedingLabel_Click(String str) {
         this.findByXPath("//span[text()=\"" + str + "\"]/preceding-sibling::label").click();
+        return (T) this;
+    }
+
+    public T listSpan_Click(String str,int n) {
+        this.findListByXPath("//span[text()=\"" + str + "\"]").get(n).click();
         return (T) this;
     }
 
@@ -605,6 +652,12 @@ public class Public<T extends Public> extends UIPage<T> {
         return value;
     }
 
+    public T spanClass_Click(String key) {
+        String locator = pro.getPro(key);
+        this.findByXPath("//span[@class=\"" + locator + "\"]").click();
+        return (T) this;
+    }
+
     public T spanClass_click(String str) {
         this.findByXPath("//span[@class=\"" + str + "\"]").click();
         return (T) this;
@@ -632,6 +685,12 @@ public class Public<T extends Public> extends UIPage<T> {
     }
 
     //根据button标签的class定位到该元素，并且点击
+    public T buttonClass_click(String str) {
+        String locator = pro.getPro(str);
+        this.findByXPath("//button[@class=\"" + locator + "\"]").click();
+        return (T) this;
+    }
+
     public T button_classClick(String str) {
         this.findByXPath("//button[@class=\"" + str + "\"]").click();
         return (T) this;
@@ -652,7 +711,7 @@ public class Public<T extends Public> extends UIPage<T> {
      */
     //根据ul标签的class定位到该元素，随机获取其子标签li,并且点击
     public T ul_clickLi(int n) {
-        this.findByClassName("ivu-select-dropdown-list")
+        this.findListByClassName("ivu-select-dropdown-list").get(1)
                 .findListByTagName("li").get(n).click();
         return (T) this;
     }
@@ -668,8 +727,20 @@ public class Public<T extends Public> extends UIPage<T> {
     li标签
      */
     //根据li标签的内容定位到该元素，并且点击该元素
+    public T liClick(String key) {
+        String locator = pro.getPro(key);
+        this.findByXPath("//li[text()=\"" + locator + "\"]").click();
+        return (T) this;
+    }
+
     public T Li_click(String str) {
         this.findByXPath("//li[text()=\"" + str + "\"]").click();
+        return (T) this;
+    }
+
+    public T liCliss(String key) {
+        String locator = pro.getPro(key);
+        this.findByXPath("//li[@class=\"" + locator + "\"]").click();
         return (T) this;
     }
 
@@ -702,14 +773,16 @@ public class Public<T extends Public> extends UIPage<T> {
     }
 
     //根据div标签的内容 定位到该元素，click该元素
+    public T divClick(String key) {
+        String locator = pro.getPro(key);
+        this.findByXPath("//div[text()=\"" + locator + "\"]").click();
+        return (T) this;
+    }
+
     public T div_click(String str) {
         this.findByXPath("//div[text()=\"" + str + "\"]").click();
         return (T) this;
     }
-    /*public T divParent_click(String str){
-        this.findByXPath("//div[text()=\""+str+"\"]/parent::div/parent::div//div[text()=\"确定\"]").click();
-        return (T) this;
-    }*/
 
     //根据div标签的内容 定位到该元素，获取该元素的值
     public T div_getValue(String str) {
@@ -728,12 +801,32 @@ public class Public<T extends Public> extends UIPage<T> {
     }
 
     //根据div标签的class，并且点击
+    public T divClass_click(String key) {
+        String locator = pro.getPro(key);
+        this.findByXPath("//div[@class=\"" + locator + "\"]").click();
+        return (T) this;
+    }
+
+    public T divsClass_click(String key,int n,String tag,int m) {
+        String locator = pro.getPro(key);
+        this.findListByClassName(locator).get(n)
+                .findListByTagName(tag).get(m)
+                .click();
+        return (T) this;
+    }
+
+    public T divId_buttonClass_click(String str1,String str2) {
+        this.findByXPath("//div[@id=\"" + str1 + "\"]//button[@class=\""+str2+"\"]").click();
+        return (T) this;
+    }
+
     public T divClass(String str) {
         this.findByXPath("//div[@class=\"" + str + "\"]").click();
         return (T) this;
     }
 
     //根据div标签的class 定位到下级a元素，并且点击
+
     public T div_class_(String str) {
         this.findByXPath("//div[@class=\"" + str + "\"]//a").click();
         return (T) this;
@@ -744,9 +837,39 @@ public class Public<T extends Public> extends UIPage<T> {
         return (T) this;
     }
 
+    public T divClass_button(String key) {
+        String locator = pro.getPro(key);
+        this.findByXPath("//div[@class=\"" + locator + "\"]//button").click();
+        return (T) this;
+    }
+
+    public T div_class_buttons(String str) {
+        this.findByXPath("//div[@class=\"" + str + "\"]/button[2]").click();
+        return (T) this;
+    }
+
     public T divClass_spanClick(String str) {
         this.findByXPath("//div[@class=\"" + str + "\"]/span").click();
         return (T) this;
+    }
+
+    public T divClass_iClick(String str) {
+        this.findByXPath("//div[@class=\"" + str + "\"]/i").click();
+        return (T) this;
+    }
+
+
+    public T div_class_spans(String key,int i) {
+        String locator = pro.getPro(key);
+        this.findListByXPath("//div[@class=\"" + locator + "\"]//span")
+                .get(i)
+                .click();
+        return (T) this;
+    }
+
+    public String divClass_A(String key) {
+        String locator = pro.getPro(key);
+        return this.findByXPath("//div[@class=\"" + locator + "\"]//a").getText();
     }
 
     public String divClass_value(String str) {
@@ -789,8 +912,19 @@ public class Public<T extends Public> extends UIPage<T> {
         return (T) this;
     }
 
+    public T divText_parentDiv_precedingA_click(String key) {
+        String locator = pro.getPro(key);
+        this.findByXPath("//div[text()=\"" + locator + "\"]/parent::div/preceding-sibling::a").click();
+        return (T) this;
+    }
+
     public T div_parentDiv_precedingA_click(String str) {
         this.findByXPath("//div[text()=\"" + str + "\"]/parent::div/preceding-sibling::a").click();
+        return (T) this;
+    }
+
+    public T div_parentDiv_parentDiv_followingDiv_spanClick(String str, String str1) {
+        this.findByXPath("//div[text()=\"" + str + "\"]/parent::div/parent::div/preceding-sibling::div//span[text()=\" "+ str1+ "\"]").click();
         return (T) this;
     }
 
@@ -811,6 +945,11 @@ public class Public<T extends Public> extends UIPage<T> {
     public T labelClick(String str) {
         this.findByXPath("//label[text()=\"" + str + "\"]").click();
         return (T) this;
+    }
+
+    public String label_parentDiv_div(String str) {
+        return this.findByXPath("//label[text()=\"" + str + "\"]/parent::div//div").getText();
+        //return (T) this;
     }
 
     public String label_followingDiv_spanValue(String str) {
@@ -883,6 +1022,11 @@ public class Public<T extends Public> extends UIPage<T> {
     h2标签
      */
     //根据label标签的alt内容定位到该元素，再点击该元素
+    public T h2_divParent_followingdiv_Click(String a,String str) {
+        String locator = pro.getPro(str);
+        this.findByXPath("//h2[text()=\"" + a + "\"]/parent::div/following-sibling::div//span[text()=\"" + locator + "\"]").click();
+        return (T) this;
+    }
     public T h2_inputClick(String str) {
         this.findByXPath("//h2[text()=\"" + str + "\"]/following-sibling::div//input").click();
         return (T) this;
@@ -908,6 +1052,15 @@ public class Public<T extends Public> extends UIPage<T> {
             //this.findByXPath("//textarea[@placeholder=\""+str+"\"]").sendKeys(Keys.ENTER);
         }
 
+        return (T) this;
+    }
+
+    /*
+    em标签
+     */
+    public T em_click(String key) {
+        String locator = pro.getPro(key);
+        this.findByXPath("//em[text()=\"" + locator + "\"]").click();
         return (T) this;
     }
 
@@ -974,12 +1127,6 @@ public class Public<T extends Public> extends UIPage<T> {
         return (T) this;
     }
 
-    /*public T calendar_currentMonths_label(String str){
-        this.findByXPath("//label[text()=\""+str+"\"]/following-sibling::div")
-                .findByClassName("ivu-date-picker-cells-cell-focused").click();
-        return (T) this;
-    }*/
-
     //当日
     public T label_calendar_today(String str) {
         this.findByXPath("//label[text()=\"" + str + "\"]/following-sibling::div")
@@ -1000,7 +1147,8 @@ public class Public<T extends Public> extends UIPage<T> {
     //先找span
     // 根据月份框前的文字，点击当前月份
     public T calendar_currentMonths_span(String str) {
-        this.findByXPath("//span[text()=\"" + str + "\"]/following-sibling::div")
+        String locator = pro.getPro(str);
+        this.findByXPath("//span[text()=\"" + locator + "\"]/following-sibling::div")
                 .findByClassName("ivu-date-picker-cells-cell-focused").click();
         return (T) this;
     }
@@ -1236,7 +1384,7 @@ public class Public<T extends Public> extends UIPage<T> {
     public T displayWait() {
         //Element element=this.findByClassName("ef-modal-ef-model-confirm-b-span");
         ExpectedCondition<Boolean> e = ExpectedConditions.textToBePresentInElement((WebElement) this.findByClassName("ef-modal-ef-model-confirm-b-span"), "添加到我的收藏夹成功，请前往查看。");
-        this.waitFor(20, e);
+        //this.waitFor(20, e);
         //WebDriver driver = new ChromeDriver();
         //WebDriverWait wait = new WebDriverWait(driver,20);
         //等待直到符合元素文本内容出现
@@ -1259,48 +1407,24 @@ public class Public<T extends Public> extends UIPage<T> {
         return (T) this;
     }
 
+    //将滚动条拉至页面底部
+    public T scrollBar1() {
+        //Element element=this.findListByClassName("ef-panel-wrap").get(0);
+        //element.click();
+        //element.sendKeys(Keys.PAGE_DOWN);
+        //element.sendKeys(Keys.END);
+        //this.findByXPath("//input[@placeholder=\"请选择实际付款时间\"]").click();
+        this.execute_script1();
+        return (T) this;
+    }
+
+    /*public T scrollBar2() {
+        this.execute_script2();
+        return (T) this;
+    }*/
 
     String uuid = UUID.randomUUID().toString();
 
-  /*  public Element elements(int i){
-        Element element=this.findListByXPath("//*[@id=\"home_menus_menuId\"]/child::li").get(i);
-        return element;
-    }
-*/
-
-    /**
-     * 加入项目表
-     *
-     */
-   /* public ArrayList<String> addProjectTable(ArrayList<String> arrayList, int n){
-        //获取表的行数
-        List<Element> elements=this.findListById("selectTable_box").get(n).findByClassName("table_bg").findListByClassName("ivu-table-row");
-        int num=elements.size();
-
-        for(int i=0;i<num;i++){
-            elements.get(i).findByClassName("cursorP").click();
-            try {
-                this.sleepForSeconds(2);
-            } catch (InterruptedException e) {
-            }
-            String joinStatus =  this.findListById("selectTable_box").get(n).findByClassName("table_bg").findListByClassName("ivu-table-row").get(i).findByClassName("weight400").getText();
-            //String joinStatus =  elements.get(i).findByClassName("weight400").getText();
-            if (joinStatus.equals("已加入")) {
-                String clientName1 =  elements.get(i).findListByTagName("span").get(0).getText();//获取第i行的客户名称
-                String projectName1 =  elements.get(i).findListByTagName("span").get(1).getText();//获取第i行的项目名称
-                String clientName1 =  this.findListById("selectTable_box").get(n).findByClassName("table_bg").findListByClassName("ivu-table-row").get(i).findListByTagName("span").get(0).getText();//获取第i行的客户名称
-                String projectName1 =  this.findListById("selectTable_box").get(n).findByClassName("table_bg").findListByClassName("ivu-table-row").get(i).findListByTagName("span").get(1).getText();//获取第i行的项目名称
-                arrayList.add(clientName1);
-                arrayList.add(projectName1);
-                break;
-            } else {
-                //关闭提示框
-                this.findByCssSelector("#ef-modal-ef-model-confirm > div.ef-modal-ef-model-confirm-footer > button").click();
-            }
-        }
-        return arrayList;
-    }
-*/
 
 //关闭页面
     public T closePage() {

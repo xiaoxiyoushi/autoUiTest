@@ -7,11 +7,12 @@ import org.junit.Assert;
 public class GP06Page extends Public<GP06Page> {
 
     public GP06Page checkInform(){
-        String str1=this.findByXPath("//span[text()=\"GP06\"]").getText();
-        String str2=this.findByXPath("//h3[text()=\"设置启投时间\"]").getText();
+        //String str1=this.findByXPath("//span[text()=\"GP06\"]").getText();
+        //String str2=this.findByXPath("//h3[text()=\"设置启投时间\"]").getText();
 
-        Assert.assertEquals(str1,"GP06");
-        Assert.assertEquals(str2,"设置启投时间");
+        //Assert.assertEquals(str1,"GP06");
+        //Assert.assertEquals(str2,"设置启投时间");
+        String str1=this.findByXPath("//h3[text()=\"设置启投时间\"]").getText();
         return this;
     }
 

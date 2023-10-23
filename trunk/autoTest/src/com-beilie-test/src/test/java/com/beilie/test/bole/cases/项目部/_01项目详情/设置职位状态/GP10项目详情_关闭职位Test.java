@@ -17,7 +17,7 @@ import java.util.List;
 public class GP10项目详情_关闭职位Test extends BoleBase {
     @Test
     public void test() throws IllegalAccessException, InstantiationException, InterruptedException, Exception {
-        BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
+        BdHomePage bdHomePage = login("ccl_userName", "ccl_password").sleepForSeconds(3);
         //List<VGPPM01_TeamProject> list=SpringUtils.getBean(GPService.class).getMyProject(ProjectStatus.Recruiting,null,null,null,1,12,null).getData().getList();
 
         bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗

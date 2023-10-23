@@ -12,12 +12,12 @@ import java.util.List;
  */
 public class AplHomePage extends UIPage<AplHomePage>{
      public AplHomePage clickHeader(String text) throws IllegalAccessException, InstantiationException{
-         this.waitFor(10, d -> {
+         /*this.waitFor(10, d -> {
              //this.findByClassName("headerName fl").findByLinkText(text).click();
              //this.findByCssSelector("#bg > div.header > div.headerCenter > div > div.headerName.fl").findByLinkText(text).click();
              this.findByClassName("headerCenter").findByLinkText(text).click();
              return Boolean.TRUE;
-         });
+         });*/
          return this;
      }
      public AplHomePage assertLoginSuccess(){

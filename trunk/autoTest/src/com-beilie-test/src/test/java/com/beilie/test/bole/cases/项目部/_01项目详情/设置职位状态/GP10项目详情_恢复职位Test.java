@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class GP10项目详情_恢复职位Test extends BoleBase {
     @Test
     public void test() throws IllegalAccessException, InstantiationException, InterruptedException, Exception {
-        BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
+        BdHomePage bdHomePage = login("ccl_userName", "ccl_password").sleepForSeconds(3);
 
         bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
         GPPM10Page gPPM10Page = (GPPM10Page) bdHomePage
@@ -28,7 +28,7 @@ public class GP10项目详情_恢复职位Test extends BoleBase {
         String positionName = gP10Page.spanClass("project-name");
 
         GPPM10Page gPPM10Page_1 = (GPPM10Page) gP10Page
-                .divClass("ivu-dropdown-rel").sleepForSeconds(1)//点击【更多操作】
+                .divClass("ivu-dropdown-rel").sleepForSeconds(2)//点击【更多操作】
                 .ulClass_li("ivu-dropdown-menu",2)//选中恢复
                 .i_classClick("icon-btn ivu-icon bole icon-close2")//关闭页面
                 .switchToNewIframe1("GPPM10", GPPM10Page.class).sleepForSeconds(1);

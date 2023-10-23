@@ -29,6 +29,12 @@ public class UIElement extends SearchTemplate<UIElement> implements Element{
         return this;
     }
 
+    /*@Override
+    public Element scrollTo() {
+        this.vendor.execute_script();
+        return this;
+    }*/
+
     @Override
     public String getTagName() {
         return this.vendor.getTagName();

@@ -5,17 +5,20 @@ import com.beilie.test.bole.pages.BdHomePage;
 import com.beilie.test.bole.pages.GP.GPCP.GPCP05Page;
 import com.beilie.test.bole.pages.GP.GPRV01Page;
 import com.beilie.test.open.PublicClass.Public;
-import org.junit.Test;
+import org.testng.annotations.Test;
+
 import java.util.Map;
 
 public class _03GPRV01收款计划_使用预付款 extends BoleBase {
     @Test
     public void test() throws IllegalAccessException, InstantiationException, InterruptedException {
-        BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
+        BdHomePage bdHomePage = login_ceshi("ccl_userName", "ccl_password").sleepForSeconds(3);
+
+        bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
 
         GPRV01Page gPRV01Page = (GPRV01Page) bdHomePage
-                .clickMenus("\n" +
-                        "          项目管理", "收款计划")//点击菜单栏
+                .clickFirstMenu_projectManage().sleepForSeconds(1)//点击一级菜单
+                .clickSecondMenu_collection()//点开二级菜单：收款计划
                 .switchToNewIframe1("GPRV01", GPRV01Page.class).sleepForSeconds(1);
 
         int n = Public.generateNumber0_n_1(2);
@@ -28,7 +31,8 @@ public class _03GPRV01收款计划_使用预付款 extends BoleBase {
         GPCP05Page gPCP05Page = (GPCP05Page) gPRV01Page.operation_click(2)//点击使用预付款
                 .switchToNewIframe(0, GPCP05Page.class).sleepForSeconds(2);
 
-        GPRV01Page gPRV01Page_1 = (GPRV01Page) gPCP05Page.scrollBar()
+        GPRV01Page gPRV01Page_1 = (GPRV01Page) gPCP05Page
+                .scrollBar()
                 .clickInputPlaceholder("请选择预付款").sleepForSeconds(1)
                 .spanClass_click("ivu-radio-inner")
                 .scrollBar()

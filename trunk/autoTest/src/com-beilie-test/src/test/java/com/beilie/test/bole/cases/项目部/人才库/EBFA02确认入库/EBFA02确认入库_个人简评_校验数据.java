@@ -15,7 +15,7 @@ import java.lang.reflect.InvocationTargetException;
 public class EBFA02确认入库_个人简评_校验数据 extends BoleBase {
     @Test
     public void test() throws IllegalAccessException, InstantiationException, InterruptedException, InvocationTargetException {
-        BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
+        BdHomePage bdHomePage = login("ccGaoFan_userName", "1").sleepForSeconds(3);
 
         bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
         EBFA04Page eBFA04Page = (EBFA04Page) bdHomePage

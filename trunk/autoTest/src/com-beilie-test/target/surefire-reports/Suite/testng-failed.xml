@@ -3,15 +3,29 @@
 <suite verbose="0" name="Failed suite [Suite]">
   <parameter name="pass" value="111111"/>
   <parameter name="username" value="18513199586"/>
-  <test name="Test1(failed)">
+  <test name="项目部._01项目详情.团队人选(failed)">
     <classes>
-      <class name="com.beilie.test.bole.cases.项目部._01项目详情.团队人选.GP10项目详情_全部栏_加入时间默认倒序Tes">
+      <class name="com.beilie.test.bole.cases.审核专员.GC37待审核的合同">
         <methods>
+          <include name="合同审核通过"/>
           <include name="clear"/>
-          <include name="GP10项目详情_全部栏_加入时间默认倒序"/>
           <include name="init"/>
         </methods>
-      </class> <!-- com.beilie.test.bole.cases.项目部._01项目详情.团队人选.GP10项目详情_全部栏_加入时间默认倒序Tes -->
+      </class> <!-- com.beilie.test.bole.cases.审核专员.GC37待审核的合同 -->
+      <class name="com.beilie.test.bole.cases.客户部.我的客户._01GHHP00_添加单个客户">
+        <methods>
+          <include name="clear"/>
+          <include name="新增客户成功"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.beilie.test.bole.cases.客户部.我的客户._01GHHP00_添加单个客户 -->
+      <class name="com.beilie.test.bole.cases.客户部.我的客户._03GC12提交合同">
+        <methods>
+          <include name="clear"/>
+          <include name="test"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.beilie.test.bole.cases.客户部.我的客户._03GC12提交合同 -->
     </classes>
-  </test> <!-- Test1(failed) -->
+  </test> <!-- 项目部._01项目详情.团队人选(failed) -->
 </suite> <!-- Failed suite [Suite] -->

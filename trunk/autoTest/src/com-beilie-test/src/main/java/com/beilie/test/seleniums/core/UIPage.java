@@ -11,15 +11,19 @@ public class UIPage<T extends UIPage> extends SearchTemplate<T> {
 
     private String windowHandle;
 
-    public void waitFor(Integer timeOutInSeconds, ExpectedCondition<Boolean> condition) {
+    /*public void waitFor(Integer timeOutInSeconds, ExpectedCondition<Boolean> condition) {
         vendor.waitFor(timeOutInSeconds, condition);
+    }*/
+
+    public void waitFor(Integer timeOutInSeconds, String str) {
+        vendor.waitFor(timeOutInSeconds, str);
     }
 
-    public T waitForTitleLoaded(int i, String s) {
+    /*public T waitForTitleLoaded(int i, String s) {
         ExpectedCondition<Boolean> condition = d -> d.getTitle().toLowerCase().endsWith(s);
         this.vendor.waitFor(i, condition);
         return (T) this;
-    }
+    }*/
 
     protected UIPage createPage(Class<? extends UIPage> pageClass) throws InstantiationException, IllegalAccessException {
         UIPage page = pageClass.newInstance();
@@ -111,6 +115,14 @@ public class UIPage<T extends UIPage> extends SearchTemplate<T> {
 
     public void execute_script(){
         this.vendor.execute_script();
+    }
+
+    public void execute_script1(){
+        this.vendor.execute_script1();
+    }
+
+    public void execute_script2(String str){
+        this.vendor.execute_script2(str);
     }
 
     public List<String> getWindowHandles() {

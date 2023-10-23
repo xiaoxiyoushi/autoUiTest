@@ -8,18 +8,39 @@ import java.util.List;
 
 //EBFA08人选详情
 public class EBFA08Page extends Common<EBFA08Page> {
+    //人选详情页面加载出来
+    public EBFA08Page waitCandidateDetail(){
+        this.waitFor(30,"//span[@class=\"ebfa08_peopleInfoTitle\"]");
+        return this;
+    }
+
+    public EBFA08Page pageNumber(){
+        String pageNumber=this.findByXPath("//div[@class=\"ef-page-header d-flex align-items-center justify-content-between dark\"]//span").getText();
+        Assert.assertEquals("EBFA08 | 人选详情",pageNumber);
+        return this;
+    }
+
     /*
     获取手机号
      */
+    public EBFA08Page waitCandidatePhone(){
+        this.waitFor(30,"//div[@class=\"header-card__user-info d-flex justify-content-between flex-wrap\"]");
+        return this;
+    }
     public String getMobile(){
-        String mobile=this.findById("peopleInfos").findListByClassName("ml20").get(1)
-                .findByTagName("span").getText();
+       /* String mobile=this.findById("peopleInfos").findListByClassName("ml20").get(1)
+                .findByTagName("span").getText();*/
+        String mobile=this.findByXPath("//div[@class=\"header-card__user-info d-flex justify-content-between flex-wrap\"]//span/*").getText();
         return mobile;
     }
 
     /*
     关闭页面
      */
+    public EBFA08Page closeEBFA08Page(){
+        this.findByXPath("//i[@class=\"icon-btn ivu-icon bole icon-close2\"]").click();
+        return this;
+    }
     public EBFA08Page closePage(){
         this.findByXPath("//img[@alt=\"关闭\"]").click();
         return this;
@@ -31,7 +52,6 @@ public class EBFA08Page extends Common<EBFA08Page> {
             String value=this.findByXPath("//*[@id=\"peopleInfos\"]//span[text()=\""+str+"\"]").getText();
             Assert.assertEquals(value,str);
         }
-
         return this;
     }
 
@@ -99,8 +119,6 @@ public class EBFA08Page extends Common<EBFA08Page> {
            String a=this.findByXPath("//span[text()=\""+list_1.get(i)+"\"]/following-sibling::span[text()=\""+list.get(i)+"\"]")
                    .getText();//获取到 性别、年龄、现居住地，就验证成功
            }
-
-
         return this;
     }
 
@@ -173,7 +191,7 @@ public class EBFA08Page extends Common<EBFA08Page> {
 
     //获取页面框架上的消息
     public String value_efpage(){
-        String value=this.findByClassName(" messageContent").getText();
+        String value=this.findByClassName("ef-page-header__input").getText();
         return value;
     }
 
@@ -198,11 +216,44 @@ public class EBFA08Page extends Common<EBFA08Page> {
 
     //点击“生成推荐报告”
     public EBFA08Page recommndReport_click(){
-this.findByClassName("newBtnDiv")
-.findByTagName("li").click()
-        ;
+       this.findByClassName("newBtnDiv").findByTagName("li").click();
        return this;
     }
 
+    /*
+    举报原因
+    */
+    //选择审核人
+    public EBFA08Page selectApprover()throws InterruptedException{
+        //点击请选择审核人框
+        this.findByXPath("//span[text()=\"请选择审核人\"]").click();
+        this.sleepForSeconds(1);
 
+        //选择审核人
+        this.findByXPath("//div[@class=\"ivu-select ivu-select-visible ivu-select-single ivu-select-default\"]//li[@class=\"ivu-select-item\"]").click();
+        return this;
+    }
+
+    //等待举报原因页面，确定按钮出现
+    public EBFA08Page waitTipoffsOkBtn()throws InterruptedException{
+        this.waitFor(30,"//div[@class=\"tipoff_modal v-transfer-dom\"]//span[text()=\"确定\"]");
+        return this;
+    }
+
+    //在举报原因页面，点击确定按钮
+    public EBFA08Page OkBtn_click()throws InterruptedException{
+        this.findByXPath("//div[@class=\"tipoff_modal v-transfer-dom\"]//span[text()=\"确定\"]").click();
+        return this;
+    }
+
+    //重新输入电子邮箱
+    public EBFA08Page inputMail()throws InterruptedException{
+        //清除电子邮箱文本框
+        this.findByXPath("//input[@placeholder=\"请输入电子邮箱\"]").clear();
+        this.sleepForSeconds(1);
+
+        //重新输入电子邮箱
+        this.findByXPath("//input[@placeholder=\"请输入电子邮箱\"]").sendKeys("lvxiao2020@163.com");
+        return this;
+    }
 }

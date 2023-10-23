@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class GP10项目详情_暂停职位Test extends BoleBase {
     @Test
     public void test() throws IllegalAccessException, InstantiationException, InterruptedException, Exception {
-        BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
+        BdHomePage bdHomePage = login("ccl_userName", "ccl_password").sleepForSeconds(3);
 
         bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
         GPPM10Page gPPM10Page = (GPPM10Page) bdHomePage

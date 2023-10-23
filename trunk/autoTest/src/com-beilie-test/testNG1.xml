@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+    <parameter name ="username" value="18513199586"/>
+    <parameter name ="pass" value="111111"/>
+    <test name="项目部._01项目详情.团队人选">
+
+        <classes>
+            <class name="com.beilie.test.bole.cases.项目部._01项目详情.设置项目进程.GP10项目详情_暂停Test"/>
+        </classes>
+
+    <!--<classes>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.删除一级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.删除二级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.删除三级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.新增一级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.新增二级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.新增三级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.搜索一级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.搜索二级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.搜索三级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.备注一级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.备注二级合伙人"/>
+        <class name="com.beilie.test.bole.cases.薪酬系统.合伙人.ESUP65合伙人架构.备注三级合伙人"/>
+    </classes>-->
+
+    </test>
+    <listeners>
+        <listener class-name="com.beilie.test.util.TestReport"/>
+    </listeners>
+</suite>

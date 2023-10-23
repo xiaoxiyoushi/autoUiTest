@@ -28,7 +28,7 @@ public class Engine {
     private Engine() {
         //System.setProperty("webdriver.chrome.driver", "D://workspace//TEST//trunk//autoTest//tools//seleniums//3.141.59//chromedriver.exe");
         //System.setProperty("webdriver.ie.driver", "D://workspace//TEST//trunk//autoTest//tools//seleniums//3.141.59//IEDriverServer.64.exe");
-        System.setProperty("webdriver.chrome.driver", "D://workPlace//trunk//autoTest//tools//seleniums//3.141.59//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "E://seleniumTest//trunk//autoTest//tools//seleniums//3.141.59//chromedriver.exe");
         //System.setProperty("webdriver.ie.driver", "D://workspace//TEST//trunk//autoTest//tools//seleniums//3.141.59//IEDriverServer.64.exe");
         //WebDriver driver=new InternetExplorerDriver(); //ie
         //WebDriver driver=new FireFoxDriver(); //firefox

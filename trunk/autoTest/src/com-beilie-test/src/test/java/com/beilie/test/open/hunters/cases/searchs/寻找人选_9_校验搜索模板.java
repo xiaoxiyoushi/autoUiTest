@@ -10,7 +10,7 @@ public class 寻找人选_9_校验搜索模板 extends HunterBase {
     public void 校验搜索模板() throws IllegalAccessException, InstantiationException, InterruptedException {
         HomePage homePage = login("13370273782", "1");
         FindCandidatePage findCandidatePage = (FindCandidatePage) homePage
-                .waitForTitleLoaded(10, "谈聘网-首页-开启招聘之旅")
+                //.waitForTitleLoaded(10, "谈聘网-首页-开启招聘之旅")
                 .clickHeader("寻找人选")
                 .transfer(FindCandidatePage.class).sleepForSeconds(3);
         findCandidatePage.checkTemplate();

@@ -13,8 +13,7 @@ public class GC23Page extends Public<GC23Page> {
 
     //点击【审核通过】按钮
     public GC23Page clickPass(){
-        //this.findByClassName("GC23_ac").findByClassName("btnPanels").findByClassName("aPassBtn").click();
-        this.findByClassName("aPassBtn").click();
+        spanClick("gc23_auditPass");
         return this;
     }
 

@@ -10,10 +10,10 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 
 public class HomePage extends UIPage<HomePage> {
     public HomePage clickHeader(String text) throws IllegalAccessException, InstantiationException {
-        this.waitFor(10, d -> {
+        /*this.waitFor(10, d -> {
             this.findByClassName("headerName").findByLinkText(text).click();
             return Boolean.TRUE;
-        });
+        });*/
         return this;
     }
 
@@ -23,14 +23,14 @@ public class HomePage extends UIPage<HomePage> {
     }
 
     public HomePage hoverHeader(String headerName) {
-        this.waitFor(10, d -> {
+        /*this.waitFor(10, d -> {
             try {
                 this.findByLinkText(headerName).hover();
                 return Boolean.TRUE;
             } catch (Exception e) {
                 return Boolean.FALSE;
             }
-        });
+        });*/
         return this;
     }
 
@@ -49,28 +49,28 @@ public class HomePage extends UIPage<HomePage> {
     public HomePage clickQuit() throws InterruptedException {
         Element ulli = this.findById("ulli");
         ulli.hover();
-        this.waitFor(10, d -> {
+        /*this.waitFor(10, d -> {
             try {
                 ulli.findListByCssSelector("dd.cursor").get(1).click();
                 return Boolean.TRUE;
             } catch (Exception e) {
                 return Boolean.FALSE;
             }
-        });
+        });*/
         return this;
     }
 
     public HomePage clickPersonalMenu(String itemName) throws InterruptedException {
         Element ulli = this.findById("ulli");
         ulli.hover();
-        this.waitFor(10, d -> {
+        /*this.waitFor(10, d -> {
             try {
                 ulli.findByLinkText(itemName).click();
                 return Boolean.TRUE;
             } catch (Exception e) {
                 return Boolean.FALSE;
             }
-        });
+        });*/
         return this;
     }
 }

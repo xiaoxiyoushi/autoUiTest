@@ -5,16 +5,16 @@ import com.beilie.test.bole.pages.BdHomePage;
 import com.beilie.test.bole.pages.GC.GC13Page;
 import com.beilie.test.bole.pages.GC.GC23Page;
 import com.beilie.test.bole.pages.GC.GC37Page;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class GC37待审核的合同 extends BoleBase {
-    @Test
+    @Test(description="测试审核合同成功")
     public void 合同审核通过() throws IllegalAccessException, InstantiationException, InterruptedException {
-        BdHomePage bdHomePage = login("68657209", "1").sleepForSeconds(3);
+        BdHomePage bdHomePage = login("dululu_userName", "dululu_password").sleepForSeconds(3);
+
+        bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
         GC37Page gc37Page = (GC37Page) bdHomePage
-                //.clickClientManger("待审核的合同",14)//开发环境dululu
-                .clickMenus("\n" +
-                        "          客户合同", "待审核的合同")//点击菜单栏
+                .clickMenu_reviewedContract()//点开菜单“待审核的合同”
                 .switchToNewIframe1("GC37", GC37Page.class).sleepForSeconds(3);
 
         //获取审核合同的公司名称
@@ -35,10 +35,8 @@ public class GC37待审核的合同 extends BoleBase {
                 .switchToNewIframe1("GC13", GC13Page.class).sleepForSeconds(1);
 
         gc13Page.inputCompanyName(companyName)//输入客户名称
-                .clickSearch().sleepForSeconds(3)//点击搜索按钮
-                .checkContractStatus().sleepForSeconds(3)
-
-        ;
+                .divClick("gcl3_search").sleepForSeconds(3)//点击搜索【按钮
+                .checkContractStatus().sleepForSeconds(3);
 
 
     }

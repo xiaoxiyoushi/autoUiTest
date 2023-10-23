@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.beilie:com-beilie-talents:1.0.4-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-talents/1.0.4-SNAPSHOT/com-beilie-talents-1.0.4-20210719.064745-218.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-talents/1.0.4-SNAPSHOT/com-beilie-talents-1.0.4-20221125.015048-225.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-talents/1.0.4-SNAPSHOT/com-beilie-talents-1.0.4-20210719.064745-218-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-talents/1.0.4-SNAPSHOT/com-beilie-talents-1.0.4-20221125.015048-225-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-talents/1.0.4-SNAPSHOT/com-beilie-talents-1.0.4-20210719.064745-218-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-talents/1.0.4-SNAPSHOT/com-beilie-talents-1.0.4-20221125.015048-225-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

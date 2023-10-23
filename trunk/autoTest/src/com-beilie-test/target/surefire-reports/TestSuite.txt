@@ -1,19 +1,69 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 32.579 sec <<< FAILURE! - in TestSuite
-GP10项目详情_全部栏_加入时间默认倒序(com.beilie.test.bole.cases.项目部._01项目详情.团队人选.GP10项目详情_全部栏_加入时间默认倒序Tes)  Time elapsed: 9.006 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="ef-modal v-transfer-dom"]//i"}
-  (Session info: chrome=97.0.4692.71)
-  (Driver info: chromedriver=96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}),platform=Windows NT 10.0.19043 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 63 milliseconds
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 119.566 sec <<< FAILURE! - in TestSuite
+新增客户成功(com.beilie.test.bole.cases.客户部.我的客户._01GHHP00_添加单个客户)  Time elapsed: 17.004 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: element click intercepted: Element <iframe src="/webapps/v2/GCCM/GCCM01/index.html?bole-v=1.1.0&amp;formKey=GCCM01&amp;formName=%E6%B7%BB%E5%8A%A0%E5%AE%A2%E6%88%B7&amp;lang=zh&amp;windowId=WID948390736983882" frameborder="0" id="GCCM01" class="active_page" cd_frame_id_="1118c3ff72efa9d23a1c1522040f2478"></iframe> is not clickable at point (679, 590). Other element would receive the click: <div class="popUp_footer">...</div>
+  (Session info: chrome=98.0.4758.82)
+  (Driver info: chromedriver=98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}),platform=Windows NT 10.0.19043 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.11 seconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-FJ710P4', ip: '192.168.5.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60009}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}), userDataDir=C:\Users\86182\AppData\Local\Temp\scoped_dir8544_1654810283}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=98.0.4758.82, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: c3efacc14fdcc434caedc12ba53a5d56
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.beilie.test.seleniums.core.sealed.WebElementVendor.click(WebElementVendor.java:39)
+	at com.beilie.test.seleniums.core.UIElement.click(UIElement.java:10)
+	at com.beilie.test.open.PublicClass.Public.button_classClick(Public.java:676)
+	at com.beilie.test.open.PublicClass.Public.industryComponent(Public.java:191)
+	at com.beilie.test.bole.cases.客户部.我的客户._01GHHP00_添加单个客户.新增客户成功(_01GHHP00_添加单个客户.java:30)
+
+test(com.beilie.test.bole.cases.客户部.我的客户._03GC12提交合同)  Time elapsed: 30.722 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: element click intercepted: Element <iframe src="/webapps/v2/GC/GC14/index.html?bole-v=1.1.0&amp;formKey=GC14&amp;formName=%E6%88%91%E7%9A%84%E5%90%88%E5%90%8C&amp;lang=zh&amp;windowId=WID4161580338219792" frameborder="0" id="GC14" class="active_page" cd_frame_id_="19dabcab94b7a027b5bfe7be40eba80a"></iframe> is not clickable at point (448, 204). Other element would receive the click: <iframe src="/webapps/v2/GC/GC12/index.html?modalWidth=90%25&amp;modalHeight=90%25&amp;modalType=Window&amp;bole-v=1.1.0&amp;contractId=1019914789096263680&amp;windowId=WID902201967900834&amp;formKey=GC12&amp;formName=%E5%88%9B%E5%BB%BA%E5%90%88%E5%90%8C&amp;lang=zh&amp;dark=1" frameborder="0" id="WID902201967900834" cd_frame_id_="882541989fb096ccd4a4dd49185a9b23"></iframe>
+  (Session info: chrome=98.0.4758.82)
+  (Driver info: chromedriver=98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}),platform=Windows NT 10.0.19043 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.07 seconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-FJ710P4', ip: '192.168.5.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60197}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}), userDataDir=C:\Users\86182\AppData\Local\Temp\scoped_dir12040_429974679}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=98.0.4758.82, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: c2c9e5df695e5c1a4290eacba5ee9727
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.beilie.test.seleniums.core.sealed.WebElementVendor.click(WebElementVendor.java:39)
+	at com.beilie.test.seleniums.core.UIElement.click(UIElement.java:10)
+	at com.beilie.test.open.PublicClass.Public.iClass_click(Public.java:131)
+	at com.beilie.test.bole.pages.GC.GC14Page.checkContract_submit(GC14Page.java:31)
+	at com.beilie.test.bole.cases.客户部.我的客户._03GC12提交合同.test(_03GC12提交合同.java:39)
+
+合同审核通过(com.beilie.test.bole.cases.审核专员.GC37待审核的合同)  Time elapsed: 22.678 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()="审核通过"]"}
+  (Session info: chrome=98.0.4758.82)
+  (Driver info: chromedriver=98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}),platform=Windows NT 10.0.19043 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 26 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
 System info: host: 'DESKTOP-FJ710P4', ip: '192.168.5.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58151}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}), userDataDir=C:\Users\86182\AppData\Local\Temp\scoped_dir13916_1785150248}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=97.0.4692.71, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: 547219648cfc46c1f6fcb5e4eb8ec3c7
-*** Element info: {Using=xpath, value=//div[@class="ef-modal v-transfer-dom"]//i}
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60299}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}), userDataDir=C:\Users\86182\AppData\Local\Temp\scoped_dir15116_636222967}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=98.0.4758.82, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 7779b2387c255d5a18c0813e4e2daf98
+*** Element info: {Using=xpath, value=//span[text()="审核通过"]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -27,6 +77,7 @@ Session ID: 547219648cfc46c1f6fcb5e4eb8ec3c7
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at com.beilie.test.seleniums.core.sealed.WebAbstractVendor.findByXPath(WebAbstractVendor.java:91)
 	at com.beilie.test.seleniums.core.SearchTemplate.findByXPath(SearchTemplate.java:38)
-	at com.beilie.test.bole.pages.BdHomePage.closeHideMenue(BdHomePage.java:111)
-	at com.beilie.test.bole.cases.项目部._01项目详情.团队人选.GP10项目详情_全部栏_加入时间默认倒序Tes.GP10项目详情_全部栏_加入时间默认倒序(GP10项目详情_全部栏_加入时间默认倒序Tes.java:16)
+	at com.beilie.test.open.PublicClass.Public.spanClick(Public.java:533)
+	at com.beilie.test.bole.pages.GC.GC23Page.clickPass(GC23Page.java:16)
+	at com.beilie.test.bole.cases.审核专员.GC37待审核的合同.合同审核通过(GC37待审核的合同.java:29)
 

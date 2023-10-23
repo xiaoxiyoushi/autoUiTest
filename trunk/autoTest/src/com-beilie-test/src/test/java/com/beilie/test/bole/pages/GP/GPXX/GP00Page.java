@@ -127,7 +127,7 @@ public class GP00Page extends Public<GP00Page> {
     public GP00Page education() throws InterruptedException{
         this.findByClassName("edQu").findByXPath("//span[text()=\"请选择\"]").click();
         this.sleepForSeconds(1);
-        this.findByXPath("//li[text()=\"硕士\n" +
+        this.findByXPath("//li[text()=\"不限\n" +
                 "                    \"]").click();
         return this;
     }
@@ -163,7 +163,7 @@ public class GP00Page extends Public<GP00Page> {
 
         try {
 //            Element element=this.findByXPath("//span[text()=\""+str+"\"]");
-            this.findByXPath("//div[text()=\"邮箱尚未确认，提交后请及时联系保护BD[bd12]进行确认，以免影响推荐报告的发送\"]/parent::div/parent::div/following-sibling::div//span").click();
+            this.findByXPath("//div[text()=\"邮箱尚未确认，提交后请及时联系保护BD[jackZhang1]进行确认，以免影响推荐报告的发送\"]/parent::div/parent::div/following-sibling::div//span").click();
         } /*catch (NoSuchElementException e,No) {
             e.printStackTrace();
         }*/catch (Exception e) {
@@ -175,5 +175,10 @@ public class GP00Page extends Public<GP00Page> {
     }
 
 
-
+    public GP00Page saveAndSubmit() throws InterruptedException{
+        this.findByXPath("//*[@id=\"EFPage\"]/div[2]/div[2]/button[1]/span").click();
+        this.sleepForSeconds(1);
+        this.findByXPath("//*[@id=\"EFPage\"]/div[2]/div[2]/button[2]/span").click();
+        return this;
+    }
 }

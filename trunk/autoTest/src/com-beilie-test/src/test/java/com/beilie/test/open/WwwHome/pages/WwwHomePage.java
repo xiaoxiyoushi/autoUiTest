@@ -39,10 +39,10 @@ public class WwwHomePage extends UIPage<WwwHomePage>{
         throw new BusinessException("页面加载失败。");
     }
     public WwwHomePage clickHeader(String text) throws IllegalAccessException, InstantiationException {
-        this.waitFor(2, d -> {
+        /*this.waitFor(2, d -> {
             this.findByCssSelector("#wrap > div:nth-child(3) > div.com-index.map.ivu-col.ivu-col-span-20.ivu-col-offset-2 > div > div:nth-child(1) > div > div > div.ivu-tabs-bar > div > div > div > div").findByLinkText(text).click();
             return Boolean.TRUE;
-        });
+        });*/
         return this;
     }
     /**
@@ -66,10 +66,10 @@ public class WwwHomePage extends UIPage<WwwHomePage>{
      * 点击 导航栏：职位
      */
     public WwwHomePage clickPosition(){
-        this.waitFor(10,d -> {
+        /*this.waitFor(10,d -> {
             this.findByCssSelector("#header_bg > div > div.headerCenter > div > div.headerName.fl > ul > li.positionLi > a").click();
         return Boolean.TRUE;
-                });
+                });*/
         return this;
     }
 
@@ -100,17 +100,11 @@ public class WwwHomePage extends UIPage<WwwHomePage>{
      * 选行业栏
      */
     public WwwHomePage chooseIndustry(int i) throws IllegalAccessException, InstantiationException{
-        this.waitFor(10, d -> {
-            /*this.findByCssSelector("#anchor_hotposition > div > div > div.ivu-tabs-bar > div > div > div > div")
-                    .findListByClassName("ivu-tabs-tab").get(i).click();
-            return Boolean.TRUE;*/
+        /*this.waitFor(10, d -> {
             this.findByCssSelector("#anchor_hotposition > div.tabcube")
                     .findListByTagName("span").get(i).click();
             return Boolean.TRUE;
-        });
-        //#anchor_hotposition > div.tabcube > span.tabTitleActived
-        //#anchor_hotposition > div.tabcube > span:nth-child(2)
-        //#anchor_hotposition > div.tabcube > span:nth-child(3)
+        });*/
             return this;
     }
     /*

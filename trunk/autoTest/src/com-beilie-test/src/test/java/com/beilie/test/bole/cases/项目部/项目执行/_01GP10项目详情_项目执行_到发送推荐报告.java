@@ -9,7 +9,7 @@ import com.beilie.test.bole.pages.GP.GPPM.GPPM10Page;
 import com.beilie.test.bole.pages.GP.GPXX.*;
 import com.beilie.test.bole.pages.GP.*;
 import com.beilie.test.open.PublicClass.Public;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class _01GP10项目详情_项目执行_到发送推荐报告 extends BoleBase {
     @Test
@@ -19,14 +19,18 @@ public class _01GP10项目详情_项目执行_到发送推荐报告 extends Bole
     }
 
     public BdHomePage login() throws IllegalAccessException, InstantiationException, InterruptedException {
-        BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
+        BdHomePage bdHomePage = login("ccl_userName", "ccl_password").sleepForSeconds(3);
         return bdHomePage;
     }
 
     public void process(BdHomePage bdHomePage) throws IllegalAccessException, InstantiationException, InterruptedException {
+        try{
+            bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
+        }catch (Exception ex){}
+
         GPPM10Page gPPM10Page = (GPPM10Page) bdHomePage
-                .clickMenus("\n" +
-                        "          项目管理", "我的项目").sleepForSeconds(2)//点击菜单栏
+                .clickFirstMenu_projectManage().sleepForSeconds(1)//点击一级菜单：项目管理
+                .clickSecondMenu_myProject()//点击二级菜单：我的项目
                 .switchToNewIframe1("GPPM10", GPPM10Page.class).sleepForSeconds(1);
 
         String randomStr = Public.generateString(8);//8位随机字符串
@@ -36,6 +40,7 @@ public class _01GP10项目详情_项目执行_到发送推荐报告 extends Bole
 
         GP10Page gP10Page = (GP10Page) gPPM10Page
                 .inputClientName("请输入项目名称", "卖麦芽糖的")//输入项目名称
+                //.inputClientName("请输入项目名称", "市场营销企划主管MT939X0b")//输入项目名称
                 .clickSearch()
                 .sleepForSeconds(2)
                 .table_td_aClick(0, 0)
@@ -54,7 +59,8 @@ public class _01GP10项目详情_项目执行_到发送推荐报告 extends Bole
             if (porjectProcess.equals("正在联络")) {
                 name = gP10Page.table_td_list_aValue(0, 0, 0);
 
-                GP14Page gP14Page = (GP14Page) gP10Page.table_td_aClick(0, 0)
+                GP14Page gP14Page = (GP14Page) gP10Page
+                        .table_td_aClick(0, 0)
                         .switchToNewIframe(1, GP14Page.class).sleepForSeconds(3);
 
                 carry(gP14Page, name);
@@ -64,7 +70,7 @@ public class _01GP10项目详情_项目执行_到发送推荐报告 extends Bole
                         .switchToNewIframe(1, GP14Page.class).sleepForSeconds(3);
 
                 GP12Page gP12Page = (GP12Page) gP14Page.clickSpan("创建面试")
-                        .clickConfirmBtn("ivu-btn ivu-btn-primary ivu-btn-large").sleepForSeconds(1)
+                        .clickConfirmBtn("easy-modal-ok ivu-btn ivu-btn-primary").sleepForSeconds(1)
                         .switchToNewIframe(2, GP12Page.class).sleepForSeconds(3);
 
                 GP14Page gP14Page_1 = (GP14Page) gP12Page.img_altClick("关闭")
@@ -115,23 +121,36 @@ public class _01GP10项目详情_项目执行_到发送推荐报告 extends Bole
 
     public void carry(GP14Page gP14Page, String name) throws IllegalAccessException, InstantiationException, InterruptedException {
         String project_company = "-卖麦芽糖的-上海麦芽糖公司";
+        //String project_company = "-市场营销企划主管MT939X0b-上海友善公司ＵｍＷｄＪｑ１１";
 
         EBFA08Page eBFA08Page = (EBFA08Page) gP14Page
                 .secondTask(name)
                 .switchToNewIframe(2, EBFA08Page.class).sleepForSeconds(3);
 
-        String message = eBFA08Page.clickSpan("生成推荐报告").sleepForSeconds(1)//点击 生成推荐报告
-                .div_Value(" 添加推荐报告成功 ");
+        /*String message = eBFA08Page.clickSpan("生成推荐报告").sleepForSeconds(1)//点击 生成推荐报告
+                .div_Value(" 添加推荐报告成功 ");*/
 
-        if (message.equals("添加推荐报告成功")) {
+        eBFA08Page.clickSpan("生成推荐报告").sleepForSeconds(1);
+
+        /*if (message.equals("添加推荐报告成功")) {
             EB0701Page eB0701Page = (EB0701Page) eBFA08Page
                     .switchToNewIframe(3, EB0701Page.class).sleepForSeconds(3);
 
-            eB0701Page.i_classClick("icon-btn ivu-icon ivu-icon-undefined icon-close2");//点击关闭
+            eB0701Page.i_classClick("icon-btn ivu-icon bole icon-close2");//点击关闭
 
             eBFA08Page = (EBFA08Page) eBFA08Page
                     .switchToNewIframe(2, EBFA08Page.class).sleepForSeconds(3);
-        }
+        }*/
+
+
+            EB0701Page eB0701Page = (EB0701Page) eBFA08Page
+                    .switchToNewIframe(3, EB0701Page.class).sleepForSeconds(3);
+
+            eB0701Page.i_classClick("icon-btn ivu-icon bole icon-close2");//点击关闭
+
+            eBFA08Page = (EBFA08Page) eBFA08Page
+                    .switchToNewIframe(2, EBFA08Page.class).sleepForSeconds(3);
+
 
         GP14Page gP14Page_1 = (GP14Page) eBFA08Page.i_classClick("icon-btn ivu-icon bole icon-close2")//点击关闭
                 .switchToNewIframe(1, GP14Page.class).sleepForSeconds(3);

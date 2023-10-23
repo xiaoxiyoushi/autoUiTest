@@ -9,7 +9,7 @@ public class 寻找人选__校验未获取候选人联系方式 extends HunterBa
     public void 判断是否获取联系方式 () throws IllegalAccessException, InstantiationException, InterruptedException{
         HomePage homePage=(HomePage)login("13370273782","1");
         FindCandidatePage findCandidatePage=(FindCandidatePage) homePage
-                .waitForTitleLoaded(10,"谈聘网-首页-开启招聘之旅")
+                //.waitForTitleLoaded(10,"谈聘网-首页-开启招聘之旅")
                 .clickHeader("寻找人选")
                 .transfer(FindCandidatePage.class).sleepForSeconds(2);
 

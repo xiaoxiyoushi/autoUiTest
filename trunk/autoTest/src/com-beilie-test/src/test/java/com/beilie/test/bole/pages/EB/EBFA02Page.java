@@ -21,14 +21,16 @@ public class EBFA02Page extends EBFAPage<EBFA02Page> {
 
     //校对提示 简历入库成功，点击【确定】按钮 关掉页面
     public EBFA02Page checkTip(){
-        String value=getSpanValue("添加到收藏夹成功");
+        String value=div_Value("添加到收藏夹成功");
         Assert.assertEquals(value,"添加到收藏夹成功");
 
-        this.findById("EFmodal")
-                .findByTagName("button").click();//点击确定按钮
+        /*this.findById("EFmodal")
+                .findByTagName("button").click();*///点击确定按钮
         //this.findByClassName("bigokbutton").click();//点击确定按钮
+
+        this.findByXPath("//div[text()=\"" + "添加到收藏夹成功" + "\"]/parent::div/parent::div/following-sibling::div//span").click();
         return this;
-    }
+    }////*[@id="thebody"]/div[4]/div[2]/div/div/div[2]/button/span
 
     //校对提示 添加人选到项目成功；
     public EBFA02Page checkTip_addProject(String name){
@@ -94,5 +96,15 @@ public class EBFA02Page extends EBFAPage<EBFA02Page> {
 
         return this;
     }
+
+    /*
+    工作经历
+     */
+    public EBFA02Page workExperience_function_click(){
+        this.findById("vailworkExperience")
+                .findByClassName("icon-function").click();
+        return this;
+    }
+
 
 }

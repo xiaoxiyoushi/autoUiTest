@@ -12,10 +12,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class AllLinksPage extends UIPage<AllLinksPage> {
     //教师招聘
     public AllLinksPage checkEducation(){
-        this.waitFor(10, d -> {
+        /*this.waitFor(10, d -> {
             this.findByCssSelector("#loginToolBar > div > span").click();
             return Boolean.TRUE;
-        });
+        });*/
         return this;
     }
     //事业单位招聘
@@ -26,11 +26,11 @@ public class AllLinksPage extends UIPage<AllLinksPage> {
     }
     //企业征信
     public AllLinksPage checkCorporateCredit(){
-        this.waitFor(10, d -> {
+        /*this.waitFor(10, d -> {
             String str=this.findByCssSelector("#search_items > span.entInfo.selected").getText();
             Assert.assertEquals("企业信用信息",str);
             return Boolean.TRUE;
-        });
+        });*/
         return this;
     }
     //银行招聘

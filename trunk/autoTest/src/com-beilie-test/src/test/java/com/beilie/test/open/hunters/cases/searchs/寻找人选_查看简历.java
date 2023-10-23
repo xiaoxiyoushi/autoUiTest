@@ -13,7 +13,7 @@ public class 寻找人选_查看简历 extends HunterBase {
     public void 搜索职位会计() throws IllegalAccessException, InstantiationException, InterruptedException {
         HomePage homePage = login("13370273782", "1");
         FindCandidatePage findCandidatePage = (FindCandidatePage) homePage
-                .waitForTitleLoaded(10, "谈聘网-首页-开启招聘之旅")
+                //.waitForTitleLoaded(10, "谈聘网-首页-开启招聘之旅")
                 .clickHeader("寻找人选")
                 .transfer(FindCandidatePage.class).sleepForSeconds(2);
 

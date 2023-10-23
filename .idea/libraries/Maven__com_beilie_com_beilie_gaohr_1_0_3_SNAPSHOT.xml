@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.beilie:com-beilie-gaohr:1.0.3-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-gaohr/1.0.3-SNAPSHOT/com-beilie-gaohr-1.0.3-20220105.021409-638.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-gaohr/1.0.3-SNAPSHOT/com-beilie-gaohr-1.0.3-20230419.054017-687.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-gaohr/1.0.3-SNAPSHOT/com-beilie-gaohr-1.0.3-20220105.021409-638-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-gaohr/1.0.3-SNAPSHOT/com-beilie-gaohr-1.0.3-20230419.054017-687-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-gaohr/1.0.3-SNAPSHOT/com-beilie-gaohr-1.0.3-20220105.021409-638-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/beilie/com-beilie-gaohr/1.0.3-SNAPSHOT/com-beilie-gaohr-1.0.3-20230419.054017-687-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

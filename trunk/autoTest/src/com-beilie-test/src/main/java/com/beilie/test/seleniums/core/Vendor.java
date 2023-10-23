@@ -17,7 +17,8 @@ public interface Vendor {
     /*
     * xpath*/
     Element findByXPath(String xpathExpression);
-    void waitFor(Integer timeOutInSeconds, ExpectedCondition<Boolean> condition);
+    //void waitFor(Integer timeOutInSeconds, ExpectedCondition<Boolean> condition);
+    void waitFor(Integer timeOutInSeconds, String str);
     Element findByLinkText(String text);
     Boolean hasClassName(String className);
     Boolean hasLinkText(String text);
@@ -25,6 +26,8 @@ public interface Vendor {
     void back();
     //void showWaiting();
     void execute_script();
+    void execute_script1();
+    void execute_script2(String str);
 
     void sendKeys(CharSequence... var1);
     void click();

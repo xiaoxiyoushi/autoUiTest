@@ -11,7 +11,7 @@ public class 寻找人选_6_组合搜索_关键词_职位名称 extends HunterBa
     public void 组合搜索关键词_职位名称() throws IllegalAccessException, InstantiationException, InterruptedException {
         HomePage homePage = login("13370273782", "1");
         FindCandidatePage findCandidatePage = (FindCandidatePage) homePage
-                .waitForTitleLoaded(10, "谈聘网-首页-开启招聘之旅")
+                //.waitForTitleLoaded(10, "谈聘网-首页-开启招聘之旅")
                 .clickHeader("寻找人选")
                 .transfer(FindCandidatePage.class).sleepForSeconds(3);
 

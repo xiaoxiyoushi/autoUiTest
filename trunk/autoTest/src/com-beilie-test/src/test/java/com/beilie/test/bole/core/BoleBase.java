@@ -4,8 +4,11 @@ import com.beilie.test.bole.pages.BbpiPage.BapiHomePage;
 import com.beilie.test.bole.pages.BdHomePage;
 import com.beilie.test.open.hunters.pages.LoginPage;
 import com.beilie.test.seleniums.core.TestCaseBase;
+import com.beilie.test.util.ProUtil;
 
 public class BoleBase extends TestCaseBase {
+    ProUtil pro = new ProUtil("element.properties");
+
     protected BdHomePage cclLogin() throws IllegalAccessException, InstantiationException ,InterruptedException{
         LoginPage loginPage = (LoginPage) engine.createPage("http://47.110.140.203/#/home", LoginPage.class);
         return (BdHomePage)loginPage
@@ -17,19 +20,23 @@ public class BoleBase extends TestCaseBase {
                 .transfer(BdHomePage.class);
     }
 
-    protected BdHomePage cclLogin_ceshi() throws IllegalAccessException, InstantiationException ,InterruptedException{
+    protected BdHomePage login_ceshi(String str, String str1) throws IllegalAccessException, InstantiationException ,InterruptedException{
+        String userName = pro.getPro(str);
+        String password = pro.getPro(str1);
         LoginPage loginPage = (LoginPage) engine.createPage("http://192.168.5.215/#/home", LoginPage.class);
         return (BdHomePage)loginPage
                 .clickAccountLogin().sleepForSeconds(1)
-                .userName("68658226")
-                .password("1")
+                .userName(userName)
+                .password(password)
                 .captcha("1234")
                 .submit()
                 .transfer(BdHomePage.class);
     }
 
-    protected BdHomePage login(String userName, String password) throws IllegalAccessException, InstantiationException ,InterruptedException{
-        LoginPage loginPage = (LoginPage) engine.createPage("http://192.168.5.215/#/home", LoginPage.class);
+    protected BdHomePage login(String str, String str1) throws IllegalAccessException, InstantiationException ,InterruptedException{
+        String userName = pro.getPro(str);
+        String password = pro.getPro(str1);
+        LoginPage loginPage = (LoginPage) engine.createPage("http://192.168.5.205/#/home", LoginPage.class);
         return (BdHomePage)loginPage
                 .clickAccountLogin().sleepForSeconds(1)
                 .userName(userName)

@@ -6,16 +6,18 @@ import com.beilie.test.bole.pages.EB.EBFA05Page;
 import com.beilie.test.bole.pages.EB.EBFA08Page;
 import com.beilie.test.open.PublicClass.Public;
 import org.junit.Assert;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class EBFA05我的收藏夹_新增备注 extends BoleBase {
-    @Test
+    @Test(description = "新增备注")
     public void test() throws IllegalAccessException, InstantiationException, InterruptedException {
-        BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
+        BdHomePage bdHomePage = login("ccl_userName", "ccl_password").sleepForSeconds(3);
+
+        bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
 
         EBFA05Page eBFA05Page = (EBFA05Page) bdHomePage
-                .clickMenus("\n" +
-                        "          中文简历库", "我的收藏夹")//点击菜单栏
+                .clickFirstMenu_resumeLibrary().sleepForSeconds(1)//点击一级菜单：中文简历库
+                .clickSecondMenu_myFavorities()//点击二级菜单
                 .switchToNewIframe1("EBFA05", EBFA05Page.class).sleepForSeconds(3);
 
         int n = Public.generateNumber0_n_1(3);
@@ -27,6 +29,7 @@ public class EBFA05我的收藏夹_新增备注 extends BoleBase {
                 .clickConfirmBtn_addRemark().sleepForSeconds(1)
                 .span_followingGetSpan("备注：");
 
+        eBFA05Page.sleepForSeconds(2);
         Assert.assertEquals(remark, remark_1);
 
         //点击more  获取我的备注信息

@@ -13,8 +13,9 @@ public class _01GPPL04收款计划_新增普通的收款 extends BoleBase {
 public void test ()throws IllegalAccessException, InstantiationException, InterruptedException {
         BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
 
+        bdHomePage.closeHideMenue();//关闭设置隐藏菜单的弹窗
         GPPL04Page gPPL04Page=(GPPL04Page)bdHomePage
-        .clickMenus(" 项目管理","收款计划")//点击菜单栏
+        .clickMenu_collection()//点开二级菜单：收款计划
         .switchToNewIframe1("GPPL04", GPPL04Page.class).sleepForSeconds(1);
 
         int n=Public.generateNumber0_n_1(2);

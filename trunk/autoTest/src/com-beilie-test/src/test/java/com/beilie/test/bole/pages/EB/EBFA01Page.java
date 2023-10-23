@@ -62,11 +62,13 @@ public class EBFA01Page extends EBFAPage<EBFA01Page> {
         ExpectedCondition<Boolean> e = ExpectedConditions.textToBePresentInElement((WebElement)element,"姓名不能为空");
         this.waitFor(60, e);*/
         //this.waitFor(60, ExpectedConditions.textToBePresentInElement((WebElement)this.findByXPath("//div[text()=\"姓名不能为空\"]"),"姓名不能为空"));
-        this.waitFor(5, d -> {
+        String str=this.findByXPath("//div[text()=\"姓名不能为空\"]").getText();
+        Assert.assertEquals("企业信用信息",str);
+        /*this.waitFor(5, d -> {
             String str=this.findByXPath("//div[text()=\"姓名不能为空\"]").getText();
             Assert.assertEquals("企业信用信息",str);
             return Boolean.TRUE;
-        });
+        });*/
         return this;
     }
 
@@ -163,7 +165,7 @@ public class EBFA01Page extends EBFAPage<EBFA01Page> {
     }
 
     //教育经历，月份日历
-    public EBFA01Page education_calendar_months(String str){
+    public EBFA01Page education_calendar_months(){
         this.findById("vaileducations")
                 .findByClassName("ivu-icon-ios-calendar-outline").click();
         this.findById("vaileducations")
@@ -196,6 +198,17 @@ public class EBFA01Page extends EBFAPage<EBFA01Page> {
         return this;
     }
 
+    /*
+    工作经历
+     */
+    public EBFA01Page inputJob(String str){
+        sendInputPlaceholder("请输入职位名称",str);
+        return this;
+    }
 
+    public EBFA01Page waitResume(String str){
+        this.waitFor(30,"//span[text()=\"" + str + "\"]");
+        return this;
+    }
 
 }

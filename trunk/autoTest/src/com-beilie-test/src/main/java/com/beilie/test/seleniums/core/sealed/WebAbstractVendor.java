@@ -4,6 +4,8 @@ import com.beilie.test.seleniums.core.Element;
 import com.beilie.test.seleniums.core.UIElement;
 import com.beilie.test.seleniums.core.Vendor;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -19,6 +21,7 @@ public abstract class WebAbstractVendor implements Vendor {
     public void setDriver(SearchContext driver) {
         this.driver = driver;
     }
+
 
     protected SearchContext driver;
 

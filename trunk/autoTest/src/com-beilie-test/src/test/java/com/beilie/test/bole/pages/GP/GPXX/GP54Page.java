@@ -4,9 +4,11 @@ import com.beilie.test.open.PublicClass.Public;
 
 public class GP54Page extends Public<GP54Page> {
     public GP54Page selectTime() throws InterruptedException{
-        this.findByClassName("ivu-date-picker-cells-cell-today").click();//选择当天
-        this.sleepForSeconds(1);
-        this.findByXPath("//span[text()=\"确定\"]").click();//点击【确定】按钮
+        //this.findByClassName("ivu-date-picker-cells-cell-today").click();//选择当天
+        //this.sleepForSeconds(1);
+        //this.findByXPath("//span[text()=\"确定\"]").click();//点击【确定】按钮
+        spanClass_Click("gp54_today_class");//选择当天
+        buttonClass_click("gp54_submit_class");//点击【确定】按钮
         return this;
     }
 

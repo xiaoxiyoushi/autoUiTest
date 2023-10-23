@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="seleniumTest" default="run" basedir=".">
+    <property name="src" value="src"/>
+    <property name="dest" value="classes"/>
+    <property name="helloant_jar" value="helloant.jar"/>
+	<target name="test">
+	 <testng  
+            <xmlfileset dir="E:\seleniumTest\trunk\autoTest\src" includes="*.xml"/>
+        </testng>
+	</target>
+</project>

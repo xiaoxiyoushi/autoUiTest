@@ -9,6 +9,7 @@ public interface Element extends SearchElement{
     Element submit();
     Element sendKeys(CharSequence... var1);
     Element clear();
+    //Element scrollTo();
     String getTagName();
     String getAttribute(String var1);
     boolean isSelected();

@@ -6,7 +6,7 @@ import com.beilie.test.open.PublicClass.Public;
 public class GPCT01Page extends Public<GPCT01Page> {
 
     public GPCT01Page clickCarry(){
-        this.findByXPath("//span[text()=\"执行\"]").click();
+        this.findByXPath("//div[@class=\"ivu-table-fixed-right\"]//span[text()=\"执行\"]").click();
         return this;
     }
 

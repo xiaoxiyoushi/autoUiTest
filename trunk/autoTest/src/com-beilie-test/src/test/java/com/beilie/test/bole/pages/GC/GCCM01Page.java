@@ -30,9 +30,7 @@ public class GCCM01Page extends Public<GCCM01Page> {
     //选择所属行业
     public GCCM01Page selectIndustry(){
         //点击  请选择一个行业
-        this.findById("Editor_bg")
-                .findById("b-expect-industry")
-                  .findByTagName("input").click();
+        this.findByClassName("icon-industry").click();
 
         /*//选择：IT/互联网/游戏 > 全部
         this.findByClassName("nextUl").findByTagName("li").click();
@@ -56,9 +54,7 @@ public class GCCM01Page extends Public<GCCM01Page> {
 ////    }
     public GCCM01Page selectCity(){
         //点击  请选择一个所在地
-        this.findById("b-expect-location")
-               .findByTagName("input").click();
-
+        this.findByClassName("icon-region").click();
         return this;
     }
 

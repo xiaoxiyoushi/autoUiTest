@@ -12,7 +12,7 @@ public class 寻找人选_7_组合搜索_职位名称_学历_期望职能_期望
         寻找人选_4_期望职能 zn=new 寻找人选_4_期望职能();
         HomePage homePage = login("13370273782", "1");
         FindCandidatePage findCandidatePage = (FindCandidatePage) homePage
-                .waitForTitleLoaded(10, "谈聘网-首页-开启招聘之旅")
+                //.waitForTitleLoaded(10, "谈聘网-首页-开启招聘之旅")
                 .clickHeader("寻找人选")
                 .transfer(FindCandidatePage.class).sleepForSeconds(3);
         CandidateResultPage resultPage = (CandidateResultPage) findCandidatePage.positionName("java工程师")

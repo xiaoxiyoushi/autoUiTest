@@ -12,6 +12,13 @@ public class GPRV01Page<T extends GPRV01Page> extends Public<T> {
             "        搜索\n" +
             "      ";
 
+    //搜索按钮
+    public GPRV01Page search_button() {
+        this.findByXPath("//div[@class=\"ef-search-bar-btns\"]//button[2]").click();
+        return this;
+    }
+
+
     public GPRV01Page paymentPlan_click() {
         this.findByClassName("GPPL04_newlyAddedBtn").click();
         return this;
@@ -32,7 +39,8 @@ public class GPRV01Page<T extends GPRV01Page> extends Public<T> {
         sendInputPlaceholder("请输入公司名称", recommendComp_1);
         sendInputPlaceholder("请输入职位名称", recommendJob_1);
 
-        clickButton(searchButton);
+        search_button();
+
         this.sleepForSeconds(2);
 
         String td_Value = table_tdValue(0, 7);//本次收款金额
@@ -87,13 +95,15 @@ public class GPRV01Page<T extends GPRV01Page> extends Public<T> {
         sendInputPlaceholder("请输入公司名称", company_1);
         sendInputPlaceholder("请输入职位名称", job_1);
 
-        clickButton(searchButton);
+        //buttonClass_click("gprv01_search_class");
+        search_button();
         this.sleepForSeconds(2);
 
         for (int i = 0; i < table_trNumb(); i++) {
             String td_thisTimeMoney = this.table_tdValue(i, 7);
             if (thisTimeMoney_1.equals(td_thisTimeMoney)) {
                 this.findListByClassName("ivu-table-cell-expand").get(i).click();//点击箭头
+                this.sleepForSeconds(3);
 
                 String paymenType = this.findListByClassName("ivu-table-tbody").get(1)
                         .findListByTagName("tr").get(0)
@@ -240,4 +250,7 @@ public class GPRV01Page<T extends GPRV01Page> extends Public<T> {
 
         return this;
     }
+
+
+
 }

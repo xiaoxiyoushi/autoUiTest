@@ -1,11 +1,18 @@
 package com.beilie.test.bole.pages.EB;
 
 import com.beilie.test.open.PublicClass.Public;
+import com.beilie.test.seleniums.core.Element;
 import org.junit.Assert;
 import java.util.ArrayList;
 import java.util.List;
 
 public class EBFA04Page extends Public<EBFA04Page> {
+
+    //等待人选数据加载出来
+    public EBFA04Page waitCandidateSearchResults(){
+        this.waitFor(30,"//div[@class=\"EBFA04_rightResult_content\"]//div[@class=\"small_card mb20\"]");
+        return this;
+    }
 
     public EBFA04Page a(){
         for (int i=0;i<6;i++){
@@ -33,6 +40,23 @@ public class EBFA04Page extends Public<EBFA04Page> {
     public EBFA04Page hoverAvatar(int n){
         this.findByClassName("pt72").findListByClassName("small_card").get(n)
                 .findByClassName("cursorP").hover();
+        return this;
+    }
+
+    //鼠标hover姓名，显示人选基本信息card
+    public EBFA04Page hoverNameAndAssert() throws InterruptedException{
+        //获取姓名
+        String name=this.findByXPath("//div[@class=\"ml10 font14 weight400 flex singleLine\"]/div[1]/div[1]/div[1]").getText();
+
+        //hover姓名
+        this.findByXPath("//div[@class=\"ml10 font14 weight400 flex singleLine\"]/div[1]").hover();
+        this.sleepForSeconds(1);
+
+        //获取卡片的姓名
+        String cardName=this.findListById("big_card").get(1)
+                .findByTagName("span")
+                .getText();
+        Assert.assertEquals(name,cardName);
         return this;
     }
 
@@ -177,6 +201,18 @@ public class EBFA04Page extends Public<EBFA04Page> {
         return this;
     }
 
+    //鼠标点击姓名
+    public EBFA04Page clickName() throws InterruptedException{
+        //点击姓名
+        this.findByXPath("//div[@class=\"ml10 font14 weight400 flex singleLine\"]/div[1]").click();
+        return this;
+    }
 
+    //按钮是清空文案+可点击
+    public EBFA04Page clearButton(){
+        Element element=this.findByXPath("//a[text()=\"" + "清空" + "\"]");//按钮是清空文案
+        element.isEnabled();//可点击
+        return this;
+    }
 
 }

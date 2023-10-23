@@ -58,6 +58,7 @@ public class GP10Page extends Common<GP10Page> {
         return this;
     }
 
+    //点击姓名
     public GP10Page clickName() {
         this.findByClassName("ivu-table-tbody")
                 .findByTagName("a").click();
@@ -105,5 +106,44 @@ public class GP10Page extends Common<GP10Page> {
         return this;
     }
 
+    //获取姓名
+    public String getNmae() {
+        String td_Value = this.findByClassName("ivu-table-tbody")
+                .findListByTagName("tr").get(0)
+                .findListByTagName("td").get(0)
+                .findListByTagName("a").get(0)
+                .getText();
+        return td_Value;
+    }
 
+    //获取手机号
+    public String getPhone() {
+        String td_Value = this.findByClassName("ivu-table-tbody")
+                .findListByTagName("tr").get(0)
+                .findListByTagName("td").get(1)
+                .findListByTagName("a").get(0)
+                .getText();
+        return td_Value;
+    }
+
+    /*
+    *从备选库添加
+     */
+    //点击从备选库添加按钮
+    public GP10Page alternativeLibraryBtn_click() {
+        this.findByXPath("//span[text()=\"从备选库添加\"]").click();
+        return this;
+    }
+
+    public GP10Page alternativeLibraryBtn_isEnabled() {
+        boolean b=this.findByXPath("//div[@class=\"search-bar-btns\"]//button").isEnabled();
+        Assert.assertTrue(b);
+        return this;
+    }
+
+    public GP10Page alternativeLibrary_joinProje_isEnabled() {
+        boolean b=this.findByXPath("//div[@class=\"d-flex justify-content-between align-items-center\"]//button").isEnabled();
+        Assert.assertFalse(b);
+        return this;
+    }
 }

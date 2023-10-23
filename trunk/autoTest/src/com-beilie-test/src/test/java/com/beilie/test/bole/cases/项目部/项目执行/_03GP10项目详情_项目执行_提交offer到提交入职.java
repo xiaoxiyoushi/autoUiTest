@@ -6,24 +6,25 @@ import com.beilie.test.bole.pages.GP.GPPC01Page;
 import com.beilie.test.bole.pages.GP.GPPM.GPPM10Page;
 import com.beilie.test.bole.pages.GP.GPXX.*;
 import com.beilie.test.open.PublicClass.Public;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class _03GP10项目详情_项目执行_提交offer到提交入职 extends BoleBase {
     @Test
     public void run() throws IllegalAccessException, InstantiationException, InterruptedException {
-        BdHomePage bdHomePage1 = login("68658226", "1").sleepForSeconds(3);
+        BdHomePage bdHomePage1 = login("ccl_userName", "ccl_password").sleepForSeconds(3);
         process(bdHomePage1);
     }
 
     public BdHomePage login() throws IllegalAccessException, InstantiationException, InterruptedException {
-        BdHomePage bdHomePage = login("68658226", "1").sleepForSeconds(3);
+        BdHomePage bdHomePage = login("ccl_userName", "ccl_password").sleepForSeconds(3);
         return bdHomePage;
     }
 
     public void process(BdHomePage bdHomePage) throws IllegalAccessException, InstantiationException, InterruptedException{
+        bdHomePage.closeHideMenue().sleepForSeconds(1);//关闭设置隐藏菜单的弹窗
         GPPM10Page gPPM10Page = (GPPM10Page) bdHomePage
-                .clickMenus("\n" +
-                        "          项目管理", "我的项目")//点击菜单栏
+                .clickFirstMenu_projectManage().sleepForSeconds(1)//点击一级菜单：项目管理
+                .clickSecondMenu_myProject().sleepForSeconds(1)//点击二级菜单：我的项目
                 .switchToNewIframe1("GPPM10", GPPM10Page.class).sleepForSeconds(1);
 
         String randomStr = Public.generateString(8);//8位随机字符串
@@ -46,11 +47,12 @@ public class _03GP10项目详情_项目执行_提交offer到提交入职 extends
         GPPC01Page gPPC01Page = (GPPC01Page) gP14Page
                 //点击【跟踪入职情况-高超OjqzHV1M-卖麦芽糖的-上海麦芽糖公司】按钮
                 .carryButton_click()
-                .switchToNewIframe(2, GPPC01Page.class).sleepForSeconds(3);
+                    .switchToNewIframe(2, GPPC01Page.class).sleepForSeconds(3);
 
         GP14Page gP14Page_1 = (GP14Page) gPPC01Page
-                .uploadBackground("C:\\Users\\86182\\Desktop\\resume\\周贤伍简历-招聘经理.pdf").sleepForSeconds(5)
-                .clickSure()
+                 .uploadBackground("C:\\Users\\86182\\Desktop\\resume\\周贤伍简历-招聘经理.pdf").sleepForSeconds(5)
+                .spanClick("gppc01_submit")
+                //.clickSure()
                 .switchToNewIframe(1, GP14Page.class).sleepForSeconds(1);
 
         GP22Page gP22Page = (GP22Page) gP14Page_1
@@ -72,28 +74,31 @@ public class _03GP10项目详情_项目执行_提交offer到提交入职 extends
                 .clickButton("录用")
                 .switchToNewIframe(2, GP11Page.class).sleepForSeconds(3);
 
-        GP14Page gP14Page_5 = (GP14Page) gP11Page.label_followingDiv_input("年薪", "65000")
-                .scrollBar()
-                .selectTime_Many("提醒")
-                .confirmTime("确认日期")
-                .confirmTime("预计上班日期")
-                .clickStatusInput("状态")
+        GP14Page gP14Page_5 = (GP14Page) gP11Page
+                .label_followingDiv_input("年薪：", "65000")
+               // .scrollBar()
+                .selectTime_Many("提醒：")
+                .confirmTime("确认日期：",1)
+                .confirmTime("预计上班日期：",2)
+                .clickStatusInput("状态：")
                 .Li_click("录用")
-                .label_followingDiv_clickInput("提醒对象").sleepForSeconds(1)
-                .labelClick("(cc41)")
-                .clickConfirm().sleepForSeconds(1)
-                .clickSpan("保存")
+                .label_followingDiv_clickInput("提醒对象：").sleepForSeconds(1)
+                .labelClick(" 兰帝(兰帝)")
+                .clickSpan("确定").sleepForSeconds(1)
+                //.clickConfirm().sleepForSeconds(1)
+                .clickSpan("保存").sleepForSeconds(1)
                 .clickSubmit()
                 .switchToNewIframe(1, GP14Page.class).sleepForSeconds(3);
 
         GP27Page gP27Page = (GP27Page) gP14Page_5
                 //点击【跟踪入职情况-高超OjqzHV1M-卖麦芽糖的-上海麦芽糖公司】按钮
-                .carryButton_click()
+                .confirmAttendanceButton_click()
                 .switchToNewIframe(2, GP27Page.class).sleepForSeconds(3);
 
         GP14Page gP14Page_6 = (GP14Page) gP27Page
                 .labelClick("已入职").sleepForSeconds(1)
-                .clickReport()
+                //.clickSpan("submit")
+                .button_classClick("ivu-btn ivu-btn-primary")
                 .switchToNewIframe(1, GP14Page.class).sleepForSeconds(3);
 
         GP13Page gP13Page = (GP13Page) gP14Page_6
@@ -102,21 +107,27 @@ public class _03GP10项目详情_项目执行_提交offer到提交入职 extends
                 .tanchuang_quedingButton_click()
                 .switchToNewIframe(2, GP13Page.class).sleepForSeconds(3);
 
-        GP14Page gP14Page_7 = (GP14Page) gP13Page.clickInputPlaceholder("入职时间")
-                .label_calendar_today("入职时间")
+        GP14Page gP14Page_7 = (GP14Page) gP13Page
+                .clickInputPlaceholder("入职时间").sleepForSeconds(1)
+                //.label_calendar_today("入职时间")
+                .entryTime_click(0).sleepForSeconds(1)//入职时间
                 .labelClick("保证期结束时间")
-                .clickInputPlaceholder("试用期结束")
-                .scrollBar()
-                .label_calendar_today("保证期结束时间")
+                .clickInputPlaceholder("试用期结束").sleepForSeconds(1)
+                //.scrollBar().sleepForSeconds(1)
+                //.label_calendar_today("保证期结束时间")
+                .entryTime_click(1).sleepForSeconds(1)
                 .labelClick("保证期结束时间")
-                .clickInputPlaceholder("提醒时间")
-                .label_calendar_today("提醒时间")
+
+                .clickInputPlaceholder("提醒时间").sleepForSeconds(2)
+                //.label_calendar_today("提醒时间")
+                .entryTime_click(2)
                 .labelClick("保证期结束时间")
+
                 .label_followingDiv_clickInput("提醒对象")
                 .div_followingDiv_input_click("人员：")
                 .sure_click("提醒对象")
                 //.scrollBar()
-                .div_class_button("btns").sleepForSeconds(1)
+                .div_class_buttons("ef-modal-page-footer ef-page-footer").sleepForSeconds(1)
                 .switchToNewIframe(1, GP14Page.class).sleepForSeconds(1);
 
         GP10Page gP10Page_1 = (GP10Page) gP14Page_7

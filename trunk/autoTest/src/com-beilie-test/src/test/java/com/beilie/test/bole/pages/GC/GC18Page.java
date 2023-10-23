@@ -45,4 +45,15 @@ public class GC18Page extends Public<GC18Page> {
         this.clickSpan("创建项目");
         return this;
     }
+
+    public GC18Page currentNoContactor(){
+        try {
+            listSpan_Click("确定",1).sleepForSeconds(1);
+        } /*catch (NoSuchElementException e,No) {
+            e.printStackTrace();
+        }*/catch (Exception e) {
+            e.printStackTrace();
+        }
+        return this;
+    }
 }

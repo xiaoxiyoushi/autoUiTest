@@ -15,12 +15,12 @@ public class GCCM02Page extends Public<GCCM02Page> {
 
     //点击未保护框
     public GCCM02Page clickProtectInput(){
-        element(0,2).findByTagName("span").click();
+        findByXPath("//span[text()=\"我保护\"]").click();
         return this;
     }
     //选择未保护
     public GCCM02Page selectUnprotected(int i){
-        element(0,2).findListByClassName("ivu-select-item").get(i).click();
+        findByXPath("//li[text()=\"未保护\"]").click();
         return this;
     }
 

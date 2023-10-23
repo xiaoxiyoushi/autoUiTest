@@ -11,7 +11,7 @@ public class GP05Page extends Public<GP05Page>{
     }
 
     public GP05Page tickSubmit(){
-        this.findByXPath("//a[text()=\"提交\"]").click();
+        this.findByXPath("//span[text()=\"提交\"]").click();
         return this;
     }
 }
